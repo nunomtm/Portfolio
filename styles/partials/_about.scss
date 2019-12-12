@@ -1,9 +1,31 @@
 .about {
-  display: flex;
-  align-items: center;
-  padding-top: 1%;
-  width: calc(100 / 2) - 20px;
+  min-height: 100vh;
   position: relative;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    width: calc(100 / 2) - 20px;
+  }
+  .title {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .accent {
+    font-size: 3rem;
+    color: #ee0149
+  }
+  .menu{
+    position: absolute;
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #4b4b4b;
+    top: 15%;
+  }
   .photo {
     margin: 0;
     padding: 3%;
@@ -22,9 +44,9 @@
   .border {
     position: absolute;
     border: 6px solid #ee0149;
-    height: 47%;
-    width: 47%;
-    top: 20%;
+    height: 38%;
+    width: 37%;
+    top: 22%;
     left: 53%;
     z-index: -1;
   }

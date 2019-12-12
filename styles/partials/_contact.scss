@@ -1,12 +1,37 @@
 .contact {
     background: #4b4b4b;
     padding: 5% 0;
+    position: relative;
+    .accent {
+        font-size: 3rem;
+        color: #ee0149
+    }
+    .menu{
+        position: absolute;
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #fff;
+        bottom: 65%;
+    }
     .wrapper {
         display: flex;
         justify-content: space-around;
     }
+    .border {
+        position: absolute;
+        border: 6px solid #ee0149;
+        height: 50%;
+        width: 30%;
+        top: 7%;
+        left: 10%;
+        z-index: 0;
+    }
     .contactMe {
         width: 45%;
+        z-index: 1;
+        background-color: #4b4b4b;
         h2 {
             font-size: 4rem;
             letter-spacing: 1.2px;
@@ -19,8 +44,21 @@
         }
         .contactDetails {
             i {
-                font-size: 4rem;
+                font-size: 3rem;
                 color: #ee0149;
+                padding: 3% 0;
+                transition: 0.35s;
+                &:hover,
+                &:focus {
+                    transform: scale(1.2);
+                    color: #fff;
+                }
+            }
+            a {
+                font-size: 1.8rem;
+                text-decoration: none;
+                color: #fff;
+                margin-left: 2%;
             }
         }
     }
@@ -62,7 +100,6 @@
             transition: 0.35s;
             &:hover {
                 background-color: #000;
-                color: #ee0149;
             }
             &:focus {
                 border: 1px solid #ee0149

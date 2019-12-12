@@ -1,63 +1,84 @@
 .skills {
   background: #4b4b4b;
-  margin: 8% 0;
-}
-
-.logos {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: space-around;
-  padding-left: 0%;
-}
-
-.logos li {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% / 5);
-  padding: 50px 0;
-}
-
-.logos p {
-  font-size: 1.8rem;
-  color: #fff;
-  text-decoration: none;
-  text-align: center; 
-  margin-top: 10px;
-}
-
-.logos a {
-  text-align: center;
-}
-
-.logos i {
-  font-size: 7rem;
-  color: #ee0149;
-}
-
-.logos img {
-  width: 65px;
-  margin-bottom: 8px;
-  margin-left: 80px;
-}
-
-.logos > li:nth-child(4) {
- align-items: center;
-}
-
-.responsive .fa-mobile-alt,
-.responsive .fa-desktop {
-  font-size: 5rem;
-  margin: 11px 0;
-}
-
-.responsive .fa-caret-right {
-  font-size: 5rem;
-}
-
-.devicon-git-plain path {
-  fill: #ee0149;
-  list-style: none;
+  position: relative;
+  .title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .accent {
+    font-size: 3rem;
+    color: #ee0149
+  }
+  .menu{
+    position: absolute;
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    top: 15%;
+  }
+  
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 0%;
+  }
+  
+  .logos li {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 5);
+    padding: 50px 0;
+  }
+  
+  .logos p {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center; 
+    margin-top: 10px;
+  }
+  
+  .logos a {
+    text-align: center;
+  }
+  
+  .logos i {
+    font-size: 7rem;
+    color: #ee0149;
+  }
+  
+  .logos img {
+    width: 65px;
+    margin-bottom: 8px;
+    margin-left: 80px;
+  }
+  
+  .logos > li:nth-child(4) {
+   align-items: center;
+  }
+  
+  .responsive .fa-mobile-alt,
+  .responsive .fa-desktop {
+    font-size: 5rem;
+    margin: 11px 0;
+  }
+  
+  .responsive .fa-caret-right {
+    font-size: 5rem;
+  }
+  
+  .devicon-git-plain path {
+    fill: #ee0149;
+    list-style: none;
+  }
 }
 
 /* Skills Icons Hover Effect */

@@ -1,0 +1,52 @@
+.portfolio {
+    position: relative;
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, min-content);
+        grid-template-areas:
+        "yoda yodaInfo"
+        "marketInfo market"
+        "textile textileInfo";
+    }
+    .yoda {
+        grid-area: yoda;
+        
+    }
+    .market {
+        grid-area: market;
+    }
+    .textile {
+        grid-area: textile;
+    }
+    .yodaInfo {
+        grid-area: yodaInfo;
+    }
+    .marketInfo {
+        grid-area: marketInfo;
+    }
+    .textileInfo {
+        grid-area: textileInfo;
+        
+    }
+    .title {
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .accent {
+        font-size: 3rem;
+        color: #ee0149
+    }
+        .menu{
+        position: absolute;
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #4b4b4b;
+        top: 15%;
+    }
+}

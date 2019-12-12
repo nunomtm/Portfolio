@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/fe0b8f1505.js" crossorigin="anonymous"></script>
     <link rel='icon' href='./assets/Favicon.ico' type='image/x-icon'/>
-    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Nuno's Portfolio</title>
@@ -53,19 +53,25 @@
     </header>
 
     <main>
-        <section class="about wrapper" id="about">
-            <figure class="photo">
-                <img src="./assets/me.png" alt="portrate of Nuno Macedo">
-            </figure>
-            <div class="aboutMe">
-                <p>Hi, my name is Nuno Macedo, a front-end developer recently graduated from Juno's College Bootcamp and I'm based in Toronto.</p>
-                <p>My journey in web developement should've started many years ago, but I decided to get a degree in Marketing and being able to promote any product to customers from the most diverse backgrounds.</p>
-                <p>A few months ago I decided that life is too short and that I would finally persue a career as Web-Developer and do something that I can spend hours coding without even noticing the time passing by.</p>
+        <section class="about" id="about">
+            <p class="menu"> > <span class="accent">.</span> About</p>
+            <h2 class="title">ABOUT</h2>
+            <div class="wrapper">
+                <figure class="photo">
+                    <img src="./assets/me.png" alt="portrate of Nuno Macedo">
+                </figure>
+                <div class="aboutMe">
+                    <p>Hi, my name is Nuno Macedo, a front-end developer recently graduated from Juno's College Bootcamp and I'm based in Toronto.</p>
+                    <p>My journey in web developement should've started many years ago, but I decided to get a degree in Marketing and being able to promote any product to customers from the most diverse backgrounds.</p>
+                    <p>A few months ago I decided that life is too short and that I would finally persue a career as Web-Developer and do something that I can spend hours coding without even noticing the time passing by.</p>
+                </div>
+                <div class="border"></div>
             </div>
-            <div class="border"></div>
         </section>
 
         <section class="skills" id="skills">
+            <p class="menu"> > <span class="accent">.</span> Skills</p>
+            <h2 class="title">SKILLS</h2>
             <ul class="logos wrapper">
                 <li>
                     <a class="hvr-icon-pulse-grow" href="">
@@ -135,21 +141,53 @@
         </section>
 
         <section class="portfolio" id="portfolio">
-        
+            <h2 class="title">PORTFOLIO</h2>
+            <p class="menu"> > <span class="accent">.</span> Portfolio</p>
+            <div class="wrapper">
+                <div class="yodaInfo">
+                    <p class="info">Yoda</p>
+                </div>
+                <div class="yoda">
+                    <img src="./assets/Yoda Wisdom.png" alt="">
+                </div>
+                <div class="market">
+                    <img src="./assets/Juno's Market.png" alt="">
+                </div>
+                <div class="marketInfo">
+                        <p class="info">Juno's Market</p>
+                </div>
+                <div class="textile">
+                    <img src="./assets/Textiles.png" alt="">
+                </div>
+                <div class="textileInfo">
+                    <p class="info">Textiles</p>
+                </div>
+            </div>
         </section>
 
         <section class="contact" id="contact">
+            <p class="menu"> > <span class="accent">.</span> Contact</p>
             <div class="wrapper">
+                <div class="border"></div>
                 <div class="contactMe">
                     <h2>Contact me!</h2>
                     <p>If you are interested to go for a coffee and discuss work opportunities, you know what you need to do.</p>
                     <div class="contactDetails">
-                        <i class="fas fa-phone-alt"></i>
-                        <i class="far fa-envelope"></i>
-                        <i class="fas fa-paperclip"></i>
+                        <div class="phone">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            <a href="tel://1-647-233-2011">+1 (647) 233-2011</a>
+                        </div>
+                        <div class="email">
+                            <i class="far fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:nuno.webdeveloper@gmail.com?subject=Let's%20chat">nuno.webdeveloper@gmail.com</a>
+                        </div>
+                        <div class="resume">
+                            <i class="fas fa-file-download" aria-hidden="true"></i>
+                            <a href="./download/Nuno Macedo - Resume.pdf" download>résumé</a>
+                        </div>
                     </div>
                 </div>
-    
+
                 <fieldset>
                     <legend>You can write a message to me</legend>
     

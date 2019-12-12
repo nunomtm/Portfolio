@@ -48,21 +48,18 @@ header {
   transition: 0.25s;
 }
 
-.nav li:last-child {
-  margin-right: 0;
-}
-
 .nav a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border: 3px solid transparent;
+  padding: 5px;
+  transition: 0.35s;
 }
 
 .nav a:hover,
 .nav a:focus {
-  color: #ee0149;
-  border-bottom: 2px solid #fff;
+  border: 3px solid #ee0149;
 }
 
 // Nav li Animation
@@ -197,15 +194,21 @@ header {
   text-align: center;
   text-shadow: 2px 2px black;
   margin-top: 15%;
-  margin-bottom: 5%;
+  margin-bottom: 0;
 }
 
 .myLogo .headline {
-  font-size: 3rem;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.1rem;
   color: #fff;
   letter-spacing: 2px;
   text-align: center;
   text-shadow: 2px 2px black;
+  border: 6px solid #ee0149;
+  margin-top: 1%;
+  padding: 1% 0;
+  width: 35%;
+  margin-left: 32%;
 }
 
 // .stayTuned {
@@ -223,7 +226,6 @@ header {
 // }
 
 /* Scroll Animation */
-
 .iconScroll,
 .iconScroll:before{
     position: absolute;
@@ -235,7 +237,6 @@ header {
     height: 65px;
     margin-left: -20px;
     top: 85%;
-    // margin-top: -35px;
     box-shadow: inset 0 0 0 1px #fff;
     border-radius: 25px;
 }
