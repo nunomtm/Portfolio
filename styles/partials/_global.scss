@@ -1,0 +1,38 @@
+/* Global Styles Start Here */
+html {
+    font-size: 65.2%;
+    scroll-behavior: smooth
+}
+
+body {
+  font-family: $font;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Global Styles Ends Here */
+
+
+/* Skip-line for accessibility */
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skipLink:focus {
+  left: 0;
+}
+/* - */
+

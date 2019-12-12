@@ -1,0 +1,31 @@
+.about {
+  display: flex;
+  align-items: center;
+  padding-top: 1%;
+  width: calc(100 / 2) - 20px;
+  position: relative;
+  .photo {
+    margin: 0;
+    padding: 3%;
+    max-width: 45%;
+  }
+  .aboutMe {
+    p {
+      font-size: 2rem;
+      line-height: 1.5;
+      color: #000;
+      background: #fff;
+      margin: 0 30px;
+      padding: 1% 0;
+    }
+  }
+  .border {
+    position: absolute;
+    border: 6px solid #ee0149;
+    height: 47%;
+    width: 47%;
+    top: 20%;
+    left: 53%;
+    z-index: -1;
+  }
+}

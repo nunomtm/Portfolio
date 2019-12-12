@@ -1,0 +1,84 @@
+.contact {
+    background: #4b4b4b;
+    padding: 5% 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contactMe {
+        width: 45%;
+        h2 {
+            font-size: 4rem;
+            letter-spacing: 1.2px;
+            color: #fff;
+            margin: 0;
+        }
+        p {
+            font-size: 1.8rem;
+            color: #fff;
+        }
+        .contactDetails {
+            i {
+                font-size: 4rem;
+                color: #ee0149;
+            }
+        }
+    }
+    fieldset {
+        border: none;
+        padding: 0;
+        width: 45%;
+        legend {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 5% 0;
+        }
+        #username,
+        #useremail,
+        #message {
+            font-size: 1.4rem;
+            background: transparent;
+            color: #fff;
+            margin: 3% 0;
+            padding: 2% 2%;
+        }
+        #message {
+            padding: 10% 2%;
+        }
+        input[type="submit"] {
+            background-color: #ee0149;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: none;
+            padding: 2%;
+            width: 25%;
+            transition: 0.35s;
+            &:hover {
+                background-color: #000;
+                color: #ee0149;
+            }
+            &:focus {
+                border: 1px solid #ee0149
+            }
+        }
+    }
+}
+
+
+
+.visually-hidden:not(:focus):not(:active) { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}

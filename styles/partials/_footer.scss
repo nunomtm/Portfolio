@@ -1,0 +1,48 @@
+/* Footer Styles Starts Here */
+footer {
+  background-color:rgba(0, 0, 0, 0.9);
+}
+
+.mainFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainFooter p {
+  font-size: 1.5rem;
+  color: #ee0149;
+}
+
+.mainFooter .white{
+  color: white;
+}
+
+.mainFooter i {
+  font-size: 1.8rem;
+  color: #ee0149;
+  padding: 10px;
+  transition: 0.25s;
+}
+
+.mainFooter i:hover,
+.mainFooter i:focus {
+  transform: scale(1.4);
+  color: #fff;
+}
+
+.social {
+  align-self: center;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social li {
+  text-decoration: none;
+}
+/* Footer Styles Ends Here */

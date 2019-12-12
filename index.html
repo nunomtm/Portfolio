@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/fe0b8f1505.js" crossorigin="anonymous"></script>
+    <link rel='icon' href='./assets/Favicon.ico' type='image/x-icon'/>
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Nuno's Portfolio</title>
+</head>
+<body>
+    <!-- Skip-link for accessibility -->
+    <a href="header" class="skipLink">Skip to main content.</a>
+
+    <header>
+        <div class="navContainer">
+            <nav class="nav wrapper">
+                <ul>
+                    <li><a class="hvr-wobble-vertical" href="index.html">Home</a></li>
+                    <li><a class="hvr-wobble-vertical" href="#about">About</a></li>
+                    <li><a class="hvr-wobble-vertical" href="#skills">Skills</a></li>
+                    <li><a class="hvr-wobble-vertical" href="#portfolio">Portfolio</a></li>
+                    <li><a class="hvr-wobble-vertical" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="mobileNav">
+            <label for="toggleMenu"><i class="fa fa-bars"></i> </label>
+            <input type="checkbox" id="toggleMenu" name="toggleMenu">
+            <ul class="navMobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="myLogo wrapper">
+                <img src="./logo/rotate_black_updated.svg" alt="">
+                <p class="name">Nuno Macedo</p>
+                <p class="headline">Front-End Web Developer</p>
+            </div>
+            <div class="scroll">
+                <p class='iconScroll'><a href="#about"></a></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about wrapper" id="about">
+            <figure class="photo">
+                <img src="./assets/me.png" alt="portrate of Nuno Macedo">
+            </figure>
+            <div class="aboutMe">
+                <p>Hi, my name is Nuno Macedo, a front-end developer recently graduated from Juno's College Bootcamp and I'm based in Toronto.</p>
+                <p>My journey in web developement should've started many years ago, but I decided to get a degree in Marketing and being able to promote any product to customers from the most diverse backgrounds.</p>
+                <p>A few months ago I decided that life is too short and that I would finally persue a career as Web-Developer and do something that I can spend hours coding without even noticing the time passing by.</p>
+            </div>
+            <div class="border"></div>
+        </section>
+
+        <section class="skills" id="skills">
+            <ul class="logos wrapper">
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <i class="hvr-icon fab fa-html5" aria-hidden="true"></i>
+                    </a>
+                    <p>HTML5</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <i class="hvr-icon fab fa-css3-alt" aria-hidden="true"></i>
+                    </a>
+                    <p>CSS3</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <i class="hvr-icon fab fa-sass" aria-hidden="true"></i>
+                    </a>
+                    <p>Sass</p>
+                </li>
+                <li>
+                    <div class="responsive">
+                        <a class="hvr-icon-pulse-grow" href="">
+                            <i class="hvr-icon fas fa-desktop" aria-hidden="true"></i>
+                            <i class="hvr-icon fas fa-caret-right" aria-hidden="true"></i>
+                            <i class="hvr-icon fas fa-mobile-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <p>Responsive Design</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <img class="hvr-icon" src="./assets/VSCodeIcon.png" alt="">
+                    </a>
+                    <p>VS Code</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <i class="hvr-icon fab fa-js-square" aria-hidden="true"></i>
+                    </a>
+                    <p>JavaScript</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <img class="hvr-icon" src="./assets/jQueryIcon.png" alt="">
+                    </a>
+                    <p>jQuery</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <i class="hvr-icon fab fa-react" aria-hidden="true"></i>
+                    </a>
+                    <p>React</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <img class="hvr-icon" src="./assets/FirebaseIcon.png" alt="">
+                    </a>
+                    <p>Firebase</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <i class="hvr-icon fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <p>GitHub</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+        
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="wrapper">
+                <div class="contactMe">
+                    <h2>Contact me!</h2>
+                    <p>If you are interested to go for a coffee and discuss work opportunities, you know what you need to do.</p>
+                    <div class="contactDetails">
+                        <i class="fas fa-phone-alt"></i>
+                        <i class="far fa-envelope"></i>
+                        <i class="fas fa-paperclip"></i>
+                    </div>
+                </div>
+    
+                <fieldset>
+                    <legend>You can write a message to me</legend>
+    
+                    <form action="submit">
+                        <label class="visually-hidden" for="username">Your name</label>
+                        <input type="text" name="username" id="username" placeholder="Your name">
+                    
+                        <label class="visually-hidden" for="useremail">Your e-mail</label>
+                        <input type="email" name="useremail" id="useremail" placeholder="Your e-mail">
+    
+                        <label class="visually-hidden" for="message">Your message</label>
+                        <input type="text" name="message" id="message" placeholder="Your message">
+                    
+                        <input type="submit" value="send">
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="mainFooter wrapper">
+            <p><span class="white">Copyright &copy;</span> Nuno Macedo Web Developer</p>
+        
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/nunomacedo1/">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="visuallyhidden">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/nuno_webdev">
+                            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                            <span class="visuallyhidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/nunomtm">
+                            <i class="fab fa-github-square" aria-hidden="true"></i>
+                            <span class="visuallyhidden">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@nunomtm">
+                            <i class="fab fa-medium" aria-hidden="true"></i>
+                            <span class="visuallyhidden">Medium</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
