@@ -40,14 +40,20 @@
             </ul>
         </nav>
 
-        <div class="hero">
-            <div class="myLogo wrapper">
-                <img src="./logo/rotate_black_updated.svg" alt="">
-                <p class="name">Nuno Macedo</p>
-                <p class="headline">Front-End Web Developer</p>
-            </div>
-            <div class="scroll">
-                <p class='iconScroll'><a href="#about"></a></p>
+        <div class="heroContainer">
+            <div class="hero wrapper">
+                <div class="logo">
+                    <img src="./logo/rotate_black_updated.svg" alt="">
+                </div>
+                <div class="name">
+                    <p>Nuno Macedo</p>
+                </div>
+                <div class="headline">
+                    <p>Front-End Web Developer</p>
+                </div>
+                <div class="scroll">
+                    <a href="#about" class='iconScroll'></a>
+                </div>
             </div>
         </div>
     </header>
@@ -92,13 +98,9 @@
                     <p>Sass</p>
                 </li>
                 <li>
-                    <div class="responsive">
-                        <a class="hvr-icon-pulse-grow" href="">
-                            <i class="hvr-icon fas fa-desktop" aria-hidden="true"></i>
-                            <i class="hvr-icon fas fa-caret-right" aria-hidden="true"></i>
-                            <i class="hvr-icon fas fa-mobile-alt" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <img class="responsive hvr-icon" src="./assets/responsive(1).png" alt="">
+                    </a>
                     <p>Responsive Design</p>
                 </li>
                 <li>
@@ -136,6 +138,18 @@
                         <i class="hvr-icon fab fa-github" aria-hidden="true"></i>
                     </a>
                     <p>GitHub</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <i class="fab fa-git-alt" aria-hidden="true"></i>
+                    </a>
+                    <p>Git</p>
+                </li>
+                <li>
+                    <a class="hvr-icon-pulse-grow" href="">
+                        <i class="hvr-icon fas fa-universal-access" aria-hidden="true"></i>
+                    </a>    
+                    <p>Accessibility</p>
                 </li>
             </ul>
         </section>
@@ -182,7 +196,7 @@
                             <a href="mailto:nuno.webdeveloper@gmail.com?subject=Let's%20chat">nuno.webdeveloper@gmail.com</a>
                         </div>
                         <div class="resume">
-                            <i class="fas fa-file-download" aria-hidden="true"></i>
+                            <i class="fas fa-download" aria-hidden="true"></i>
                             <a href="./download/Nuno Macedo - Resume.pdf" download>résumé</a>
                         </div>
                     </div>
@@ -191,7 +205,7 @@
                 <fieldset>
                     <legend>You can write a message to me</legend>
     
-                    <form action="submit">
+                    <form action="http://www.focuspocus.io/magic/9e3fdfda50a10bcc34317288f47b37ea" method="POST">
                         <label class="visually-hidden" for="username">Your name</label>
                         <input type="text" name="username" id="username" placeholder="Your name">
                     
@@ -201,7 +215,7 @@
                         <label class="visually-hidden" for="message">Your message</label>
                         <input type="text" name="message" id="message" placeholder="Your message">
                     
-                        <input type="submit" value="send">
+                        <input type="submit" value="Send">
                     </form>
                 </fieldset>
             </div>

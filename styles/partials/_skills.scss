@@ -1,125 +1,111 @@
 .skills {
-  background: #4b4b4b;
-  position: relative;
-  .title {
-    font-size: 5rem;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  .accent {
-    font-size: 3rem;
-    color: #ee0149
-  }
-  .menu{
-    position: absolute;
-    transform: rotate(270deg);
-    transform-origin: left top 0;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: #fff;
-    top: 15%;
-  }
-  
-  .logos {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-around;
-    padding-left: 0%;
-  }
-  
-  .logos li {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% / 5);
-    padding: 50px 0;
-  }
-  
-  .logos p {
-    font-size: 1.8rem;
-    color: #fff;
-    text-decoration: none;
-    text-align: center; 
-    margin-top: 10px;
-  }
-  
-  .logos a {
-    text-align: center;
-  }
-  
-  .logos i {
-    font-size: 7rem;
-    color: #ee0149;
-  }
-  
-  .logos img {
-    width: 65px;
-    margin-bottom: 8px;
-    margin-left: 80px;
-  }
-  
-  .logos > li:nth-child(4) {
-   align-items: center;
-  }
-  
-  .responsive .fa-mobile-alt,
-  .responsive .fa-desktop {
-    font-size: 5rem;
-    margin: 11px 0;
-  }
-  
-  .responsive .fa-caret-right {
-    font-size: 5rem;
-  }
-  
-  .devicon-git-plain path {
-    fill: #ee0149;
-    list-style: none;
-  }
+    background: $baseBackgroundColor;
+    position: relative;
+    .title {
+        font-size: 5rem;
+        font-weight: bold;
+        color: $primeryFontColor;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .accent {
+        font-size: 3rem;
+        color: $primeryColor;
+    }
+    .menu{
+        position: absolute;
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $primeryFontColor;
+        top: 30%;
+    }
+    .logos {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-around;
+        padding-left: 0%;
+        li {
+            display: flex;
+            flex-direction: column;
+            width: calc(100% / 6);
+            padding: 50px 0;
+        }
+        p {
+            font-size: 1.8rem;
+            color: $primeryFontColor;
+            text-decoration: none;
+            text-align: center; 
+            margin-top: 10px;
+        }
+        a {
+            text-align: center;
+        }
+        i {
+            font-size: 7rem;
+            color: $primeryColor;
+        }
+        img {
+            width: 65px;
+            margin-bottom: 8px;
+            margin-left: 65px;
+        }
+        li:nth-child(4) {
+            align-items: center;
+        }
+        .responsive {
+            margin: 0;
+            width: 100px;
+            margin-bottom: 8px;
+        }
+    }
+    .devicon-git-plain path {
+        fill: $primeryColor;
+        list-style: none;
+    }
 }
 
 /* Skills Icons Hover Effect */
 @-webkit-keyframes hvr-icon-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 @keyframes hvr-icon-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 .hvr-icon-pulse-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 .hvr-icon-pulse-grow .hvr-icon {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 .hvr-icon-pulse-grow:hover .hvr-icon, 
 .hvr-icon-pulse-grow:focus .hvr-icon, 
 .hvr-icon-pulse-grow:active .hvr-icon {
-  -webkit-animation-name: hvr-icon-pulse-grow;
-  animation-name: hvr-icon-pulse-grow;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+    -webkit-animation-name: hvr-icon-pulse-grow;
+    animation-name: hvr-icon-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
 }
 /* Skills Icons Hover Effect End */
 /* Skills Styles Ends Here */

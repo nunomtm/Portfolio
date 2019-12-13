@@ -1,53 +1,53 @@
 .about {
-  min-height: 100vh;
-  position: relative;
-  .wrapper {
-    display: flex;
-    align-items: center;
-    width: calc(100 / 2) - 20px;
-  }
-  .title {
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  .accent {
-    font-size: 3rem;
-    color: #ee0149
-  }
-  .menu{
-    position: absolute;
-    transform: rotate(270deg);
-    transform-origin: left top 0;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: #4b4b4b;
-    top: 15%;
-  }
-  .photo {
-    margin: 0;
-    padding: 3%;
-    max-width: 45%;
-  }
-  .aboutMe {
-    p {
-      font-size: 2rem;
-      line-height: 1.5;
-      color: #000;
-      background: #fff;
-      margin: 0 30px;
-      padding: 1% 0;
+    min-height: 100vh;
+    position: relative;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        width: calc(100 / 2) - 20px;
     }
-  }
-  .border {
-    position: absolute;
-    border: 6px solid #ee0149;
-    height: 38%;
-    width: 37%;
-    top: 22%;
-    left: 53%;
-    z-index: -1;
-  }
+    .title {
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .accent {
+        font-size: 3rem;
+        color: $primeryColor;
+    }
+    .menu {
+        position: absolute;
+        transform: rotate(270deg);
+        transform-origin: left top 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $baseBackgroundColor;
+        top: 18%;
+    }
+    .photo {
+        margin: 0;
+        padding: 3%;
+        max-width: 45%;
+    }
+    .aboutMe {
+        p {
+            font-size: 2rem;
+            line-height: 1.5;
+            color: $secondaryColor;
+            background: $primeryFontColor;
+            margin: 0 30px;
+            padding: 1% 0;
+        }
+    }
+    .border {
+        position: absolute;
+        border: 6px solid $primeryColor;
+        height: 38%;
+        width: 37%;
+        top: 22%;
+        left: 53%;
+        z-index: -1;
+    }
 }

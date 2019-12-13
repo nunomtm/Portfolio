@@ -1,10 +1,10 @@
 .contact {
-    background: #4b4b4b;
+    background: $baseBackgroundColor;
     padding: 5% 0;
     position: relative;
     .accent {
         font-size: 3rem;
-        color: #ee0149
+        color: $primeryColor;
     }
     .menu{
         position: absolute;
@@ -12,8 +12,8 @@
         transform-origin: left top 0;
         font-size: 1.5rem;
         text-transform: uppercase;
-        color: #fff;
-        bottom: 65%;
+        color: $primeryFontColor;
+        top: 31%;
     }
     .wrapper {
         display: flex;
@@ -21,7 +21,7 @@
     }
     .border {
         position: absolute;
-        border: 6px solid #ee0149;
+        border: 6px solid $primeryColor;
         height: 50%;
         width: 30%;
         top: 7%;
@@ -31,33 +31,33 @@
     .contactMe {
         width: 45%;
         z-index: 1;
-        background-color: #4b4b4b;
+        background-color: $baseBackgroundColor;
         h2 {
             font-size: 4rem;
             letter-spacing: 1.2px;
-            color: #fff;
+            color: $primeryFontColor;
             margin: 0;
         }
         p {
             font-size: 1.8rem;
-            color: #fff;
+            color: $primeryFontColor;
         }
         .contactDetails {
             i {
                 font-size: 3rem;
-                color: #ee0149;
+                color: $primeryColor;
                 padding: 3% 0;
                 transition: 0.35s;
                 &:hover,
                 &:focus {
                     transform: scale(1.2);
-                    color: #fff;
+                    color: $primeryFontColor;
                 }
             }
             a {
                 font-size: 1.8rem;
                 text-decoration: none;
-                color: #fff;
+                color: $primeryFontColor;
                 margin-left: 2%;
             }
         }
@@ -69,7 +69,7 @@
         legend {
             font-size: 3rem;
             font-weight: bold;
-            color: #fff;
+            color: $primeryFontColor;
         }
         form {
             display: flex;
@@ -81,7 +81,7 @@
         #message {
             font-size: 1.4rem;
             background: transparent;
-            color: #fff;
+            color: $primeryFontColor;
             margin: 3% 0;
             padding: 2% 2%;
         }
@@ -89,8 +89,8 @@
             padding: 10% 2%;
         }
         input[type="submit"] {
-            background-color: #ee0149;
-            color: #fff;
+            background-color: $primeryColor;
+            color: $primeryFontColor;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1.5px;
@@ -99,23 +99,22 @@
             width: 25%;
             transition: 0.35s;
             &:hover {
-                background-color: #000;
+                background-color: $secondaryColor;
             }
             &:focus {
-                border: 1px solid #ee0149
+                border: 1px solid $primeryColor;
             }
         }
     }
 }
 
-
-
+/* To hide the labels from the form */
 .visually-hidden:not(:focus):not(:active) { 
-  position: absolute !important;
-  height: 1px; 
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap; /* added line */
+    position: absolute;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }

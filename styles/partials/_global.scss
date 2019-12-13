@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: $font;
+    font-family: $primeryFont;
 }
 
 .wrapper {
@@ -15,24 +15,34 @@ body {
 }
 
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
 }
 /* Global Styles Ends Here */
 
 
 /* Skip-line for accessibility */
 .skipLink {
-  position: absolute;
-  left: -1000px;
-  top: 5px;
-  z-index: 999;
-  background: white;
-  color: black;
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
 }
 
 .skipLink:focus {
-  left: 0;
+    left: 0;
 }
 /* - */
 

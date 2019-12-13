@@ -34,19 +34,18 @@
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
-        margin: 0;
     }
     .accent {
         font-size: 3rem;
-        color: #ee0149
+        color: $primeryColor;
     }
-        .menu{
+    .menu{
         position: absolute;
         transform: rotate(270deg);
         transform-origin: left top 0;
         font-size: 1.5rem;
         text-transform: uppercase;
-        color: #4b4b4b;
-        top: 15%;
+        color: $baseBackgroundColor;
+        top: 16%;
     }
 }
