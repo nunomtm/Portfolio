@@ -8,16 +8,19 @@
         "yoda yodaInfo"
         "marketInfo market"
         "textile textileInfo";
+        padding: 5% 0;
     }
     .yoda {
         grid-area: yoda;
-        
+        padding: 5% 0;
     }
     .market {
         grid-area: market;
+        padding: 5% 0;
     }
     .textile {
         grid-area: textile;
+        padding: 5% 0;
     }
     .yodaInfo {
         grid-area: yodaInfo;
@@ -46,6 +49,6 @@
         font-size: 1.5rem;
         text-transform: uppercase;
         color: $baseBackgroundColor;
-        top: 16%;
+        top: 14%;
     }
 }

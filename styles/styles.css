@@ -359,6 +359,10 @@ header {
   border: 3px solid #ee0149;
 }
 
+.navContainer .current {
+  border-bottom: 3px solid #ee0149;
+}
+
 /* Nav li Animation */
 @-webkit-keyframes hvr-wobble-vertical {
   16.65% {
@@ -628,7 +632,7 @@ header {
   border: 6px solid #ee0149;
   height: 38%;
   width: 37%;
-  top: 22%;
+  top: 20%;
   left: 53%;
   z-index: -1;
 }
@@ -788,24 +792,28 @@ header {
       grid-template-rows: repeat(3, -webkit-min-content);
       grid-template-rows: repeat(3, min-content);
       grid-template-areas: "yoda yodaInfo" "marketInfo market" "textile textileInfo";
+  padding: 5% 0;
 }
 
 .portfolio .yoda {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: yoda;
+  padding: 5% 0;
 }
 
 .portfolio .market {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: market;
+  padding: 5% 0;
 }
 
 .portfolio .textile {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: textile;
+  padding: 5% 0;
 }
 
 .portfolio .yodaInfo {
@@ -847,7 +855,7 @@ header {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #4b4b4b;
-  top: 16%;
+  top: 14%;
 }
 
 .contact {
@@ -928,6 +936,10 @@ header {
   text-decoration: none;
   color: #fff;
   margin-left: 2%;
+}
+
+.contact .contactMe .qrCode {
+  margin-top: 10%;
 }
 
 .contact fieldset {
