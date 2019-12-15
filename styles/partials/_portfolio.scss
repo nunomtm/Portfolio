@@ -1,6 +1,14 @@
 .portfolio {
     background-color: rgba(0, 0, 0, 0.2);
     position: relative;
+    .title {
+        font-size: 5rem;
+        font-weight: bold;
+        color: $secondaryColor;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 3%;
+    }
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -106,6 +114,6 @@
         font-size: 1.5rem;
         text-transform: uppercase;
         color: $baseBackgroundColor;
-        top: 14%;
+        top: 10%;
     }
 }

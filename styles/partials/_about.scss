@@ -1,5 +1,5 @@
 .about {
-    min-height: 100vh;
+    min-height: 90vh;
     position: relative;
     .arrowUp {
         position: fixed;
@@ -33,6 +33,7 @@
         text-align: center;
         text-transform: uppercase;
         margin: 0;
+        margin-top: 3%;
     }
     .accent {
         font-size: 3rem;
@@ -46,7 +47,7 @@
         font-size: 1.5rem;
         text-transform: uppercase;
         color: $baseBackgroundColor;
-        top: 18%;
+        top: 16%;
     }
     .photo {
         margin: 0;
@@ -70,6 +71,15 @@
         width: 37%;
         top: 20%;
         left: 53%;
+        z-index: -1;
+    }
+    .line {
+        position: absolute;
+        border: 10px solid $primaryColor;
+        opacity: 0.9;
+        width: 30%;
+        top: 3%;
+        left: 35%;
         z-index: -1;
     }
 }

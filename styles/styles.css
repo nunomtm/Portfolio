@@ -448,7 +448,7 @@ header {
 /*  */
 /* Hero Container Styles Start Here */
 .heroContainer {
-  min-height: 100vh;
+  min-height: 95vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -759,7 +759,7 @@ svg circle {
 }
 
 .about {
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
 }
 
@@ -811,6 +811,7 @@ svg circle {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 3%;
 }
 
 .about .accent {
@@ -828,7 +829,7 @@ svg circle {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #4b4b4b;
-  top: 18%;
+  top: 16%;
 }
 
 .about .photo {
@@ -856,6 +857,16 @@ svg circle {
   z-index: -1;
 }
 
+.about .line {
+  position: absolute;
+  border: 10px solid #ee0149;
+  opacity: 0.9;
+  width: 30%;
+  top: 3%;
+  left: 35%;
+  z-index: -1;
+}
+
 .skills {
   background: #4b4b4b;
   position: relative;
@@ -867,6 +878,7 @@ svg circle {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 3%;
 }
 
 .skills .accent {
@@ -884,7 +896,7 @@ svg circle {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #fff;
-  top: 30%;
+  top: 25%;
 }
 
 .skills .logos {
@@ -991,6 +1003,7 @@ svg circle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 15% 0;
   padding: 15%;
 }
 
@@ -1077,6 +1090,15 @@ svg circle {
 .portfolio {
   background-color: rgba(0, 0, 0, 0.2);
   position: relative;
+}
+
+.portfolio .title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 3%;
 }
 
 .portfolio .wrapper {
@@ -1226,7 +1248,7 @@ svg circle {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #4b4b4b;
-  top: 14%;
+  top: 10%;
 }
 
 .contact {
