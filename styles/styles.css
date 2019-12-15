@@ -273,8 +273,8 @@ a {
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
 }
 
 .skipLink:focus {
@@ -289,7 +289,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  min-height: 94vh;
+  min-height: 100vh;
 }
 
 /* Nav Styles Start Here */
@@ -304,7 +304,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 6vh;
+  min-height: 5vh;
 }
 
 .navContainer p {
@@ -448,7 +448,7 @@ header {
 /*  */
 /* Hero Container Styles Start Here */
 .heroContainer {
-  min-height: 95vh;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -888,18 +888,102 @@ svg circle {
 }
 
 .skills .logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
+      grid-template-areas: "html css sass mobile vsCode js" "jq react firebase github git accessible";
   list-style: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding-left: 0%;
 }
 
-.skills .logos li {
+.skills .logos .html {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: html;
+}
+
+.skills .logos .css {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: css;
+}
+
+.skills .logos .sass {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sass;
+}
+
+.skills .logos .mobile {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: mobile;
+}
+
+.skills .logos .vsCode {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: vsCode;
+}
+
+.skills .logos .javaScript {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: js;
+}
+
+.skills .logos .jQuery {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: jq;
+}
+
+.skills .logos .react {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: react;
+}
+
+.skills .logos .firebase {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: firebase;
+}
+
+.skills .logos .github {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: github;
+}
+
+.skills .logos .git {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: git;
+}
+
+.skills .logos .accessible {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: accessible;
+}
+
+.skills .logos .html,
+.skills .logos .css,
+.skills .logos .sass,
+.skills .logos .mobile,
+.skills .logos .vsCode,
+.skills .logos .javaScript,
+.skills .logos .jQuery,
+.skills .logos .react,
+.skills .logos .firebase,
+.skills .logos .github,
+.skills .logos .git,
+.skills .logos .accessible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,8 +991,7 @@ svg circle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(100% / 6);
-  padding: 50px 0;
+  padding: 15%;
 }
 
 .skills .logos p {
@@ -929,24 +1012,16 @@ svg circle {
 }
 
 .skills .logos img {
-  width: 65px;
-  margin-bottom: 8px;
-  margin-left: 65px;
-}
-
-.skills .logos li:nth-child(4) {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 6%;
 }
 
 .skills .logos .responsive {
-  margin: 0;
   width: 100px;
-  margin-bottom: 8px;
 }
 
-.skills .devicon-git-plain path {
+.skills .logos .devicon-git-plain path {
   fill: #ee0149;
   list-style: none;
 }
@@ -1012,89 +1087,121 @@ svg circle {
   -ms-grid-rows: (min-content)[3];
       grid-template-rows: repeat(3, -webkit-min-content);
       grid-template-rows: repeat(3, min-content);
-      grid-template-areas: "yoda yodaInfo" "marketInfo market" "textile textileInfo" "lateInfo late";
+      grid-template-areas: "yodaInfo yoda" "market marketInfo" "lateInfo late" "textile textileInfo";
 }
 
 .portfolio .wrapper h2 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
+  margin-bottom: 3%;
 }
 
-.portfolio .wrapper h3 {
+.portfolio .wrapper h2 span {
+  font-size: 2.6rem;
+}
+
+.portfolio .wrapper ul {
+  text-decoration: none;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio .wrapper ul li {
   font-size: 1.8rem;
+  border: 2px solid #ee0149;
+  padding: 1%;
 }
 
 .portfolio .wrapper p {
-  font-size: 2.2rem;
+  font-size: 2rem;
+  margin: 5% 0;
 }
 
-.portfolio .wrapper span {
-  border: 1px solid #ee0149;
+.portfolio .wrapper .links {
+  margin-top: 5%;
+}
+
+.portfolio .wrapper .links a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  border: 2px solid #ee0149;
+  background-color: #ee0149;
+  color: #fff;
   margin-right: 2%;
-  padding: 1%;
+  padding: 2%;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+.portfolio .wrapper .links a:hover, .portfolio .wrapper .links a:focus {
+  background-color: #000;
+  border: 2px solid #000;
+  -webkit-box-shadow: 4px 4px 1px rgba(255, 255, 255, 0.8);
+          box-shadow: 4px 4px 1px rgba(255, 255, 255, 0.8);
 }
 
 .portfolio .yoda {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: yoda;
   padding: 6% 0;
 }
 
-.portfolio .yoda .handPhone {
-  width: 30%;
-}
-
 .portfolio .market {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: market;
   padding: 6% 0;
 }
 
-.portfolio .textile {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: textile;
-  padding: 6% 0;
-}
-
 .portfolio .amILate {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: late;
   padding: 6% 0;
 }
 
-.portfolio .yodaInfo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: yodaInfo;
-  margin-top: 10%;
-  margin-left: 10%;
+.portfolio .textile {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: textile;
+  padding: 6% 0;
 }
 
-.portfolio .marketInfo {
-  -ms-grid-row: 2;
+.portfolio .yodaInfo {
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: marketInfo;
+  grid-area: yodaInfo;
   margin-top: 10%;
   margin-right: 10%;
 }
 
-.portfolio .textileInfo {
-  -ms-grid-row: 3;
+.portfolio .marketInfo {
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: textileInfo;
+  grid-area: marketInfo;
   margin-top: 10%;
   margin-left: 10%;
 }
 
 .portfolio .amILateInfo {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: lateInfo;
   margin-top: 10%;
   margin-right: 10%;
+}
+
+.portfolio .textileInfo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: textileInfo;
+  margin-top: 10%;
+  margin-left: 10%;
 }
 
 .portfolio .title {
@@ -1120,10 +1227,6 @@ svg circle {
   text-transform: uppercase;
   color: #4b4b4b;
   top: 14%;
-}
-
-.portfolio .jQueryIcon {
-  width: 20px;
 }
 
 .contact {
@@ -1257,10 +1360,22 @@ svg circle {
   color: #fff;
   margin: 3% 0;
   padding: 2% 2%;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+.contact fieldset #username:hover, .contact fieldset #username:focus,
+.contact fieldset #useremail:hover,
+.contact fieldset #useremail:focus,
+.contact fieldset #message:hover,
+.contact fieldset #message:focus {
+  border: 2px solid #ee0149;
+  -webkit-box-shadow: 6px 6px 1px rgba(255, 255, 255, 0.1);
+          box-shadow: 6px 6px 1px rgba(255, 255, 255, 0.1);
 }
 
 .contact fieldset #message {
-  padding: 10% 2%;
+  height: 150px;
 }
 
 .contact fieldset input[type="submit"] {
@@ -1278,6 +1393,8 @@ svg circle {
 
 .contact fieldset input[type="submit"]:hover {
   background-color: #000;
+  -webkit-box-shadow: 6px 6px 1px rgba(255, 255, 255, 0.1);
+          box-shadow: 6px 6px 1px rgba(255, 255, 255, 0.1);
 }
 
 .contact fieldset input[type="submit"]:focus {
@@ -1554,3 +1671,170 @@ footer li {
     margin-left: 18%;
   }
 }
+
+/* Header Styles Start Here */
+header {
+  background-image: url(../assets/headerBackgroung.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 94vh;
+}
+
+/* Nav Styles Start Here */
+.navContainer {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navContainer .nav {
+  min-height: 5vh;
+}
+
+.navContainer a {
+  font-size: 1.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.navContainer a i {
+  color: #ee0149;
+}
+
+.mobileNav {
+  display: none;
+}
+
+/*  */
+/* Hero Container Styles Start Here */
+.heroContainerTY {
+  min-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heroContainerTY .hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (min-content)[4];
+      grid-template-rows: repeat(4, -webkit-min-content);
+      grid-template-rows: repeat(4, min-content);
+      grid-template-areas: "logo" "name" "headline" "scroll";
+  padding-top: 10%;
+}
+
+.heroContainerTY .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.heroContainerTY .logo img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.heroContainerTY .name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: name;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.heroContainerTY .headline {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: headline;
+  font-family: "Libre Baskerville", serif;
+  font-size: 2.1rem;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  min-width: 40%;
+  border: 6px solid #ee0149;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.heroContainerTY .headline a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Container Styles Ends Here */
+/* Header Styles Ends Here */
+/* Footer Styles Starts Here */
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  min-height: 4vh;
+}
+
+footer .mainFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-size: 1.6rem;
+  color: #ee0149;
+}
+
+footer .white {
+  color: #fff;
+}
+
+footer i {
+  font-size: 2.2rem;
+  color: #ee0149;
+  padding: 10px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+footer i:hover, footer i:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #fff;
+}
+
+footer .social {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+footer li {
+  text-decoration: none;
+}
+
+/* Footer Styles Ends Here */

@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/fe0b8f1505.js" crossorigin="anonymous"></script>
     <link rel='icon' href='./assets/Favicon.ico' type='image/x-icon'/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://kit.fontawesome.com/fe0b8f1505.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Nuno's Portfolio</title>
 </head>
 <body>
-    <!-- Skip-link for accessibility -->
+    <!-- SkipLink for accessibility -->
     <a href="header" class="skipLink">Skip to main content.</a>
 
     <header>
@@ -79,18 +80,19 @@
     <main>
         <section class="about" id="about">
             <div class="arrowUp">
-                <a href="#home"><i class="fas fa-arrow-circle-up"></i>Top</a>
+                <a href="#home"><i class="far fa-caret-square-up"></i>Top</a>
             </div>
             <p class="menu"> > <span class="accent">.</span> About</p>
             <h2 class="title">ABOUT</h2>
+
             <div class="wrapper">
                 <figure class="photo">
                     <img src="./assets/me.png" alt="portrate of Nuno Macedo">
                 </figure>
                 <div class="aboutMe">
                     <p>Hi, my name is Nuno Macedo, a front-end developer recently graduated from Juno's College Bootcamp and I'm based in Toronto.</p>
-                    <p>My journey in web developement should've started many years ago, but I decided to get a degree in Marketing and being able to promote any product to customers from the most diverse backgrounds.</p>
-                    <p>A few months ago I decided that life is too short and that I would finally persue a career as Web-Developer and do something that I can spend hours coding without even noticing the time passing by.</p>
+                    <p>My career started in Marketing and transitioned into sales where I was able to apply my marketing skills to better position products to my clients and have a successfull career in both fields.</p>
+                    <p>A few months ago I decided to make a career change and started learning how to code and after espanding hours coding without even noticing, I could see that coding is something that I'm passioned about and I can see myself doing for a long time. Therefore I have become a front-end developer.</p>
                 </div>
                 <div class="border"></div>
             </div>
@@ -99,74 +101,75 @@
         <section class="skills" id="skills">
             <p class="menu"> > <span class="accent">.</span> Skills</p>
             <h2 class="title">SKILLS</h2>
+
             <ul class="logos wrapper">
-                <li>
+                <li class="html">
                     <a class="hvr-icon-pulse-grow" href="">
                         <i class="hvr-icon fab fa-html5" aria-hidden="true"></i>
                     </a>
                     <p>HTML5</p>
                 </li>
-                <li>
+                <li class="css">
                     <a class="hvr-icon-pulse-grow" href="">
                         <i class="hvr-icon fab fa-css3-alt" aria-hidden="true"></i>
                     </a>
                     <p>CSS3</p>
                 </li>
-                <li>
+                <li class="sass">
                     <a class="hvr-icon-pulse-grow" href="">
                         <i class="hvr-icon fab fa-sass" aria-hidden="true"></i>
                     </a>
                     <p>Sass</p>
                 </li>
-                <li>
+                <li class="mobile">
                     <a class="hvr-icon-pulse-grow" href="">
                         <img class="responsive hvr-icon" src="./assets/responsive.png" alt="">
                     </a>
                     <p>Responsive Design</p>
                 </li>
-                <li>
+                <li class="vsCode">
                     <a class="hvr-icon-pulse-grow" href="">
                         <img class="hvr-icon" src="./assets/VSCodeIcon.png" alt="">
                     </a>
                     <p>VS Code</p>
                 </li>
-                <li>
+                <li class="javaScript">
                     <a class="hvr-icon-pulse-grow" href="">
                         <i class="hvr-icon fab fa-js-square" aria-hidden="true"></i>
                     </a>
                     <p>JavaScript</p>
                 </li>
-                <li>
+                <li class="jQuery">
                     <a class="hvr-icon-pulse-grow" href="">
                         <img class="hvr-icon" src="./assets/jQueryIcon.png" alt="">
                     </a>
                     <p>jQuery</p>
                 </li>
-                <li>
+                <li class="react">
                     <a class="hvr-icon-pulse-grow" href="">
                         <i class="hvr-icon fab fa-react" aria-hidden="true"></i>
                     </a>
                     <p>React</p>
                 </li>
-                <li>
+                <li class="firebase">
                     <a class="hvr-icon-pulse-grow" href="">
                         <img class="hvr-icon" src="./assets/FirebaseIcon.png" alt="">
                     </a>
                     <p>Firebase</p>
                 </li>
-                <li>
+                <li class="github">
                     <a class="hvr-icon-pulse-grow" href="">
                         <i class="hvr-icon fab fa-github" aria-hidden="true"></i>
                     </a>
                     <p>GitHub</p>
                 </li>
-                <li>
+                <li class="git">
                     <a class="hvr-icon-pulse-grow" href="">
                         <i class="fab fa-git-alt" aria-hidden="true"></i>
                     </a>
                     <p>Git</p>
                 </li>
-                <li>
+                <li class="accessible">
                     <a class="hvr-icon-pulse-grow" href="">
                         <i class="hvr-icon fas fa-universal-access" aria-hidden="true"></i>
                     </a>    
@@ -178,67 +181,85 @@
         <section class="portfolio" id="portfolio">
             <h2 class="title">PORTFOLIO</h2>
             <p class="menu"> > <span class="accent">.</span> Portfolio</p>
+
             <div class="wrapper">
-                <div class="yodaInfo">
-                    <h2>Yoda Wisdom</h2>
-                    <h3>
-                        <span>HTML</span>
-                        <span>SCSS</span>
-                        <span>jQuery</span>
-                        <span>JavaScript</span>
-                        <span>Responsive</span>
-                    </h3>
-                    <p class="info">The Yoda Wisdom is a fun way to get some of Master Yoda's wisdom based on which side you like, rebel or dark and the color of the saber, blue or red.</p>
+                <div class="yodaInfo" data-aos="zoom-in-up">
+                    <h2>Yoda Wisdom | <span>Solo</span></h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>jQuery</li>
+                        <li>JavaScript</li>
+                        <li>Responsive</li>
+                    </ul>
+                    <p class="info">The Yoda Wisdom app is a fun and interactive way to get some of Master Yoda's wisdom based on which side you select, rebel or dark and the color of the saber, blue or red.</p>
+                    <div class="links">
+                        <a class="button" href="https://nunomtm.github.io/NunoMacedoProject3/" target="_blank">View Live</a>
+                        <a class="button" href="https://github.com/nunomtm/NunoMacedoProject3" target="_blank">View GitHub</a>
+                    </div>
                 </div>
-                <div class="yoda">
-                    <img src="./assets/Yoda Wisdom 2.png" alt="">
+                <div class="yoda" data-aos="zoom-in-up">
+                    <img src="./assets/Yoda Wisdom.png" alt="">
                 </div>
-                <div class="market">
-                    <img src="./assets/Juno's Market 2.png" alt="">
+                <div class="market" data-aos="zoom-in-up">
+                    <img src="./assets/Juno's Market.png" alt="">
                 </div>
-                <div class="marketInfo">
-                    <h2>Juno's Market</h2>
-                    <h3>
-                        <span>HTML</span>
-                        <span>SCSS</span>
-                        <span>React</span>
-                        <span>Firebase</span>
-                        <span>Responsive</span>
-                    </h3>
-                    <p class="info">Juno's Market is a mix of market and shopping list that helps you on check for the next time you go grocery shopping.</p>
+                <div class="marketInfo" data-aos="zoom-in-up">
+                    <h2>Juno's Market | <span>Solo</span></h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>React</li>
+                        <li>Firebase</li>
+                        <li>Responsive</li>
+                    </ul>
+                    <p class="info">Juno's Market is a mix of grocery shop and a shopping list. The app helps you to keep track of the items you will need to buy next time you go grocery shopping, so you don't miss anything.</p>
+                    <div class="links">
+                        <a class="button" href="https://nunomtm.github.io/NunoMacedoProject5/" target="_blank">View Live</a>
+                        <a class="button" href="https://github.com/nunomtm/NunoMacedoProject5" target="_blank">View GitHub</a>
+                    </div>
                 </div>
-                <div class="textile">
-                    <img src="./assets/Textiles 2.png" alt="">
+                <div class="textile" data-aos="zoom-in-up">
+                    <img src="./assets/Textiles.png" alt="">
                 </div>
-                <div class="textileInfo">
-                    <h2>Textiles</h2>
-                    <h3>
-                        <span>HTML</span>
-                        <span>SCSS</span>
-                        <span>Responsive</span>
-                    </h3>
-                    <p class="info">Textiles is a responsive multipage PSD conversion website.</p>
+                <div class="amILateInfo" data-aos="zoom-in-up">
+                    <h2>Am I Gonna be Late? | <span>Pair Programming</span></h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>API</li>
+                        <li>jQuery</li>
+                        <li>JavaScript</li>
+                        <li>Responsive</li>
+                    </ul>
+                    <p class="info">Am I Gonna be Late was created to help you see if your daily commute will take the same time as usual or you will be running late, this is based on the weather and the TTC running on schedule.</p>
+                    <div class="links">
+                        <a class="button" href="https://lynseyandnuno.github.io/lynseyAndNunoProject4/" target="_blank">View Live</a>
+                        <a class="button" href="https://github.com/lynseyAndNuno/lynseyAndNunoProject4" target="_blank">View GitHub</a>
+                    </div>
                 </div>
-                <div class="amILateInfo">
-                    <h2>Am I Gonna be Late?</h2>
-                    <h3>
-                        <span>HTML</span>
-                        <span>SCSS</span>
-                        <span>API</span>
-                        <span>jQuery</span>
-                        <span>JavaScript</span>
-                        <span>Responsive</span>
-                    </h3>
-                    <p class="info">Am I Gonna be Late was created to help you see if your daily commute will take the same time as usual or you will be running late based on the weather and the TTC running on schedule.</p>
-                </div>
-                <div class="amILate">
+                <div class="amILate" data-aos="zoom-in-up">
                     <img src="./assets/amILate.png" alt="">
+                </div>
+                <div class="textileInfo" data-aos="zoom-in-up">
+                    <h2>Textiles | <span>Solo</span></h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>Responsive</li>
+                    </ul>
+                    <p class="info">Textiles is a responsive multipage PSD conversion website created using HTML and CSS.</p>
+                    <div class="links">
+                        <a class="button" href="need link" target="_blank">View Live</a>
+                        <a class="button" href="https://github.com/nunomtm/NunoMacedoProject2" target="_blank">View GitHub</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="contact" id="contact">
             <p class="menu"> > <span class="accent">.</span> Contact</p>
+
             <div class="wrapper">
                 <div class="border"></div>
                 <div class="contactMe">
@@ -248,16 +269,6 @@
                         <p>Scan QR Code for contact details</p>
                         <p class="animated infinite bounce slow 5s arrow">☟</p>
                         <img class="qrCode" src="./assets/qrCode.png" alt="">
-                        <!-- <div class="phone">
-                            <a href="tel://1-647-233-2011">
-                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                            +1 (647) 233-2011</a>
-                        </div>
-                        <div class="email">
-                            <a href="mailto:nuno.webdeveloper@gmail.com?subject=Let's%20chat">
-                            <i class="far fa-envelope" aria-hidden="true"></i>
-                            nuno.webdeveloper@gmail.com</a>
-                        </div>-->
                         <div class="resume">
                             <a href="./download/Nuno Macedo - Resume.pdf" download>
                             <i class="fas fa-download" aria-hidden="true"></i>
@@ -270,25 +281,14 @@
                     <legend>You can write a message to me</legend>
     
                     <form action="http://www.focuspocus.io/magic/9e3fdfda50a10bcc34317288f47b37ea" method="POST">
-                        <!-- <div class="col-3"> -->
-                            <label class="visually-hidden" for="username">Your name</label>
-                            <input class="effect" type="text" name="username" id="username" placeholder="Your name">
-                            <span class="focus-border">
-                                <i></i>
-                            </span>
-                        <!-- </div> -->
+                        <label class="visually-hidden" for="username">Your name</label>
+                        <input type="text" name="username" id="username" placeholder="Your name">
                     
                         <label class="visually-hidden" for="useremail">Your e-mail</label>
-                        <input class="effect" type="email" name="useremail" id="useremail" placeholder="Your e-mail">
-                        <span class="focus-border">
-                            <i></i>
-                        </span>
+                        <input type="email" name="useremail" id="useremail" placeholder="Your e-mail">
     
                         <label class="visually-hidden" for="message">Your message</label>
-                        <input class="effect" type="text" name="message" id="message" placeholder="Your message">
-                        <span class="focus-border">
-                            <i></i>
-                        </span>
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
                     
                         <input type="submit" value="Send">
                     </form>
@@ -333,6 +333,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./script.js"></script>
 
 </body>

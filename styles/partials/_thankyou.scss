@@ -1,0 +1,130 @@
+/* Header Styles Start Here */
+header {
+    background-image: url(../assets/headerBackgroung.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 94vh;
+}
+
+/* Nav Styles Start Here */
+.navContainer {
+    background-color: rgba(0, 0, 0, 0.9);
+    .nav {
+        min-height: 5vh
+    }
+    a {
+        font-size: 1.8rem;
+        color: $primaryFontColor;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px;
+        i {
+            color: $primaryColor;
+        }
+    }
+}
+
+// /* Mobile Nav */
+.mobileNav {
+    display: none;
+}
+/*  */
+
+/* Hero Container Styles Start Here */
+.heroContainerTY {
+    min-height: 90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, min-content);
+        grid-template-areas:
+        "logo"
+        "name"
+        "headline"
+        "scroll";
+        padding-top: 10%;
+    }
+    .logo {
+        grid-area: logo;
+        img {
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+        }
+    }
+    .name {
+        grid-area: name;
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $primaryFontColor;
+        text-align: center;
+        text-shadow: 2px 2px $secondaryColor;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+    .headline {
+        grid-area: headline;
+        font-family: $secondaryFont;
+        font-size: 2.1rem;
+        color: $primaryFontColor;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: 2px 2px $secondaryColor;
+        min-width: 40%;
+        border: 6px solid $primaryColor;
+        margin: 0 auto;
+        padding: 1%;
+        a {
+            color: $primaryFontColor;
+            text-decoration: none;
+        }
+    }
+}
+/* Hero Container Styles Ends Here */
+/* Header Styles Ends Here */
+
+
+/* Footer Styles Starts Here */
+footer {
+    background-color:rgba(0, 0, 0, 0.9);
+    min-height: 4vh;
+    .mainFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    p {
+        font-size: 1.6rem;
+        color: $primaryColor;
+    }
+    .white{
+        color: $primaryFontColor;
+    }
+    i {
+        font-size: 2.2rem;
+        color: $primaryColor;
+        padding: 10px;
+        transition: 0.25s;
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            color: $primaryFontColor;
+        }
+    }
+    .social {
+        align-self: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+    }
+    li {
+      text-decoration: none;
+    }
+}
+/* Footer Styles Ends Here */

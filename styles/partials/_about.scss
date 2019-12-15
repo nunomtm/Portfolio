@@ -9,7 +9,7 @@
         z-index: 2;
         i {
             font-size: 3rem;
-            color: $primeryColor;
+            color: $primaryColor;
         }
         a {
             font-size: 1.5rem;
@@ -36,7 +36,7 @@
     }
     .accent {
         font-size: 3rem;
-        color: $primeryColor;
+        color: $primaryColor;
     }
     .menu {
         font-family: $secondaryFont;
@@ -58,14 +58,14 @@
             font-size: 2rem;
             line-height: 1.5;
             color: $secondaryColor;
-            background: $primeryFontColor;
+            background: $primaryFontColor;
             margin: 0 30px;
             padding: 1% 0;
         }
     }
     .border {
         position: absolute;
-        border: 6px solid $primeryColor;
+        border: 6px solid $primaryColor;
         height: 38%;
         width: 37%;
         top: 20%;

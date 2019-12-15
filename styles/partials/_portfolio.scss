@@ -6,57 +6,75 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, min-content);
         grid-template-areas:
-        "yoda yodaInfo"
-        "marketInfo market"
-        "textile textileInfo"
-        "lateInfo late";
-        // padding: 5% 0;
+        "yodaInfo yoda"
+        "market marketInfo"
+        "lateInfo late"
+        "textile textileInfo";
         h2 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
+            margin-bottom: 3%;
+            span {
+                font-size: 2.6rem;
+            }
         }
-        h3 {
-            font-size: 1.8rem;
+        ul {
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li {
+                font-size: 1.8rem;
+                border: 2px solid $primaryColor;
+                padding: 1%;
+            }
         }
         p {
-            font-size: 2.2rem;
+            font-size: 2rem;
+            margin: 5% 0;
         }
-        span {
-            border: 1px solid $primeryColor;
-            margin-right: 2%;
-            padding: 1%;
+        .links {
+            margin-top: 5%;
+            a {
+                font-size: 1.6rem;
+                text-decoration: none;
+                border: 2px solid $primaryColor;
+                background-color: $primaryColor;
+                color: $primaryFontColor;
+                margin-right: 2%;
+                padding: 2%;
+                transition: 0.35s;
+                &:hover,
+                &:focus {
+                    background-color: $secondaryColor;
+                    border: 2px solid $secondaryColor;
+                    box-shadow: 4px 4px 1px rgba(white, 0.8);
+                }
+            }
         }
     }
     .yoda {
         grid-area: yoda;
         padding: 6% 0;
-        .handPhone {
-            width: 30%;
-        }
     }
     .market {
         grid-area: market;
-        padding: 6% 0;
-    }
-    .textile {
-        grid-area: textile;
         padding: 6% 0;
     }
     .amILate {
         grid-area: late;
         padding: 6% 0;
     }
+    .textile {
+        grid-area: textile;
+        padding: 6% 0;
+    }
     .yodaInfo {
         grid-area: yodaInfo;
         margin-top: 10%;
-        margin-left: 10%;
+        margin-right: 10%;
     }
     .marketInfo {
         grid-area: marketInfo;
-        margin-top: 10%;
-        margin-right: 10%;
-    }
-    .textileInfo {
-        grid-area: textileInfo;
         margin-top: 10%;
         margin-left: 10%;
     }
@@ -64,6 +82,11 @@
         grid-area: lateInfo;
         margin-top: 10%;
         margin-right: 10%;
+    }
+    .textileInfo {
+        grid-area: textileInfo;
+        margin-top: 10%;
+        margin-left: 10%;
     }
     .title {
         font-size: 5rem;
@@ -73,7 +96,7 @@
     }
     .accent {
         font-size: 3rem;
-        color: $primeryColor;
+        color: $primaryColor;
     }
     .menu{
         font-family: $secondaryFont;
@@ -84,8 +107,5 @@
         text-transform: uppercase;
         color: $baseBackgroundColor;
         top: 14%;
-    }
-    .jQueryIcon {
-        width: 20px;
     }
 }

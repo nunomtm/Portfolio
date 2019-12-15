@@ -5,7 +5,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    min-height: 94vh;
+    min-height: 100vh;
 }
 
 /* Nav Styles Start Here */
@@ -14,16 +14,16 @@ header {
     .nav {
         display: flex;
         justify-content: center;
-        min-height: 6vh
+        min-height: 5vh
     }
     p {
         font-size: 3.2rem;
         font-style: italic;
-        color: $primeryFontColor;
+        color: $primaryFontColor;
         margin: 10px;
     }
     span {
-        color: $primeryColor;
+        color: $primaryColor;
         font-size: 2.7rem;
     }
     img {
@@ -43,7 +43,7 @@ header {
         transition: 0.25s;
     }
     a {
-        color: $primeryFontColor;
+        color: $primaryFontColor;
         text-transform: uppercase;
         text-decoration: none;
         border: 3px solid transparent;
@@ -51,11 +51,11 @@ header {
         transition: 0.35s;
         &:hover,
         &:focus {
-            border: 3px solid $primeryColor;
+            border: 3px solid $primaryColor;
         }
     }
     .current {
-        border-bottom: 3px solid $primeryColor;
+        border-bottom: 3px solid $primaryColor;
     }
 }
 
@@ -146,7 +146,7 @@ header {
 
 /* Hero Container Styles Start Here */
 .heroContainer {
-    min-height: 95vh;
+    min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     .hero {
         display: grid;
@@ -172,27 +172,26 @@ header {
         font-size: 4rem;
         font-weight: bold;
         text-transform: uppercase;
-        color: $primeryFontColor;
+        color: $primaryFontColor;
         text-align: center;
         text-shadow: 2px 2px $secondaryColor;
         margin: 0 auto;
         padding-top: 5%;
     }
-
     .headline {
         grid-area: headline;
         font-family: $secondaryFont;
         font-size: 2.1rem;
-        color: $primeryFontColor;
+        color: $primaryFontColor;
         letter-spacing: 2px;
         text-align: center;
         text-shadow: 2px 2px $secondaryColor;
         min-width: 40%;
-        border: 6px solid $primeryColor;
+        border: 6px solid $primaryColor;
         margin: 0 auto;
         padding: 1%;
         a {
-            color: $primeryFontColor;
+            color: $primaryFontColor;
             text-decoration: none;
         }
     }
@@ -211,14 +210,14 @@ header {
     width: 35px;
     height: 65px;
     top: 85%;
-    box-shadow: inset 0 0 0 1px $primeryFontColor;
+    box-shadow: inset 0 0 0 1px $primaryFontColor;
     border-radius: 25px;
 }
 .iconScroll:before {
     content: '';
     width: 8px;
     height: 8px;
-    background: $primeryColor;
+    background: $primaryColor;
     margin-left: -4px;
     top: 8px;
     border-radius: 4px;

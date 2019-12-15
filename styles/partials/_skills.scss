@@ -4,13 +4,13 @@
     .title {
         font-size: 5rem;
         font-weight: bold;
-        color: $primeryFontColor;
+        color: $primaryFontColor;
         text-align: center;
         text-transform: uppercase;
     }
     .accent {
         font-size: 3rem;
-        color: $primeryColor;
+        color: $primaryColor;
     }
     .menu{
         font-family: $secondaryFont;
@@ -19,24 +19,73 @@
         transform-origin: left top 0;
         font-size: 1.5rem;
         text-transform: uppercase;
-        color: $primeryFontColor;
+        color: $primaryFontColor;
         top: 30%;
     }
     .logos {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, min-content);
+        grid-template-areas:
+        "html css sass mobile vsCode js"
+        "jq react firebase github git accessible";
         list-style: none;
-        justify-content: space-around;
         padding-left: 0%;
-        li {
+        .html {
+            grid-area: html;
+        }
+        .css {
+            grid-area: css;
+        }
+        .sass {
+            grid-area: sass;
+        }
+        .mobile {
+            grid-area: mobile;
+        }
+        .vsCode {
+            grid-area: vsCode;
+        }
+        .javaScript {
+            grid-area: js;
+        }
+        .jQuery {
+            grid-area: jq;
+        }
+        .react {
+            grid-area: react;
+        }
+        .firebase {
+            grid-area: firebase;
+        }
+        .github {
+            grid-area: github;
+        }
+        .git {
+            grid-area: git;
+        }
+        .accessible {
+            grid-area: accessible;
+        }
+        .html,
+        .css,
+        .sass,
+        .mobile,
+        .vsCode,
+        .javaScript,
+        .jQuery,
+        .react,
+        .firebase,
+        .github,
+        .git,
+        .accessible {
             display: flex;
             flex-direction: column;
-            width: calc(100% / 6);
-            padding: 50px 0;
+            padding: 15%;
         }
         p {
             font-size: 1.8rem;
-            color: $primeryFontColor;
+            color: $primaryFontColor;
             text-decoration: none;
             text-align: center; 
             margin-top: 10px;
@@ -46,25 +95,20 @@
         }
         i {
             font-size: 7rem;
-            color: $primeryColor;
+            color: $primaryColor;
         }
         img {
-            width: 65px;
-            margin-bottom: 8px;
-            margin-left: 65px;
-        }
-        li:nth-child(4) {
-            align-items: center;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 6%;
         }
         .responsive {
-            margin: 0;
             width: 100px;
-            margin-bottom: 8px;
         }
-    }
-    .devicon-git-plain path {
-        fill: $primeryColor;
-        list-style: none;
+        .devicon-git-plain path {
+            fill: $primaryColor;
+            list-style: none;
+        }
     }
 }
 

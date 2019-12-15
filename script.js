@@ -1,7 +1,7 @@
 
 // The function will start here
 
-// Type.js in header //
+// Header Type.js Animation //
 let TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -43,7 +43,7 @@ TxtType.prototype.tick = function () {
     }, delta);
 };
 
-window.onload = function () {
+window.onload = function() {
     let elements = document.getElementsByClassName('typewrite');
     for (let i = 0; i < elements.length; i++) {
         let toRotate = elements[i].getAttribute('data-type');
@@ -60,78 +60,33 @@ window.onload = function () {
 };
 // End of Type.js //
 
-// Mobile nav button //
-let menuBtn = $('.menu');
 
-menuBtn.on("click", function () {
-    $(this).toggleClass('open');
-    $('body').toggleClass('open');
-    $('.mobileNav').slideToggle('slow');
+// Portfolio Scroll Animation //
+AOS.init({
+    duration: 1500
 });
 
-// Show scrow to top button //
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-        $('.arrowUp').fadeIn();
-    } else {
-        $('.arrowUp').fadeOut();
-    }
+$(function() {
+    // Mobile nav button //
+    let menuBtn = $('.menu');
+
+    menuBtn.on("click", function () {
+        $(this).toggleClass('open');
+        $('body').toggleClass('open');
+        // $('.mobileNav').slideToggle('slow');
+    });
+
+    // Scroll to top button //
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.arrowUp').fadeIn();
+        } else {
+            $('.arrowUp').fadeOut();
+        }
+    });
+
+    $('.arrowUp').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
 });
-
-const up = $('.arrowUp');
-
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
-        up.addClass('show');
-    } else {
-        up.removeClass('show');
-    }
-});
-
-up.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, '100');
-});
-
-
-
-// $(function() {
-
-//     const aboutScroll = $(window).scrollTop();
-//     $('.scroll').click(function () {
-//         $('html, body').animate({scrollTop: aboutScroll + 815})
-//     });
-    
-// });
-
-    // const aboutScroll = $(window).scrollTop();
-    // $('.submit').click(function () {
-    //     $('html, body').animate({scrollTop: wisdomScroll + 970})
-    //     $('audio#yoda')[0].play()
-    // });
-
-    // function randomQuote(optionArray) {
-    //     const item = Math.floor(Math.random() * optionArray.length);
-    //     return optionArray[item];
-    // }
-
-    // $("form").on("submit", function(e) {
-    //     e.preventDefault();
-    //     const joinOption = $('input[name=join]:checked').val();
-    //     const saberOption = $('input[name=saber]:checked').val();
-
-    //     const selection = rebel[joinOption];
-    //     const option = rebel[joinOption];
-    //     const color = selection.filter((choice) => {
-    //         if(choice.color === saberOption) {
-    //             return true;
-    //         };
-    //     });
-    
-    //     const quoteToDisplay = randomQuote(color);
-
-    //     $('.quote').html(`<p class="quote">${quoteToDisplay.quote}</p>`);
-
-    //     $('.quote').css('display', 'block');
-
-    // });  
