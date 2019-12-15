@@ -1,4 +1,5 @@
 .portfolio {
+    background-color: rgba(0, 0, 0, 0.2);
     position: relative;
     .wrapper {
         display: grid;
@@ -7,30 +8,62 @@
         grid-template-areas:
         "yoda yodaInfo"
         "marketInfo market"
-        "textile textileInfo";
-        padding: 5% 0;
+        "textile textileInfo"
+        "lateInfo late";
+        // padding: 5% 0;
+        h2 {
+            font-size: 3.5rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+        }
+        p {
+            font-size: 2.2rem;
+        }
+        span {
+            border: 1px solid $primeryColor;
+            margin-right: 2%;
+            padding: 1%;
+        }
     }
     .yoda {
         grid-area: yoda;
-        padding: 5% 0;
+        padding: 6% 0;
+        .handPhone {
+            width: 30%;
+        }
     }
     .market {
         grid-area: market;
-        padding: 5% 0;
+        padding: 6% 0;
     }
     .textile {
         grid-area: textile;
-        padding: 5% 0;
+        padding: 6% 0;
+    }
+    .amILate {
+        grid-area: late;
+        padding: 6% 0;
     }
     .yodaInfo {
         grid-area: yodaInfo;
+        margin-top: 10%;
+        margin-left: 10%;
     }
     .marketInfo {
         grid-area: marketInfo;
+        margin-top: 10%;
+        margin-right: 10%;
     }
     .textileInfo {
         grid-area: textileInfo;
-        
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .amILateInfo {
+        grid-area: lateInfo;
+        margin-top: 10%;
+        margin-right: 10%;
     }
     .title {
         font-size: 5rem;
@@ -43,6 +76,7 @@
         color: $primeryColor;
     }
     .menu{
+        font-family: $secondaryFont;
         position: absolute;
         transform: rotate(270deg);
         transform-origin: left top 0;
@@ -50,5 +84,8 @@
         text-transform: uppercase;
         color: $baseBackgroundColor;
         top: 14%;
+    }
+    .jQueryIcon {
+        width: 20px;
     }
 }

@@ -441,7 +441,6 @@ header {
 }
 
 /* Nav Styles End Here  */
-/* Mobile Nav */
 .mobileNav {
   display: none;
 }
@@ -481,7 +480,7 @@ header {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: name;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
@@ -501,13 +500,15 @@ header {
   letter-spacing: 2px;
   text-align: center;
   text-shadow: 2px 2px #000;
+  min-width: 40%;
   border: 6px solid #ee0149;
   margin: 0 auto;
-  margin-top: 1%;
+  padding: 1%;
 }
 
-.heroContainer .headline p {
-  margin: 10px;
+.heroContainer .headline a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Scroll Animation */
@@ -572,9 +573,226 @@ header {
 
 /* Hero Container Styles Ends Here */
 /* Header Styles Ends Here */
+.mobileNav:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.mobileNav.open:after {
+  opacity: 1;
+}
+
+.mobileContainer {
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  right: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.3);
+          transform: translate(-50%, -50%) scale(1.3);
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus {
+  cursor: pointer;
+}
+
+button:hover:before {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+button.open svg circle {
+  stroke-dashoffset: 0;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+button.open .ham {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+button.open .ham .top {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+button.open .ham .bottom {
+  bottom: 50%;
+  -webkit-transform: translateY(50%) rotate(135deg);
+          transform: translateY(50%) rotate(135deg);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+button.open .ham .middle {
+  left: -50%;
+  width: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+svg {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%) rotate(270deg);
+          transform: translate(-50%, -50%) rotate(270deg);
+  width: 35px;
+  height: 35px;
+}
+
+svg circle {
+  stroke-width: 2;
+  stroke: #fff;
+  fill: none;
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  stroke-linecap: round;
+  -webkit-transition: all 1.1s cubic-bezier(0.8, 0, 0.2, 1);
+  transition: all 1.1s cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+.ham {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
+}
+
+.ham .top,
+.ham .bottom {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.ham .top {
+  top: 3px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.ham .bottom {
+  bottom: 3px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.ham .middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border-radius: 1px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
+}
+
 .about {
   min-height: 100vh;
   position: relative;
+}
+
+.about .arrowUp {
+  position: fixed;
+  right: 2%;
+  bottom: 8%;
+  display: none;
+  z-index: 2;
+}
+
+.about .arrowUp i {
+  font-size: 3rem;
+  color: #ee0149;
+}
+
+.about .arrowUp a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.about .arrowUp a:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about .wrapper {
@@ -601,6 +819,7 @@ header {
 }
 
 .about .menu {
+  font-family: "Libre Baskerville", serif;
   position: absolute;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -656,6 +875,7 @@ header {
 }
 
 .skills .menu {
+  font-family: "Libre Baskerville", serif;
   position: absolute;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -780,6 +1000,7 @@ header {
 /* Skills Icons Hover Effect End */
 /* Skills Styles Ends Here */
 .portfolio {
+  background-color: rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
@@ -791,47 +1012,89 @@ header {
   -ms-grid-rows: (min-content)[3];
       grid-template-rows: repeat(3, -webkit-min-content);
       grid-template-rows: repeat(3, min-content);
-      grid-template-areas: "yoda yodaInfo" "marketInfo market" "textile textileInfo";
-  padding: 5% 0;
+      grid-template-areas: "yoda yodaInfo" "marketInfo market" "textile textileInfo" "lateInfo late";
+}
+
+.portfolio .wrapper h2 {
+  font-size: 3.5rem;
+}
+
+.portfolio .wrapper h3 {
+  font-size: 1.8rem;
+}
+
+.portfolio .wrapper p {
+  font-size: 2.2rem;
+}
+
+.portfolio .wrapper span {
+  border: 1px solid #ee0149;
+  margin-right: 2%;
+  padding: 1%;
 }
 
 .portfolio .yoda {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: yoda;
-  padding: 5% 0;
+  padding: 6% 0;
+}
+
+.portfolio .yoda .handPhone {
+  width: 30%;
 }
 
 .portfolio .market {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: market;
-  padding: 5% 0;
+  padding: 6% 0;
 }
 
 .portfolio .textile {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: textile;
-  padding: 5% 0;
+  padding: 6% 0;
+}
+
+.portfolio .amILate {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: late;
+  padding: 6% 0;
 }
 
 .portfolio .yodaInfo {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: yodaInfo;
+  margin-top: 10%;
+  margin-left: 10%;
 }
 
 .portfolio .marketInfo {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: marketInfo;
+  margin-top: 10%;
+  margin-right: 10%;
 }
 
 .portfolio .textileInfo {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: textileInfo;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.portfolio .amILateInfo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: lateInfo;
+  margin-top: 10%;
+  margin-right: 10%;
 }
 
 .portfolio .title {
@@ -847,6 +1110,7 @@ header {
 }
 
 .portfolio .menu {
+  font-family: "Libre Baskerville", serif;
   position: absolute;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -856,6 +1120,10 @@ header {
   text-transform: uppercase;
   color: #4b4b4b;
   top: 14%;
+}
+
+.portfolio .jQueryIcon {
+  width: 20px;
 }
 
 .contact {
@@ -870,6 +1138,7 @@ header {
 }
 
 .contact .menu {
+  font-family: "Libre Baskerville", serif;
   position: absolute;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -938,8 +1207,23 @@ header {
   margin-left: 2%;
 }
 
-.contact .contactMe .qrCode {
-  margin-top: 10%;
+.contact .contactMe .contactDetails p {
+  margin-top: 5%;
+}
+
+.contact .contactMe .contactDetails .arrow {
+  color: #fff;
+  font-size: 3rem;
+  margin-left: 25%;
+}
+
+.contact .contactMe .contactDetails .qrCode {
+  margin-left: 10%;
+  border: 3px solid #ee0149;
+}
+
+.contact .contactMe .contactDetails .resume {
+  margin-left: 18%;
 }
 
 .contact fieldset {
@@ -1023,6 +1307,9 @@ footer .mainFooter {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer p {
