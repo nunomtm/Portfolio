@@ -295,7 +295,6 @@ header {
 /* Nav Styles Start Here */
 .navContainer {
   background-color: rgba(0, 0, 0, 0.9);
-  border: 1px solid red;
 }
 
 .navContainer .nav {
@@ -1391,7 +1390,7 @@ footer li {
   nav.mobileNav label[for="toggleMenu"] {
     position: fixed;
     top: 1%;
-    right: 5%;
+    right: 2%;
     color: #ee0149;
     z-index: 10;
   }
@@ -1636,7 +1635,7 @@ footer li {
     min-height: 7vh;
   }
   ul.navMobile {
-    height: 29%;
+    height: 34%;
     top: 8%;
   }
   .about .menu {
