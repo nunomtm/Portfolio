@@ -14,7 +14,7 @@
         a {
             font-size: 1.5rem;
             text-decoration: none;
-            color: #000;
+            color: $secondaryColor;
         }
         a:nth-child(1) {
             display: flex;
@@ -71,15 +71,6 @@
         width: 37%;
         top: 20%;
         left: 53%;
-        z-index: -1;
-    }
-    .line {
-        position: absolute;
-        border: 10px solid $primaryColor;
-        opacity: 0.9;
-        width: 30%;
-        top: 3%;
-        left: 35%;
         z-index: -1;
     }
 }

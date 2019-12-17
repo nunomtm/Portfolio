@@ -672,16 +672,6 @@ header {
   z-index: -1;
 }
 
-.about .line {
-  position: absolute;
-  border: 10px solid #ee0149;
-  opacity: 0.9;
-  width: 30%;
-  top: 3%;
-  left: 35%;
-  z-index: -1;
-}
-
 .skills {
   background: #4b4b4b;
   position: relative;
@@ -1391,10 +1381,27 @@ footer li {
   nav.mobileNav {
     display: block;
   }
+  nav.mobileNav input[type="checkbox"]:checked + ul.navMobile {
+    right: 0;
+  }
+  nav.mobileNav input[type="checkbox"] {
+    display: none;
+  }
+  nav.mobileNav label[for="toggleMenu"] {
+    position: fixed;
+    top: 1%;
+    right: 5%;
+    color: #ee0149;
+    z-index: 10;
+  }
+  nav.mobileNav i {
+    font-size: 3.5rem;
+  }
+  nav.mobileNav i:hover, nav.mobileNav i:focus {
+    color: #fff;
+  }
   .navMobile {
     margin: 0;
-  }
-  ul.navMobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1411,47 +1418,27 @@ footer li {
     right: -150px;
     height: 23%;
     top: 6%;
-    padding: 12px;
+    padding: 2%;
     border-radius: 15px 0 15px 15px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   .navMobile li {
-    padding: 10px 0;
+    padding: 8% 0;
   }
   .navMobile li a {
     font-size: 1.6rem;
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
     display: inline-block;
     border-bottom: 3px solid transparent;
     -webkit-transition: all 0.3s;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
-  .navMobile li a:hover,
-  .navMobile li a:focus {
-    border-bottom: 3px solid #ee0149;
-  }
-  input[type="checkbox"]:checked + ul.navMobile {
-    right: 0;
-  }
-  input[type="checkbox"] {
-    display: none;
-  }
-  label[for="toggleMenu"] {
-    position: fixed;
-    top: 10px;
-    left: 90%;
-    color: #ee0149;
-    z-index: 10;
-  }
-  .mobileNav i {
-    font-size: 3.5rem;
-  }
-  .mobileNav i:hover,
-  .mobileNav i:focus {
-    color: #fff;
+  .navMobile li a:hover, .navMobile li a:focus {
+    border-bottom: 3px solid #4b4b4b;
   }
   .heroContainer .hero {
     padding-top: 24%;
@@ -1699,11 +1686,14 @@ footer li {
 }
 
 @media (max-width: 320px) {
-  label[for="toggleMenu"] {
+  nav.mobileNav label[for="toggleMenu"] {
     top: 1%;
   }
-  .mobileNav i {
+  nav.mobileNav i {
     font-size: 3rem;
+  }
+  ul.navMobile {
+    height: 40%;
   }
   .heroContainer .hero {
     padding-top: 24%;

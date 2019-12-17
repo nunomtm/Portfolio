@@ -1,5 +1,4 @@
 /* Responsive Starts Here */
-    
 
 @include mqTabletLand {
     .heroContainer {
@@ -97,16 +96,36 @@
 }
 
 @include mqTabletVert {
-    .navContainer .nav ul li {
-        display: none;
+    .navContainer {
+        .nav ul li {
+            display: none;
+        }
     }
     nav.mobileNav {
         display: block;
+        input[type="checkbox"]:checked + ul.navMobile {
+            right: 0;
+        }
+        input[type="checkbox"] {
+            display: none;
+        }
+        label[for="toggleMenu"] {
+            position: fixed;
+            top: 1%;
+            right: 5%;
+            color: $primaryColor;
+            z-index: 10;
+        }
+        i {
+            font-size: 3.5rem;
+            &:hover,
+            &:focus {
+                color: $primaryFontColor;
+            }
+        }
     }
     .navMobile {
         margin: 0;
-    }
-    ul.navMobile {
         display: flex;
         flex-direction: column;
         background: $primaryColor;
@@ -118,49 +137,29 @@
         right: -150px;
         height: 23%;
         top: 6%;
-        padding: 12px;
+        padding: 2%;
         border-radius: 15px 0 15px 15px;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-    }
-    .navMobile li {
-        padding: 10px 0;
-    }
-    .navMobile li a {
-        font-size: 1.6rem;
-        color: $primaryFontColor;
-        text-decoration: none;
-        display: inline-block;
-        border-bottom: 3px solid transparent;
-        -webkit-transition: all 0.3s;
-        transition: all 0.25s;
-    }
-    .navMobile li a:hover,
-    .navMobile li a:focus {
-        border-bottom: 3px solid $primaryColor;
-    }
-    input[type="checkbox"]:checked + ul.navMobile {
-        right: 0;
-    }
-    input[type="checkbox"] {
-        display: none;
-    }
-    label[for="toggleMenu"] {
-        position: fixed;
-        top: 10px;
-        left: 90%;
-        color: $primaryColor;
-        z-index: 10;
-    }
-    .mobileNav i {
-        font-size: 3.5rem;
-    }
-    .mobileNav i:hover,
-    .mobileNav i:focus {
-        color: $primaryFontColor    ;
+        li {
+            padding: 8% 0;
+            a {
+                font-size: 1.6rem;
+                color: $primaryFontColor;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                border-bottom: 3px solid transparent;
+                -webkit-transition: all 0.3s;
+                transition: all 0.25s;
+                &:hover,
+                &:focus {
+                    border-bottom: 3px solid $baseBackgroundColor;
+                }
+            }
+        }
     }
     // End of mobile menu
-
 
     .heroContainer {
         .hero {
@@ -458,13 +457,16 @@
 }
 
 @include mqMobileSE {
-    label[for="toggleMenu"] {
-        top: 1%;
-    }
-    .mobileNav {
+    nav.mobileNav {
+        label[for="toggleMenu"] {
+            top: 1%;
+        }
         i {
             font-size: 3rem;
         }
+    }
+    ul.navMobile {
+        height: 40%;
     }
     .heroContainer {
         .hero {
