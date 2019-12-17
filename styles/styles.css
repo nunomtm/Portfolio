@@ -294,6 +294,7 @@ header {
 /* Nav Styles Start Here */
 .navContainer {
   background-color: rgba(0, 0, 0, 0.9);
+  min-height: 6vh;
 }
 
 .navContainer .nav {
@@ -303,7 +304,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 8vh;
 }
 
 .navContainer p {
@@ -447,7 +447,7 @@ header {
 /*  */
 /* Hero Container Styles Start Here */
 .heroContainer {
-  min-height: 95vh;
+  min-height: 94vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -621,6 +621,7 @@ header {
 
 .about .title {
   font-size: 5rem;
+  font-family: "Libre Baskerville", serif;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -629,21 +630,8 @@ header {
 }
 
 .about .accent {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #ee0149;
-}
-
-.about .menu {
-  font-family: "Libre Baskerville", serif;
-  position: absolute;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  -webkit-transform-origin: left top 0;
-          transform-origin: left top 0;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: #4b4b4b;
-  top: 16%;
 }
 
 .about .photo {
@@ -677,6 +665,7 @@ header {
 }
 
 .skills .title {
+  font-family: "Libre Baskerville", serif;
   font-size: 5rem;
   font-weight: bold;
   color: #fff;
@@ -686,21 +675,8 @@ header {
 }
 
 .skills .accent {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #ee0149;
-}
-
-.skills .menu {
-  font-family: "Libre Baskerville", serif;
-  position: absolute;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  -webkit-transform-origin: left top 0;
-          transform-origin: left top 0;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: #fff;
-  top: 25%;
 }
 
 .skills .logos {
@@ -953,6 +929,7 @@ header {
 
 .portfolio .wrapper .links a {
   font-size: 1.6rem;
+  font-weight: bold;
   text-decoration: none;
   border: 2px solid #ee0149;
   background-color: #ee0149;
@@ -1031,6 +1008,7 @@ header {
 }
 
 .portfolio .title {
+  font-family: "Libre Baskerville", serif;
   font-size: 5rem;
   font-weight: bold;
   text-align: center;
@@ -1038,21 +1016,8 @@ header {
 }
 
 .portfolio .accent {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #ee0149;
-}
-
-.portfolio .menu {
-  font-family: "Libre Baskerville", serif;
-  position: absolute;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  -webkit-transform-origin: left top 0;
-          transform-origin: left top 0;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: #4b4b4b;
-  top: 10%;
 }
 
 .contact {
@@ -1206,8 +1171,9 @@ header {
 
 .contact fieldset input[type="submit"] {
   background-color: #ee0149;
-  color: #fff;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   border: none;
@@ -1242,10 +1208,10 @@ header {
 /* Footer Styles Starts Here */
 footer {
   background-color: rgba(0, 0, 0, 0.9);
-  min-height: 8vh;
 }
 
 footer .mainFooter {
+  min-height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1257,26 +1223,12 @@ footer .mainFooter {
           align-items: center;
 }
 
-footer p {
+footer .mainFooter p {
   font-size: 1.6rem;
   color: #ee0149;
 }
 
-footer .white {
-  color: #fff;
-}
-
-footer i {
-  font-size: 3rem;
-  color: #ee0149;
-  padding: 15px;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-footer i:hover, footer i:focus {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+footer .mainFooter .white {
   color: #fff;
 }
 
@@ -1286,7 +1238,7 @@ footer .social {
       align-self: center;
 }
 
-footer ul {
+footer .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1297,8 +1249,22 @@ footer ul {
   list-style: none;
 }
 
-footer li {
+footer .social li {
   text-decoration: none;
+}
+
+footer .social i {
+  font-size: 3rem;
+  color: #ee0149;
+  padding: 15px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+footer .social i:hover, footer .social i:focus {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  color: #fff;
 }
 
 /* Footer Styles Ends Here */
@@ -1315,12 +1281,6 @@ footer li {
   }
   .skills .logos img {
     width: 70%;
-  }
-  .skills .menu {
-    top: 30%;
-  }
-  .portfolio .menu {
-    top: 15%;
   }
   .portfolio .wrapper ul {
     -ms-flex-wrap: wrap;
@@ -1447,14 +1407,8 @@ footer li {
     margin-top: 5%;
     min-width: 70%;
   }
-  .about .menu {
-    top: 14%;
-  }
   .about .border {
     top: 46%;
-  }
-  .skills .menu {
-    top: 20%;
   }
   .skills .logos {
     -ms-grid-columns: (1fr)[4];
@@ -1466,9 +1420,6 @@ footer li {
   }
   .skills .logos img {
     width: 62%;
-  }
-  .portfolio .menu {
-    top: 5%;
   }
   .portfolio .wrapper {
     -ms-grid-columns: (1fr)[1];
@@ -1490,9 +1441,6 @@ footer li {
   .portfolio .wrapper .amILateInfo,
   .portfolio .wrapper .textileInfo {
     margin: 0;
-  }
-  .contact .menu {
-    top: 15%;
   }
   .contact .wrapper {
     -webkit-box-orient: vertical;
@@ -1560,9 +1508,6 @@ footer li {
   .skills .logos img {
     width: 76%;
   }
-  .portfolio .menu {
-    top: 8%;
-  }
   .portfolio .yodaInfo h2,
   .portfolio .yodaInfo .links,
   .portfolio .marketInfo h2,
@@ -1579,9 +1524,6 @@ footer li {
   .portfolio .amILateInfo ul {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  .contact .menu {
-    top: 20%;
   }
   .contact .border {
     top: 1%;
@@ -1639,9 +1581,6 @@ footer li {
     height: 34%;
     top: 8%;
   }
-  .about .menu {
-    top: 10%;
-  }
   .about .photo {
     max-width: 79%;
   }
@@ -1650,9 +1589,6 @@ footer li {
   }
   .about .aboutMe p {
     font-size: 1.8rem;
-  }
-  .skills .menu {
-    top: 10%;
   }
   .skills .logos {
     -ms-grid-columns: (1fr)[2];
@@ -1667,9 +1603,6 @@ footer li {
   }
   .portfolio .wrapper p {
     font-size: 1.8rem;
-  }
-  .contact .menu {
-    top: 18%;
   }
   .contact .wrapper {
     padding-left: 2%;

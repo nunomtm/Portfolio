@@ -10,10 +10,10 @@ header {
 /* Nav Styles Start Here */
 .navContainer {
     background-color: rgba(0, 0, 0, 0.9);
+    min-height: 6vh;
     .nav {
         display: flex;
         justify-content: center;
-        min-height: 8vh;
     }
     p {
         font-size: 3.2rem;
@@ -145,7 +145,7 @@ header {
 
 /* Hero Container Styles Start Here */
 .heroContainer {
-    min-height: 95vh;
+    min-height: 94vh;
     background-color: rgba(0, 0, 0, 0.5);
     .hero {
         display: grid;

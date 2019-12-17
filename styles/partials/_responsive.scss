@@ -17,15 +17,15 @@
             width: 70%;
         }
     }
-    .skills {
-        .menu {
-            top: 30%;
-        }
-    }
+    // .skills {
+    //     .menu {
+    //         top: 30%;
+    //     }
+    // }
     .portfolio {
-        .menu {
-            top: 15%;
-        }
+        // .menu {
+        //     top: 15%;
+        // }
         .wrapper {
             ul {
                 flex-wrap: wrap;
@@ -169,17 +169,17 @@
         }
     }
     .about {
-        .menu {
-            top: 14%;
-        }
+        // .menu {
+        //     top: 14%;
+        // }
         .border {
             top: 46%;
         }
     }
     .skills {
-        .menu {
-            top: 20%;
-        }
+        // .menu {
+        //     top: 20%;
+        // }
         .logos {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, min-content);
@@ -193,9 +193,9 @@
         }
     }
     .portfolio {
-        .menu {
-            top: 5%;
-        }
+        // .menu {
+        //     top: 5%;
+        // }
         .wrapper {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(8, min-content);
@@ -224,9 +224,9 @@
         }
     }
     .contact {
-        .menu {
-            top: 15%;
-        }
+        // .menu {
+        //     top: 15%;
+        // }
         .wrapper {
             flex-direction: column;
         }
@@ -301,9 +301,9 @@
         }
     }
     .portfolio {
-        .menu {
-            top: 8%;
-        }
+        // .menu {
+        //     top: 8%;
+        // }
         .yodaInfo,
         .marketInfo,
         .textileInfo,
@@ -318,9 +318,9 @@
         }
     }
     .contact {
-        .menu {
-            top: 20%;
-        }
+        // .menu {
+        //     top: 20%;
+        // }
         .border {
             top: 1%;
         }
@@ -390,9 +390,9 @@
         top: 8%;
     }
     .about {
-        .menu {
-            top: 10%;
-        }
+        // .menu {
+        //     top: 10%;
+        // }
         .photo {
             max-width: 79%;
         }
@@ -406,9 +406,9 @@
         }
     }
     .skills {
-        .menu {
-            top: 10%;
-        }
+        // .menu {
+        //     top: 10%;
+        // }
         .logos {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(6, min-content);
@@ -432,9 +432,9 @@
         }
     }
     .contact {
-        .menu {
-            top: 18%;
-        }
+        // .menu {
+        //     top: 18%;
+        // }
         .wrapper {
             padding-left: 2%;
         }

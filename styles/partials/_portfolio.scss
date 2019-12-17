@@ -44,6 +44,7 @@
             margin-top: 5%;
             a {
                 font-size: 1.6rem;
+                font-weight: bold;
                 text-decoration: none;
                 border: 2px solid $primaryColor;
                 background-color: $primaryColor;
@@ -97,23 +98,14 @@
         margin-left: 10%;
     }
     .title {
+        font-family: $secondaryFont;
         font-size: 5rem;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
     }
     .accent {
-        font-size: 3rem;
+        font-size: 5rem;
         color: $primaryColor;
-    }
-    .menu{
-        font-family: $secondaryFont;
-        position: absolute;
-        transform: rotate(270deg);
-        transform-origin: left top 0;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        color: $baseBackgroundColor;
-        top: 10%;
     }
 }

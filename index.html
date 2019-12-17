@@ -50,7 +50,8 @@
                     <h1>Nuno Macedo</h1>
                 </div>
                 <h2 class="headline">
-                    <a href="" class="typewrite" data-period="2000"
+                    <!-- Had to add a tabindex because I could not change to a p tag -->
+                    <a tabindex="-1" href="" class="typewrite" data-period="2000"
                         data-type='[ "Front-End Web Developer.", "Creating something great!", "Websites." ]'>
                         <span class="wrap"></span>
                     </a>
@@ -67,8 +68,7 @@
             <div class="arrowUp">
                 <a href="#home"><i class="far fa-caret-square-up"></i>Top</a>
             </div>
-            <p class="menu"> > <span class="accent">.</span> About</p>
-            <h2 class="title">About</h2>
+            <h2 class="title"> > <span class="accent">.</span> About</h2>
 
             <div class="wrapper">
                 <figure class="photo">
@@ -84,89 +84,86 @@
         </section>
 
         <section class="skills" id="skills">
-            <p class="menu"> > <span class="accent">.</span> Skills</p>
-            <h2 class="title">Skills</h2>
+            <h2 class="title"> > <span class="accent">.</span> Skills</h2>
 
             <ul class="logos wrapper">
                 <li class="html">
-                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
-                        <i class="hvr-icon fab fa-html5" aria-hidden="true"></i>
+                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" aria-labelledby="html">
+                        <i class="hvr-icon fab fa-html5"></i>
                     </a>
-                    <p>HTML5</p>
+                    <p id="html">HTML5</p>
                 </li>
                 <li class="css">
-                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Web/CSS" aria-labelledby="css3">
                         <i class="hvr-icon fab fa-css3-alt" aria-hidden="true"></i>
                     </a>
-                    <p>CSS3</p>
+                    <p id="css3">CSS3</p>
                 </li>
                 <li class="sass">
-                    <a class="hvr-icon-pulse-grow" href="https://sass-lang.com/guide">
+                    <a class="hvr-icon-pulse-grow" href="https://sass-lang.com/guide" aria-labelledby="sass">
                         <i class="hvr-icon fab fa-sass" aria-hidden="true"></i>
                     </a>
-                    <p>Sass</p>
+                    <p id="sass">Sass</p>
                 </li>
                 <li class="mobile">
-                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">
+                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" aria-labelledby="design">
                         <img class="responsive hvr-icon" src="./assets/responsive.png" alt="Responsive design icon.">
                     </a>
-                    <p>Responsive Design</p>
+                    <p id="design">Responsive Design</p>
                 </li>
                 <li class="vsCode">
-                    <a class="hvr-icon-pulse-grow" href="https://code.visualstudio.com/">
+                    <a class="hvr-icon-pulse-grow" href="https://code.visualstudio.com/" aria-labelledby="vscode">
                         <img class="hvr-icon" src="./assets/VSCodeIcon.png" alt="VSCode icon.">
                     </a>
-                    <p>VS Code</p>
+                    <p id="vscode">VS Code</p>
                 </li>
                 <li class="javaScript">
-                    <a class="hvr-icon-pulse-grow" href="https://www.javascript.com/">
+                    <a class="hvr-icon-pulse-grow" href="https://www.javascript.com/" aria-labelledby="js">
                         <i class="hvr-icon fab fa-js-square" aria-hidden="true"></i>
                     </a>
-                    <p>JavaScript</p>
+                    <p id="js">JavaScript</p>
                 </li>
                 <li class="jQuery">
-                    <a class="hvr-icon-pulse-grow" href="https://jquery.com/">
+                    <a class="hvr-icon-pulse-grow" href="https://jquery.com/" aria-labelledby="jquery">
                         <img class="hvr-icon" src="./assets/jQueryIcon.png" alt="jQuery logo.">
                     </a>
-                    <p>jQuery</p>
+                    <p id="jquery">jQuery</p>
                 </li>
                 <li class="react">
-                    <a class="hvr-icon-pulse-grow" href="https://reactjs.org/">
+                    <a class="hvr-icon-pulse-grow" href="https://reactjs.org/" aria-labelledby="react">
                         <i class="hvr-icon fab fa-react" aria-hidden="true"></i>
                     </a>
-                    <p>React</p>
+                    <p id="react">React</p>
                 </li>
                 <li class="firebase">
-                    <a class="hvr-icon-pulse-grow" href="https://firebase.google.com/">
+                    <a class="hvr-icon-pulse-grow" href="https://firebase.google.com/" aria-labelledby="firebase">
                         <img class="hvr-icon" src="./assets/FirebaseIcon.png" alt="Firebase logo">
                     </a>
-                    <p>Firebase</p>
+                    <p id="firebase">Firebase</p>
                 </li>
                 <li class="github">
-                    <a class="hvr-icon-pulse-grow" href="https://github.com/">
+                    <a class="hvr-icon-pulse-grow" href="https://github.com/" aria-labelledby="github">
                         <i class="hvr-icon fab fa-github" aria-hidden="true"></i>
                     </a>
-                    <p>GitHub</p>
+                    <p id="github">GitHub</p>
                 </li>
                 <li class="git">
-                    <a class="hvr-icon-pulse-grow" href="https://git-scm.com/">
+                    <a class="hvr-icon-pulse-grow" href="https://git-scm.com/" aria-labelledby="git">
                         <i class="fab fa-git-alt" aria-hidden="true"></i>
                     </a>
-                    <p>Git</p>
+                    <p id="git">Git</p>
                 </li>
                 <li class="accessible">
-                    <a class="hvr-icon-pulse-grow" href="https://www.w3.org/standards/webdesign/accessibility">
+                    <a class="hvr-icon-pulse-grow" href="https://www.w3.org/standards/webdesign/accessibility" aria-labelledby="accessible">
                         <i class="hvr-icon fas fa-universal-access" aria-hidden="true"></i>
                     </a>    
-                    <p>Accessibility</p>
+                    <p id="accessible">Accessibility</p>
                 </li>
             </ul>
         </section>
 
         <section class="portfolio" id="portfolio">
-            <h2 class="title">PORTFOLIO</h2>
-            <p class="menu"> > <span class="accent">.</span> Portfolio</p>
-
+            <h2 class="title"> > <span class="accent">.</span> PORTFOLIO</h2>
             <div class="wrapper">
                 <div class="yoda" data-aos="zoom-in-up">
                     <img src="./assets/Yoda Wisdom.png" alt="Screenshot of a mobile and notebook displaying the Yoda Wisdom website.">
@@ -244,8 +241,6 @@
         </section>
 
         <section class="contact" id="contact">
-            <p class="menu"> > <span class="accent">.</span> Contact</p>
-
             <div class="wrapper">
                 <div class="border"></div>
                 <div class="contactMe">

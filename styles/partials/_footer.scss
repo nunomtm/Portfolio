@@ -1,40 +1,40 @@
 /* Footer Styles Starts Here */
 footer {
     background-color:rgba(0, 0, 0, 0.9);
-    min-height: 8vh;
     .mainFooter {
+        min-height: 5vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    p {
-        font-size: 1.6rem;
-        color: $primaryColor;
-    }
-    .white{
-        color: $primaryFontColor;
-    }
-    i {
-        font-size: 3rem;
-        color: $primaryColor;
-        padding: 15px;
-        transition: 0.25s;
-        &:hover,
-        &:focus {
-            transform: scale(1.4);
+        p {
+            font-size: 1.6rem;
+            color: $primaryColor;
+        }
+        .white{
             color: $primaryFontColor;
         }
     }
     .social {
         align-self: center;
-    }
-    ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-    }
-    li {
-      text-decoration: none;
+        ul {
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+        }
+        li {
+          text-decoration: none;
+        }
+        i {
+            font-size: 3rem;
+            color: $primaryColor;
+            padding: 15px;
+            transition: 0.25s;
+            &:hover,
+            &:focus {
+                transform: scale(1.4);
+                color: $primaryFontColor;
+            }
+        }
     }
 }
 /* Footer Styles Ends Here */
