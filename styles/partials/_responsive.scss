@@ -1,192 +1,504 @@
 /* Responsive Starts Here */
-@media (max-width: 1108px) {
-  .hero {
-    grid-template-areas:
-      // "comingSoon comingSoon comingSoon comingSoon"
-      "myLogo myLogo myLogo myLogo";
-      // ". stayTuned stayTuned .";
-  }
+    
+
+@include mqTabletLand {
+    .heroContainer {
+        .hero {
+            padding-top: 15%;
+        }
+        .headline {
+            min-width: 55%;
+        }
+    } 
+    .aboutMe {
+        margin-top: 5%;
+    }
+    .skills {
+        .logos img {
+            width: 70%;
+        }
+    }
+    .skills {
+        .menu {
+            top: 30%;
+        }
+    }
+    .portfolio {
+        .menu {
+            top: 15%;
+        }
+        .wrapper {
+            ul {
+                flex-wrap: wrap;
+            }
+            li {
+                margin-top: 3%;
+            }
+            .yoda,
+            .market,
+            .amILate,
+            .textile {
+                padding: 18% 0;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .navContainer {
+        ul {
+            width: 80%;
+        }
+    }
+    .heroContainer {
+        .hero {
+            padding-top: 18%;
+        }
+    }
+    .about {
+        .wrapper {
+            flex-direction: column;
+        }
+        .border {
+            top: 54%;
+        }
+        .aboutMe {
+            margin-bottom: 5%;
+        }
+    }
+    .skills {
+        .logos img {
+            width: 81%;
+        }
+    }
+    .portfolio {
+        .wrapper {
+            .yoda,
+            .market,
+            .amILate,
+            .textile {
+                padding: 22% 0;
+            }
+        }
+    }
+    .contact {
+        .border {
+            top: 5%;
+            left: 10%;
+            z-index: 0;
+        }
+        .contactMe {
+            .contactDetails {
+                .arrow {
+                    margin-left: 38%;
+                }
+            }
+        }
+    }
 }
 
-@media (max-width: 1024px) {
-  .about {
-    flex-direction: column;
-  }
-  .skills {
-    min-height: 370px;
-  }
-  .logos li {
-    padding: 30px 0;
-  }
-  .logos p {
-    font-size: 1.5rem;
-  }
-  .logos img {
-    width: 90px;
-    margin-top: -18px;
-    margin-left: 42px;
-  }
-  .logos > li:nth-child(7) > p:nth-child(2) {
-    margin-top: 1px;
-  }
-  .logos i {
-    font-size: 6rem;
-  }
-  .responsive .fa-mobile-alt,
-  .responsive .fa-desktop {
-    font-size: 5rem;
-    margin: 11px 0;
-  }
+@include mqTabletVert {
+    .navContainer .nav ul li {
+        display: none;
+    }
+    nav.mobileNav {
+        display: block;
+    }
+    .navMobile {
+        margin: 0;
+    }
+    ul.navMobile {
+        display: flex;
+        flex-direction: column;
+        background: $primaryColor;
+        background-color: rgba($primaryColor, 0.8);
+        list-style: none;
+        position: fixed;
+        z-index: 10;
+        width: 150px;
+        right: -150px;
+        height: 23%;
+        top: 6%;
+        padding: 12px;
+        border-radius: 15px 0 15px 15px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .navMobile li {
+        padding: 10px 0;
+    }
+    .navMobile li a {
+        font-size: 1.6rem;
+        color: $primaryFontColor;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+        -webkit-transition: all 0.3s;
+        transition: all 0.25s;
+    }
+    .navMobile li a:hover,
+    .navMobile li a:focus {
+        border-bottom: 3px solid $primaryColor;
+    }
+    input[type="checkbox"]:checked + ul.navMobile {
+        right: 0;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    label[for="toggleMenu"] {
+        position: fixed;
+        top: 10px;
+        left: 90%;
+        color: $primaryColor;
+        z-index: 10;
+    }
+    .mobileNav i {
+        font-size: 3.5rem;
+    }
+    .mobileNav i:hover,
+    .mobileNav i:focus {
+        color: $primaryFontColor    ;
+    }
+    // End of mobile menu
 
-  .responsive .fa-caret-right {
-    font-size: 4rem;
-  }
+
+    .heroContainer {
+        .hero {
+            padding-top: 24%;
+        }
+        .name {
+            font-size: 3.5rem;
+        }
+        .headline {
+            margin-top: 5%;
+            min-width: 70%;
+        }
+    }
+    .about {
+        .menu {
+            top: 14%;
+        }
+        .border {
+            top: 46%;
+        }
+    }
+    .skills {
+        .menu {
+            top: 20%;
+        }
+        .logos {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, min-content);
+            grid-template-areas:
+            "html css sass mobile"
+            "vsCode js jq react"
+            "firebase github git accessible";
+            img {
+                width: 62%;
+            }
+        }
+    }
+    .portfolio {
+        .menu {
+            top: 5%;
+        }
+        .wrapper {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(8, min-content);
+            grid-template-areas:
+            "yoda"
+            "yodaInfo"
+            "market"
+            "marketInfo"
+            "late"
+            "lateInfo"
+            "textile" 
+            "textileInfo";
+            padding-bottom: 10%;
+            .yoda,
+            .market,
+            .amILate,
+            .textile {
+                padding: 10% 0;
+            }
+            .yodaInfo,
+            .marketInfo,
+            .amILateInfo,
+            .textileInfo {
+                margin: 0;
+            }
+        }
+    }
+    .contact {
+        .menu {
+            top: 15%;
+        }
+        .wrapper {
+            flex-direction: column;
+        }
+        .border {
+            width: 80%;
+            height: 40%;
+            top: 2%;
+            left: 13%;
+        }
+        .contactMe {
+            width: 100%;
+            p {
+                padding: 2% 0;
+            }
+            .contactDetails {
+                p {
+                    margin-top: 0;
+                }
+                .arrow {
+                    margin-left: 25%;
+                }
+            }   
+        }
+        fieldset {
+            width: 90%; 
+            legend {
+                padding-top: 5%;
+            }
+        }
+    }
 }
 
-@media (max-width: 768px) {
-  .comingSoon {
-    padding: 30px 0;
-  }
-  .stayTuned {
-    padding: 50px 0;
-  }
-  .navContainer .nav ul li {
-    display: none;
-  }
-  .mobileNav {
-    display: block;
-  }
-  .navMobile {
-    margin: 0;
-  }
-  ul.navMobile {
-    display: flex;
-    flex-direction: column;
-    background: #ee0149;
-    background-color: rgba(238, 1, 73, 0.8);
-    list-style: none;
-    position: fixed;
-    z-index: 10;
-    width: 150px;
-    right: -150px;
-    height: 29%;
-    top: 8%;
-    padding: 12px;
-    border-radius: 15px 0 15px 15px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .navMobile li {
-    padding: 10px 0;
-  }
-  .navMobile li a {
-    font-size: 1.6rem;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    border-bottom: 3px solid transparent;
-    -webkit-transition: all 0.3s;
-    transition: all 0.25s;
-  }
-  .navMobile li a:hover,
-  .navMobile li a:focus {
-    border-bottom: 3px solid #fff;
-  }
-  input[type="checkbox"]:checked + ul.navMobile {
-    right: 0;
-  }
-  input[type="checkbox"] {
-    display: none;
-  }
-  label[for="toggleMenu"] {
-    position: fixed;
-    top: 1%;
-    left: 90%;
-    color: #ee0149;
-    z-index: 10;
-  }
-  .mobileNav i {
-    font-size: 3.5rem;
-  }
-  .mobileNav i:hover,
-  .mobileNav i:focus {
-    color: #fff;
-  }
-  .hero {
-    grid-template-areas:
-      "comingSoon comingSoon comingSoon comingSoon"
-      "myLogo myLogo myLogo myLogo"
-      "stayTuned stayTuned stayTuned stayTuned";
-  }
-  .stayTuned {
-    text-align: center;
-  }
-  .logos img {
-    margin-left: 17px;
-  }
-  .about .photo {
-    max-width: 50%;
-  }
+@include mqMobile {
+    .navContainer {
+        min-height: 6vh;
+    }
+    ul.navMobile {
+        height: 25%;
+        top: 7%;
+    }
+    .heroContainer {
+        .hero {
+            padding-top: 39%;
+        }
+        .name {
+            padding-top: 15%;
+        }
+        .headline {
+            width: 100%;
+        }
+    }
+    .about {
+        .border {
+            top: 34%;
+        }
+        .photo {
+            max-width: 65%;
+        }
+    }
+    .skills {
+        .logos {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, min-content);
+            grid-template-areas:
+            "html css sass" 
+            "mobile vsCode js"
+            "jq react firebase"
+            "github git accessible";
+            img {
+                width: 76%;
+            }
+        }
+    }
+    .portfolio {
+        .menu {
+            top: 8%;
+        }
+        .yodaInfo,
+        .marketInfo,
+        .textileInfo,
+        .amILateInfo {
+            h2,
+            .links {
+                text-align: center;
+            }
+            ul {
+                justify-content: space-around;
+            }
+        }
+    }
+    .contact {
+        .menu {
+            top: 20%;
+        }
+        .border {
+            top: 1%;
+        }
+        .contactMe {
+            .contactDetails {
+                .qrCode {
+                    margin: 0 auto;
+                }
+                .arrow {
+                    margin-left: 46%;
+                }
+                .resume {
+                    margin-left: 35%;
+                }
+            }
+        }
+        fieldset {
+            width: 100%;
+        }
+    }
+    footer {
+        .mainFooter {
+            flex-direction: column;
+            p {
+                padding: 2% 0;
+            }
+        }
+    }
 }
 
-@media (max-width: 715px) {
-  .logos li {
-    width: 50%
-  }
-  .logos img {
-    margin-left: 34%;
-  }
-  .about .photo {
-    max-width: 60%;
-  }
+@include mqMobilePlus {
+    .navContainer {
+        min-height: 8vh;
+    }
+    ul.navMobile {
+        height: 32%;
+        top: 9%;
+    }
+    .heroContainer {
+        .hero {
+            padding-top: 36%;
+        }
+        .name {
+            font-size: 2rem;
+        }
+    }
+    .about {
+        .border {
+            top: 28%;
+        }
+    }
+    .skills {
+        .logos {
+            img {
+                width: 89%;
+            }
+        }
+    }
 }
 
-@media (max-width: 600px) {
-  .comingSoon {
-    font-size: 2.5rem;
-  }
-  .about .photo {
-    max-width: 70%;
-  }
-  .mainFooter {
-    flex-direction: column;
-  }
-  .mainFooter p {
-    text-align: center;
-  }
-  .mainFooter i {
-    font-size: 2.2rem;
-  }
+@include mqMobileX {
+    .navContainer {
+        min-height: 7vh;
+    }
+    ul.navMobile {
+        height: 29%;
+        top: 8%;
+    }
+    .about {
+        .menu {
+            top: 10%;
+        }
+        .photo {
+            max-width: 79%;
+        }
+        .border {
+            top: 32%;
+        }
+        .aboutMe {
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .skills {
+        .menu {
+            top: 10%;
+        }
+        .logos {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, min-content);
+            grid-template-areas:
+            "html css"
+            "sass mobile"
+            "vsCode js"
+            "jq react" 
+            "firebase github"
+            "git accessible";
+            img {
+                width: 64%;
+            }
+        }
+    }
+    .portfolio {
+        .wrapper {
+            p {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .contact {
+        .menu {
+            top: 18%;
+        }
+        .wrapper {
+            padding-left: 2%;
+        }
+        fieldset {
+            legend {
+                font-size: 2.2rem;
+            }
+        }
+    }
+    .mainFooter {
+        p {
+            text-align: center;
+        }
+    }
 }
 
-@media (max-width: 475px) {
-  .comingSoon {
-    font-size: 2.2rem;
-    line-height: 50px;
-  }
-  .stayTuned {
-    font-size: 1.5rem;
-  }
-  label[for="toggleMenu"] {
-    left: 80%;
-  }
-  .logos img {
-    margin-left: 28%;
-  }
-  .about .photo {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 415px) {
-  .logos img {
-    margin-left: 22%;
-  }
-}
-
-@media (max-width: 320px) {
-  .logos img {
-    margin-left: 18%;
-  }
+@include mqMobileSE {
+    label[for="toggleMenu"] {
+        top: 1%;
+    }
+    .mobileNav {
+        i {
+            font-size: 3rem;
+        }
+    }
+    .heroContainer {
+        .hero {
+            padding-top: 24%;
+        }
+    }
+    .about {
+        .title {
+            font-size: 4rem;
+        }
+    }
+    .skills {
+        .title {
+            font-size: 4rem;
+        }
+        .logos {
+            img {
+                width: 76%;
+            }
+        }
+    }
+    .portfolio {
+        .title {
+            font-size: 4rem;
+        }
+    }
+    .contact {
+        .border {
+            top: 0.5%;
+        }
+        .contactMe {
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+    }
 }
