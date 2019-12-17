@@ -63,7 +63,8 @@ window.onload = function() {
 
 // Portfolio Scroll Animation //
 AOS.init({
-    duration: 1500
+    duration: 1500,
+    // disable: 'mobile',
 });
 
 $(function() {
