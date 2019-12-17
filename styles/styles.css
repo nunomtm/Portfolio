@@ -289,7 +289,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  min-height: 100vh;
 }
 
 /* Nav Styles Start Here */
@@ -304,7 +303,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 5vh;
+  min-height: 8vh;
 }
 
 .navContainer p {
@@ -350,7 +349,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   border: 3px solid transparent;
-  padding: 5px;
+  padding: 5%;
   -webkit-transition: 0.35s;
   transition: 0.35s;
 }
@@ -587,14 +586,14 @@ header {
 }
 
 .about .arrowUp i {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #ee0149;
 }
 
 .about .arrowUp a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: #000;
+  color: #ee0149;
 }
 
 .about .arrowUp a:nth-child(1) {
@@ -1222,6 +1221,7 @@ header {
   background-color: #000;
   -webkit-box-shadow: 6px 6px 1px rgba(255, 255, 255, 0.1);
           box-shadow: 6px 6px 1px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .contact fieldset input[type="submit"]:focus {
@@ -1242,6 +1242,7 @@ header {
 /* Footer Styles Starts Here */
 footer {
   background-color: rgba(0, 0, 0, 0.9);
+  min-height: 8vh;
 }
 
 footer .mainFooter {
@@ -1266,9 +1267,9 @@ footer .white {
 }
 
 footer i {
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: #ee0149;
-  padding: 10px;
+  padding: 15px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -1412,7 +1413,7 @@ footer li {
     z-index: 10;
     width: 150px;
     right: -150px;
-    height: 23%;
+    height: 30%;
     top: 6%;
     padding: 2%;
     border-radius: 15px 0 15px 15px;

@@ -5,7 +5,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
 }
 
 /* Nav Styles Start Here */
@@ -14,7 +13,7 @@ header {
     .nav {
         display: flex;
         justify-content: center;
-        min-height: 5vh;
+        min-height: 8vh;
     }
     p {
         font-size: 3.2rem;
@@ -47,7 +46,7 @@ header {
         text-transform: uppercase;
         text-decoration: none;
         border: 3px solid transparent;
-        padding: 5px;
+        padding: 5%;
         transition: 0.35s;
         &:hover,
         &:focus {

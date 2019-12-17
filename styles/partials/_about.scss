@@ -8,13 +8,13 @@
         display: none;
         z-index: 2;
         i {
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: $primaryColor;
         }
         a {
             font-size: 1.5rem;
             text-decoration: none;
-            color: $secondaryColor;
+            color: $primaryColor;
         }
         a:nth-child(1) {
             display: flex;

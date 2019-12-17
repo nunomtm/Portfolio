@@ -123,6 +123,7 @@
             &:hover {
                 background-color: $secondaryColor;
                 box-shadow: 6px 6px 1px rgba(white, 0.1);
+                cursor: pointer;
             }
             &:focus {
                 border: 1px solid $primaryColor;
