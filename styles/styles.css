@@ -1397,9 +1397,6 @@ footer li {
   nav.mobileNav i {
     font-size: 3.5rem;
   }
-  nav.mobileNav i:hover, nav.mobileNav i:focus {
-    color: #fff;
-  }
   .navMobile {
     margin: 0;
     display: -webkit-box;
@@ -1409,7 +1406,6 @@ footer li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #ee0149;
     background-color: rgba(238, 1, 73, 0.8);
     list-style: none;
     position: fixed;
