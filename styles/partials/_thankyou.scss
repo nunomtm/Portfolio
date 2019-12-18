@@ -5,7 +5,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    min-height: 94vh;
 }
 
 /* Nav Styles Start Here */
@@ -34,7 +33,7 @@ header {
 
 /* Hero Container Styles Start Here */
 .heroContainerTY {
-    min-height: 90vh;
+    min-height: 88vh;
     background-color: rgba(0, 0, 0, 0.5);
     .hero {
         display: grid;
@@ -105,9 +104,9 @@ footer {
         color: $primaryFontColor;
     }
     i {
-        font-size: 2.2rem;
+        font-size: 2rem;
         color: $primaryColor;
-        padding: 10px;
+        padding: 1%;
         transition: 0.25s;
         &:hover,
         &:focus {

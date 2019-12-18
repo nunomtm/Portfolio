@@ -1655,7 +1655,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  min-height: 94vh;
 }
 
 /* Nav Styles Start Here */
@@ -1686,7 +1685,7 @@ header {
 /*  */
 /* Hero Container Styles Start Here */
 .heroContainerTY {
-  min-height: 90vh;
+  min-height: 88vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1779,9 +1778,9 @@ footer .white {
 }
 
 footer i {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #ee0149;
-  padding: 10px;
+  padding: 1%;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }

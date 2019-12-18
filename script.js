@@ -61,12 +61,6 @@ window.onload = function() {
 // End of Type.js //
 
 
-// Portfolio Scroll Animation //
-AOS.init({
-    duration: 1500,
-    // disable: 'mobile',
-});
-
 $(function() {
     // Mobile nav button //
     let menuBtn = $('.menu');
@@ -89,5 +83,11 @@ $(function() {
     $('.arrowUp').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+
+    // Portfolio Scroll Animation //
+    AOS.init({
+        duration: 1500,
+        disable: 'phone',
     });
 });
