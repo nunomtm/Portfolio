@@ -104,8 +104,8 @@
         }
         label[for="toggleMenu"] {
             position: fixed;
-            top: 1%;
-            right: 2%;
+            top: 12px;
+            right: 20px;
             color: $primaryColor;
             z-index: 10;
         }
@@ -123,7 +123,7 @@
         z-index: 10;
         width: 150px;
         right: -150px;
-        height: 30%;
+        height: 225px;
         top: 6%;
         padding: 2%;
         border-radius: 15px 0 15px 15px;
@@ -244,15 +244,18 @@
     .navContainer {
         min-height: 6vh;
     }
-    ul.navMobile {
-        height: 25%;
-        top: 7%;
+    nav.mobileNav {
+        label[for="toggleMenu"] {
+            top: 8px;
+            right: 15px;
+        }
     }
     .heroContainer {
         .hero {
             padding-top: 39%;
         }
         .name {
+            font-size: 3rem;
             padding-top: 15%;
         }
         .headline {
@@ -260,6 +263,9 @@
         }
     }
     .about {
+        .title {
+            font-size: 4rem;
+        }
         .border {
             top: 34%;
         }
@@ -268,6 +274,9 @@
         }
     }
     .skills {
+        .title {
+            font-size: 4rem;
+        }
         .logos {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(4, min-content);
@@ -282,6 +291,9 @@
         }
     }
     .portfolio {
+        .title {
+            font-size: 4rem;
+        }
         .yodaInfo,
         .marketInfo,
         .textileInfo,
@@ -328,11 +340,10 @@
 
 @include mqMobilePlus {
     .navContainer {
-        min-height: 8vh;
+        min-height: 7vh;
     }
     ul.navMobile {
-        height: 32%;
-        top: 9%;
+        top: 7%;
     }
     .heroContainer {
         .hero {
@@ -340,6 +351,9 @@
         }
         .name {
             font-size: 2rem;
+        }
+        .headline {
+            font-size: 1.6rem;
         }
     }
     .about {
@@ -354,15 +368,22 @@
             }
         }
     }
+    .contact {
+        fieldset {
+            #username,
+            #useremail,
+            #message {
+                border: 2px solid $primaryColor;
+            }
+        }
+    }
 }
 
 @include mqMobileX {
-    .navContainer {
-        min-height: 7vh;
-    }
-    ul.navMobile {
-        height: 34%;
-        top: 8%;
+    .heroContainer {
+        .headline {
+            font-size: 1.4rem;
+        }
     }
     .about {
         .photo {
@@ -394,13 +415,24 @@
         }
     }
     .portfolio {
+        .title {
+            font-size: 3.5rem;
+        }
         .wrapper {
+            h2 {
+                font-size: 3rem;
+            }
             p {
                 font-size: 1.8rem;
             }
         }
     }
     .contact {
+        .contactMe {
+            .contactDetails a {
+                font-size: 1.6rem;
+            }
+        }
         .wrapper {
             padding-left: 2%;
         }
@@ -426,22 +458,29 @@
             font-size: 3rem;
         }
     }
-    ul.navMobile {
-        height: 40%;
-    }
     .heroContainer {
         .hero {
             padding-top: 24%;
         }
+        .logo img {
+            height: 90px;
+            width: 90px;
+        }
+        .name h1 {
+            font-size: 3.2rem;
+        }
+        .headline {
+            font-size: 1.2rem;
+        }
     }
     .about {
         .title {
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
     }
     .skills {
         .title {
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
         .logos {
             img {
@@ -451,7 +490,10 @@
     }
     .portfolio {
         .title {
-            font-size: 4rem;
+            font-size: 3rem;
+        }
+        .wrapper h2 {
+            font-size: 2.5rem;
         }
     }
     .contact {
@@ -461,6 +503,14 @@
         .contactMe {
             h2 {
                 font-size: 3.5rem;
+            }
+            .contactDetails a {
+                font-size: 1.4rem;
+            }
+        }
+        fieldset {
+            legend {
+                font-size: 2rem;
             }
         }
     }

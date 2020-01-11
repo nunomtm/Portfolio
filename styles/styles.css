@@ -1350,8 +1350,8 @@ footer .social i:hover, footer .social i:focus {
   }
   nav.mobileNav label[for="toggleMenu"] {
     position: fixed;
-    top: 1%;
-    right: 2%;
+    top: 12px;
+    right: 20px;
     color: #ee0149;
     z-index: 10;
   }
@@ -1373,7 +1373,7 @@ footer .social i:hover, footer .social i:focus {
     z-index: 10;
     width: 150px;
     right: -150px;
-    height: 30%;
+    height: 225px;
     top: 6%;
     padding: 2%;
     border-radius: 15px 0 15px 15px;
@@ -1478,24 +1478,31 @@ footer .social i:hover, footer .social i:focus {
   .navContainer {
     min-height: 6vh;
   }
-  ul.navMobile {
-    height: 25%;
-    top: 7%;
+  nav.mobileNav label[for="toggleMenu"] {
+    top: 8px;
+    right: 15px;
   }
   .heroContainer .hero {
     padding-top: 39%;
   }
   .heroContainer .name {
+    font-size: 3rem;
     padding-top: 15%;
   }
   .heroContainer .headline {
     width: 100%;
+  }
+  .about .title {
+    font-size: 4rem;
   }
   .about .border {
     top: 34%;
   }
   .about .photo {
     max-width: 65%;
+  }
+  .skills .title {
+    font-size: 4rem;
   }
   .skills .logos {
     -ms-grid-columns: (1fr)[3];
@@ -1507,6 +1514,9 @@ footer .social i:hover, footer .social i:focus {
   }
   .skills .logos img {
     width: 76%;
+  }
+  .portfolio .title {
+    font-size: 4rem;
   }
   .portfolio .yodaInfo h2,
   .portfolio .yodaInfo .links,
@@ -1553,11 +1563,10 @@ footer .social i:hover, footer .social i:focus {
 
 @media (max-width: 415px) {
   .navContainer {
-    min-height: 8vh;
+    min-height: 7vh;
   }
   ul.navMobile {
-    height: 32%;
-    top: 9%;
+    top: 7%;
   }
   .heroContainer .hero {
     padding-top: 36%;
@@ -1565,21 +1574,25 @@ footer .social i:hover, footer .social i:focus {
   .heroContainer .name {
     font-size: 2rem;
   }
+  .heroContainer .headline {
+    font-size: 1.6rem;
+  }
   .about .border {
     top: 28%;
   }
   .skills .logos img {
     width: 89%;
   }
+  .contact fieldset #username,
+  .contact fieldset #useremail,
+  .contact fieldset #message {
+    border: 2px solid #ee0149;
+  }
 }
 
 @media (max-width: 375px) {
-  .navContainer {
-    min-height: 7vh;
-  }
-  ul.navMobile {
-    height: 34%;
-    top: 8%;
+  .heroContainer .headline {
+    font-size: 1.4rem;
   }
   .about .photo {
     max-width: 79%;
@@ -1601,8 +1614,17 @@ footer .social i:hover, footer .social i:focus {
   .skills .logos img {
     width: 64%;
   }
+  .portfolio .title {
+    font-size: 3.5rem;
+  }
+  .portfolio .wrapper h2 {
+    font-size: 3rem;
+  }
   .portfolio .wrapper p {
     font-size: 1.8rem;
+  }
+  .contact .contactMe .contactDetails a {
+    font-size: 1.6rem;
   }
   .contact .wrapper {
     padding-left: 2%;
@@ -1622,29 +1644,45 @@ footer .social i:hover, footer .social i:focus {
   nav.mobileNav i {
     font-size: 3rem;
   }
-  ul.navMobile {
-    height: 40%;
-  }
   .heroContainer .hero {
     padding-top: 24%;
   }
+  .heroContainer .logo img {
+    height: 90px;
+    width: 90px;
+  }
+  .heroContainer .name h1 {
+    font-size: 3.2rem;
+  }
+  .heroContainer .headline {
+    font-size: 1.2rem;
+  }
   .about .title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .skills .title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .skills .logos img {
     width: 76%;
   }
   .portfolio .title {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  .portfolio .wrapper h2 {
+    font-size: 2.5rem;
   }
   .contact .border {
     top: 0.5%;
   }
   .contact .contactMe h2 {
     font-size: 3.5rem;
+  }
+  .contact .contactMe .contactDetails a {
+    font-size: 1.4rem;
+  }
+  .contact fieldset legend {
+    font-size: 2rem;
   }
 }
 
