@@ -2,7 +2,7 @@
 
 
 ## Nuno's Portfolio
-This is my personal portfolio to show what I have learned and build throughout 2019/2020. If you are looking for a Front-End Developer let's have a chat over coffee.
+This is my personal portfolio to show what I have learned and build throughout 2019/2020. If you are looking for a Front-End Developer let's have a chat over coffee
 
 
 ### Build with
