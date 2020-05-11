@@ -1,8 +1,34 @@
-
 // The function will start here
 
+// Toggle hamburger menu function
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.navLinks');
+    const navLinks = document.querySelectorAll('.navLinks li')
+
+    burger.addEventListener('click', () => {
+        // Toggle Nav
+        nav.classList.toggle('navActive');
+
+        // Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.6}s`;
+            }
+        });
+
+        // Burger Animation
+        burger.classList.toggle('toggle');
+    });
+}
+navSlide();
+//Toggle function ends here
+
+
 // Header Type.js Animation //
-let TxtType = function (el, toRotate, period) {
+let TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -12,7 +38,7 @@ let TxtType = function (el, toRotate, period) {
     this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function () {
+TxtType.prototype.tick = function() {
     let i = this.loopNum % this.toRotate.length;
     let fullTxt = this.toRotate[i];
 
@@ -58,34 +84,49 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
-// End of Type.js //
+// End of Type.js
 
 
 $(function() {
-    // Mobile nav button //
-    let menuBtn = $('.menu');
+    // Active tabs on scroll
+    let sections = $('section'),
+        nav = $('.navContainer'),
+        navHeight = nav.outerHeight();
 
-    menuBtn.on("click", function () {
-        $(this).toggleClass('open');
-        $('body').toggleClass('open');
-        // $('.mobileNav').slideToggle('slow');
-    });
-
-    // Scroll to top button //
-    $(window).scroll(function () {
+    $(window).on('scroll', function() {
+        // Scroll to top button animation
         if ($(this).scrollTop() > 100) {
             $('.arrowUp').fadeIn();
         } else {
             $('.arrowUp').fadeOut();
         }
+
+        // Transition active tabs on scroll
+        let curPos = $(this).scrollTop();
+
+        sections.each(function() {
+            let top = $(this).offset().top - navHeight,
+                bottom = top + $(this).outerHeight();
+
+            if(curPos >= top && curPos <= bottom) {
+                nav.find('a').removeClass('active');
+                sections.removeClass('active');
+
+                $(this).addClass('active');
+                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            }
+        });
     });
 
-    $('.arrowUp').on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, '300');
+    // Active tab scroll function
+    $('a').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - navHeight+1,
+        }, 900);
+        return false;
     });
 
-    // Portfolio Scroll Animation //
+    // Portfolio Scroll Animation
     AOS.init({
         duration: 1500,
         disable: 'phone',

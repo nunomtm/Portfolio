@@ -1,20 +1,168 @@
 /* Responsive Starts Here */
+@include mqLaptop {
+    .wrapper {
+        width: 80%;
+    }
 
-@include mqTabletLand {
-    .heroContainer {
-        .hero {
-            padding-top: 15%;
+    .about,
+    .skills,
+    .portfolio {
+        .title {
+            font-size: 4.5rem;
+            padding-top: 40px;
+            .accent {
+                font-size: 5rem;
+            }
         }
-        .headline {
-            min-width: 55%;
+    }
+    header {
+        .heroContainer {
+            .hero {
+                padding-top: 185px;
+                .name {
+                    font-size: 5rem;
+                }
+                .headline {
+                    font-size: 2rem;
+                }
+            }
         }
-    } 
-    .aboutMe {
-        margin-top: 5%;
+    }
+    .about {
+        .wrapper {
+            margin-top: 20px;
+            .photo {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 75%;
+                }
+            }
+            .aboutMe {
+                p {
+                    font-size: 2rem;
+                }
+            }
+            .border {
+                width: 30%;
+                top: 26%;
+                right: 8%;
+            }
+        }
     }
     .skills {
-        .logos img {
-            width: 70%;
+        .logos {
+            padding-top: 40px;
+            .html,
+            .css,
+            .sass,
+            .mobile,
+            .vsCode,
+            .javaScript,
+            .jQuery,
+            .react,
+            .firebase,
+            .github,
+            .git,
+            .accessible {
+                margin: 70px 0;
+                p {
+                    font-size: 1.8rem;
+                }
+                i {
+                    font-size: 7.5rem;
+                }
+                img {
+                    width: 79px;
+                }
+                .responsive {
+                    width: 102px;
+                }
+            }
+        }
+    }
+    .contact {
+        min-height: 89.1vh;
+        padding-top: 40px;
+        .wrapper {
+            .border {
+                top: 5%;
+                left: 9%;
+                height: 55%;
+            }
+            .contactMe {
+                h2 {
+                    font-size: 4.5rem;
+                }
+                p {
+                    font-size: 1.8rem;
+                    line-height: 1.5;
+                }
+                .contactDetails {
+                    p {
+                        line-height: 1.5;
+                        margin-top: 10px;
+                    }
+                    .details {
+                        a {
+                            font-size: 1.6rem;
+                            i {
+                                font-size: 2rem;
+                            }
+                        }
+                        .resume,
+                        .email {
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+            fieldset {
+                margin-top: 35px;
+                legend {
+                    font-size: 2.5rem;
+                    padding-top: 25px;
+                }
+                form {
+                    padding: 10px 0;
+                    #username,
+                    #useremail,
+                    #message {
+                        font-size: 1.4rem;
+                        padding: 10px;
+                    }
+                    input[type="submit"] {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mqTabletLand {
+    header {
+        .navContainer {
+            .nav {
+                .navLinks {
+                    width: 70%;
+                }
+            }
+        }
+        .heroContainer {
+            .hero {
+                padding-top: 200px;
+            }
+        }
+    }
+    .about {
+        .wrapper {
+            .aboutMe {
+                margin-top: 25px;
+            }
+            .border {
+                top: 41%;
+                height: 50%;
+            }
         }
     }
     .portfolio {
@@ -23,42 +171,51 @@
                 flex-wrap: wrap;
             }
             li {
-                margin-top: 3%;
+                margin-top: 10px;
             }
             .yoda,
             .market,
             .amILate,
             .textile {
-                padding: 18% 0;
+                padding: 70px 0;
+            }
+            .yodaInfo {
+                margin-top: 25px;
+            }
+            .marketInfo {
+                margin-top: 45px;
+            }
+            .amILateInfo {
+                margin-top: 20px;
+            }
+            .textileInfo {
+                margin-top: 60px;
             }
         }
     }
 }
+
 @media (max-width: 900px) {
-    .navContainer {
-        ul {
-            width: 80%;
+    header {
+        .navContainer {
+            .nav {
+                .navLinks {
+                    width: 80%;
+                }
+            }
         }
-    }
-    .heroContainer {
-        .hero {
-            padding-top: 18%;
+        .heroContainer {
+            .hero {
+                padding-top: 220px;
+            }
         }
     }
     .about {
         .wrapper {
             flex-direction: column;
-        }
-        .border {
-            top: 54%;
-        }
-        .aboutMe {
-            margin-bottom: 5%;
-        }
-    }
-    .skills {
-        .logos img {
-            width: 81%;
+            .aboutMe {
+                margin-bottom: 30px;
+            }
         }
     }
     .portfolio {
@@ -67,20 +224,22 @@
             .market,
             .amILate,
             .textile {
-                padding: 22% 0;
+                padding: 90px 0;
             }
         }
     }
     .contact {
-        .border {
-            top: 5%;
-            left: 10%;
-            z-index: 0;
-        }
         .contactMe {
             .contactDetails {
-                .arrow {
-                    margin-left: 38%;
+                .details {
+                    .email {
+                        a {
+                            font-size: 1.6rem;
+                            i {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -88,82 +247,84 @@
 }
 
 @include mqTabletVert {
-    .navContainer {
-        .nav ul li {
-            display: none;
+    header {
+        .navContainer {
+            .nav {
+                .navLinks {
+                    position: absolute;
+                    top: 6vh;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100vh;
+                    width: 50%;
+                    background-color: rgba($secondaryColor, 0.85);
+                    padding: 60px 0;
+                    transform: translateX(100%);
+                    transition: transform 0.5s ease-in;
+                    z-index: 2;
+                    li {
+                        opacity: 0;
+                    }
+                    a {
+                        font-weight: bold;
+                    }
+                }
+                .burger {
+                    display: block;
+                }
+                .navActive {
+                    transform: translateX(0%);
+                }
+            }
         }
-    }
-    // Mobile Nav Starts Here //
-    nav.mobileNav {
-        display: block;
-        input[type="checkbox"]:checked + ul.navMobile {
-            right: 0;
+        // Burger Toggle Animation
+        .toggle {
+            .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            .line2 {
+                opacity: 0;
+            }
+            .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
         }
-        input[type="checkbox"] {
-            display: none;
+        // Burger Animation
+        @keyframes navLinkFade {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
         }
-        label[for="toggleMenu"] {
-            position: fixed;
-            top: 12px;
-            right: 20px;
-            color: $primaryColor;
-            z-index: 10;
-        }
-        i {
-            font-size: 3.5rem;
-        }
-    }
-    .navMobile {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        background-color: rgba($primaryColor, 0.8);
-        list-style: none;
-        position: fixed;
-        z-index: 10;
-        width: 150px;
-        right: -150px;
-        height: 225px;
-        top: 6%;
-        padding: 2%;
-        border-radius: 15px 0 15px 15px;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        li {
-            padding: 8% 0;
-            a {
-                font-size: 1.6rem;
-                color: $primaryFontColor;
-                text-decoration: none;
-                text-transform: uppercase;
-                display: inline-block;
-                border-bottom: 3px solid transparent;
-                -webkit-transition: all 0.3s;
-                transition: all 0.25s;
-                &:hover,
-                &:focus {
-                    border-bottom: 3px solid $baseBackgroundColor;
+        
+        .heroContainer {
+            // min-height: 71vh;
+            .social {
+                top: 24%;
+            }
+            .hero {
+                .name {
+                    font-size: 4rem;
+                }
+                .scroll {
+                    .iconScroll {
+                        top: 62%;
+                    }
                 }
             }
         }
     }
-    // End of mobile menu //
-
-    .heroContainer {
-        .hero {
-            padding-top: 24%;
-        }
-        .name {
-            font-size: 3.5rem;
-        }
-        .headline {
-            margin-top: 5%;
-            min-width: 70%;
-        }
-    }
     .about {
-        .border {
-            top: 46%;
+        .wrapper {
+            .border {
+                top: 32%;
+            }
         }
     }
     .skills {
@@ -174,9 +335,6 @@
             "html css sass mobile"
             "vsCode js jq react"
             "firebase github git accessible";
-            img {
-                width: 62%;
-            }
         }
     }
     .portfolio {
@@ -192,12 +350,12 @@
             "lateInfo"
             "textile" 
             "textileInfo";
-            padding-bottom: 10%;
+            padding-bottom: 60px;
             .yoda,
             .market,
             .amILate,
             .textile {
-                padding: 10% 0;
+                padding: 60px 0;
             }
             .yodaInfo,
             .marketInfo,
@@ -210,67 +368,62 @@
     .contact {
         .wrapper {
             flex-direction: column;
-        }
-        .border {
-            width: 80%;
-            height: 40%;
-            top: 2%;
-            left: 13%;
-        }
-        .contactMe {
-            width: 100%;
-            p {
-                padding: 2% 0;
+            .border {
+                height: 48%;
+                top: 10%;
+                left: 64%;
             }
-            .contactDetails {
+            .contactMe {
+                width: 100%;
                 p {
-                    margin-top: 0;
+                    padding: 10px 0;
                 }
-                .arrow {
-                    margin-left: 25%;
+                .contactDetails {
+                    .details {
+                        align-items: center;
+                        .arrow {
+                            margin-left: 0;
+                        }
+                        .email {
+                            .emailBtn {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }   
+            }
+            fieldset {
+                width: 100%; 
+                padding-top: 0;
+                legend {
+                    padding-top: 50px;
                 }
-            }   
-        }
-        fieldset {
-            width: 90%; 
-            legend {
-                padding-top: 5%;
             }
         }
     }
 }
 
 @include mqMobile {
-    .navContainer {
-        min-height: 6vh;
-    }
-    nav.mobileNav {
-        label[for="toggleMenu"] {
-            top: 8px;
-            right: 15px;
-        }
-    }
-    .heroContainer {
-        .hero {
-            padding-top: 39%;
-        }
-        .name {
-            font-size: 3rem;
-            padding-top: 15%;
-        }
-        .headline {
-            width: 100%;
+    header {
+        .heroContainer {
+            .hero {
+                .name {
+                    font-size: 2.8rem;
+                }
+            }
         }
     }
     .about {
         .title {
             font-size: 4rem;
         }
-        .border {
-            top: 34%;
-        }
-        .photo {
-            max-width: 65%;
+        .wrapper {
+            .photo {
+                max-width: 65%;
+            }
+            .border {
+                top: 39%;
+            }
         }
     }
     .skills {
@@ -285,9 +438,6 @@
             "mobile vsCode js"
             "jq react firebase"
             "github git accessible";
-            img {
-                width: 76%;
-            }
         }
     }
     .portfolio {
@@ -303,72 +453,76 @@
                 text-align: center;
             }
             ul {
-                justify-content: space-around;
+                justify-content: center;
             }
         }
     }
     .contact {
-        .border {
-            top: 1%;
-        }
-        .contactMe {
-            .contactDetails {
-                .qrCode {
-                    margin: 0 auto;
-                }
-                .arrow {
-                    margin-left: 46%;
-                }
-                .resume {
-                    margin-left: 35%;
-                }
+        .wrapper {
+            .border {
+                width: 50%;
+                top: 9%;
+                left: 45%;
             }
-        }
-        fieldset {
-            width: 100%;
-        }
-    }
-    footer {
-        .mainFooter {
-            flex-direction: column;
-            p {
-                padding: 2% 0;
+            fieldset {
+                legend {
+                    padding-top: 65px;
+                }
             }
         }
     }
 }
 
 @include mqMobilePlus {
-    .navContainer {
-        min-height: 7vh;
-    }
-    ul.navMobile {
-        top: 7%;
-    }
-    .heroContainer {
-        .hero {
-            padding-top: 36%;
-        }
-        .name {
-            font-size: 2rem;
-        }
-        .headline {
-            font-size: 1.6rem;
+    header {
+        .heroContainer {
+            // min-height: 85vh;
+            .hero {
+                padding-top: 170px;
+                .logo img {
+                    height: 80px;
+                    width: 80px;
+                }
+                .name h2 {
+                    font-size: 3.6rem;
+                    margin-top: 40px;
+                }
+                .headline {
+                    font-size: 1.6rem;
+                }
+                .scroll {
+                    .iconScroll,
+                    .iconScroll:before {
+                        left: 46%;
+                    }
+                    .iconScroll {
+                        top: 72%;
+                    }
+                }
+            }
         }
     }
     .about {
-        .border {
-            top: 28%;
-        }
-    }
-    .skills {
-        .logos {
-            img {
-                width: 89%;
+        .wrapper {
+            .border {
+                top: 34%;
             }
         }
     }
     .contact {
+        .wrapper {
+            .contactMe {
+                .contactDetails {
+                    .details {
+                        .email{
+                            .emailBtn {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         fieldset {
             #username,
             #useremail,
@@ -377,25 +531,64 @@
             }
         }
     }
+    footer {
+        .wrapper {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
 
 @include mqMobileX {
-    .heroContainer {
-        .headline {
-            font-size: 1.4rem;
+    header {
+        // .navContainer {
+        //     .nav {
+        //         .navLinks {
+        //             // height: 79vh;
+        //         }
+        //     }
+        // }
+        .heroContainer {
+            // min-height: 85vh;
+            .social {
+                top: 36%;
+                ul li {
+                    i {
+                        font-size: 2.8rem;
+                        margin: 10px 5px;
+                    }
+                    .slider {
+                        top: 12px;
+                        left: 34px;
+                        height: 25px;
+                        p {
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+            .hero {
+                 padding-top: 270px;
+                .logo img {
+                    height: 90px;
+                    width: 90px;
+                }
+                .name h2 {
+                    font-size: 2.8rem;
+                    margin-top: 30px;
+                }
+                .scroll {
+                    .iconScroll {
+                        top: 90%;
+                    }
+                }
+            }
         }
     }
     .about {
-        .photo {
-            max-width: 79%;
-        }
-        .border {
-            top: 32%;
-        }
-        .aboutMe {
-            p {
-                font-size: 1.8rem;
-            }
+        .arrowUp {
+            right: 5px;
         }
     }
     .skills {
@@ -409,9 +602,6 @@
             "jq react" 
             "firebase github"
             "git accessible";
-            img {
-                width: 64%;
-            }
         }
     }
     .portfolio {
@@ -425,57 +615,97 @@
             p {
                 font-size: 1.8rem;
             }
+            .links a {
+                font-size: 1.5rem;
+                padding: 10px;
+            }
         }
     }
     .contact {
-        .contactMe {
-            .contactDetails a {
-                font-size: 1.6rem;
-            }
-        }
         .wrapper {
-            padding-left: 2%;
-        }
-        fieldset {
-            legend {
-                font-size: 2.2rem;
+            .contactMe {
+                .contactDetails {
+                    .details {
+                        .email{
+                            .emailBtn {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+            fieldset {
+                legend {
+                    font-size: 2.8rem;
+                }
             }
         }
     }
-    .mainFooter {
-        p {
-            text-align: center;
+    footer {
+        .wrapper p {
+            font-size: 1.3rem;
         }
     }
 }
 
 @include mqMobileSE {
-    nav.mobileNav {
-        label[for="toggleMenu"] {
-            top: 1%;
+    header {
+        .navContainer {
+            .nav {
+                .initial {
+                    font-size: 1rem;
+                }
+                .navLinks {
+                    // height: 89vh;
+                    li a {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         }
-        i {
-            font-size: 3rem;
-        }
-    }
-    .heroContainer {
-        .hero {
-            padding-top: 24%;
-        }
-        .logo img {
-            height: 90px;
-            width: 90px;
-        }
-        .name h1 {
-            font-size: 3.2rem;
-        }
-        .headline {
-            font-size: 1.2rem;
+        .heroContainer {
+            // min-height: 95vh;
+            .social {
+                top: 32%;
+            }
+            .hero {
+                padding-top: 150px;
+                .logo img {
+                    height: 60px;
+                    width: 60px;
+                }
+                .name h2 {
+                    font-size: 2.5rem;
+                    margin-top: 25px;
+                }
+                .headline {
+                    font-size: 1.5rem;
+                }
+                .scroll {
+                    .iconScroll,
+                    .iconScroll:before {
+                        left: 44.5%;
+                    }
+                    .iconScroll {
+                        top: 82%;
+                        width: 31px;
+                        height: 55px;
+                    }
+                    .iconScroll:before {
+                        margin-left: -2px;
+                    }
+                }
+            }
         }
     }
     .about {
         .title {
             font-size: 3.5rem;
+        }
+        .wrapper {
+            .aboutMe p {
+                font-size: 1.5rem;
+            }
         }
     }
     .skills {
@@ -483,35 +713,112 @@
             font-size: 3.5rem;
         }
         .logos {
-            img {
-                width: 76%;
+            .html,
+            .css,
+            .sass,
+            .mobile,
+            .vsCode,
+            .javaScript,
+            .jQuery,
+            .react,
+            .firebase,
+            .github,
+            .git,
+            .accessible {
+                i {
+                    font-size: 6.5rem;
+                }
+                img {
+                    width: 68px;
+                }
+                .responsive {
+                    width: 87px;
+                }
             }
         }
     }
     .portfolio {
         .title {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
-        .wrapper h2 {
-            font-size: 2.5rem;
+        .wrapper {
+            .yoda,
+            .market,
+            .amILate,
+            .textile {
+                padding: 35px 0;
+            }
+            .yodaInfo,
+            .marketInfo,
+            .amILateInfo,
+            .textileInfo {
+                border-bottom: 3px solid $primaryColor;
+                padding-bottom: 30px;
+            }
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: 5px;
+            }
+            ul li {
+                font-size: 1.6rem;
+            }
+            p {
+                font-size: 1.7rem;
+                margin-left: 5px;
+            }
+            .links {
+                a {
+                    font-size: 1.2rem;
+                    margin-right: 0;
+                }
+            }
         }
     }
     .contact {
-        .border {
-            top: 0.5%;
+        .wrapper {
+            .border {
+                top: 4%;
+            }
+            .contactMe {
+                margin-left: 5px;
+                h2 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                }
+                .contactDetails {
+                    .details {
+                        a {
+                            font-size: 1.4rem;
+                            i {
+                                font-size: 2rem;
+                            }
+                        }
+                        .resumeBtn,
+                        .emailBtn {
+                            padding: 10px 5px;
+                        }
+                    }
+                }
+            }
+            fieldset {
+                margin-left: 5px;
+                legend {
+                    font-size: 1.8rem;
+                }
+                form {
+                    input[type="submit"] {
+                        font-size: 1.4rem;
+                        padding: 8px;
+                    }
+                }
+            }
         }
-        .contactMe {
-            h2 {
-                font-size: 3.5rem;
-            }
-            .contactDetails a {
-                font-size: 1.4rem;
-            }
-        }
-        fieldset {
-            legend {
-                font-size: 2rem;
-            }
+    }
+    footer {
+        .wrapper p {
+            font-size: 1.29rem;
         }
     }
 }

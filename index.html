@@ -7,7 +7,7 @@
     <link rel='icon' href='./assets/Favicon.ico' type='image/x-icon'/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <script src="https://kit.fontawesome.com/fe0b8f1505.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Arimo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Nuno's Portfolio</title>
@@ -19,40 +19,77 @@
     <header>
         <div class="navContainer">
             <nav class="nav wrapper">
-                <ul>
-                    <li><a class="current hvr-wobble-vertical" href="index.html">Home</a></li>
-                    <li><a class="hvr-wobble-vertical" href="#about">About</a></li>
-                    <li><a class="hvr-wobble-vertical" href="#skills">Skills</a></li>
-                    <li><a class="hvr-wobble-vertical" href="#portfolio">Portfolio</a></li>
-                    <li><a class="hvr-wobble-vertical" href="#contact">Contact</a></li>
+                <div tabindex="0" class="initial">
+                    <h1>N</h1>
+                </div>
+                <ul class="navLinks" id="navLinks">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </nav>
         </div>
 
-        <nav class="mobileNav">
-            <label for="toggleMenu"><i class="fa fa-bars"></i> </label>
-            <input type="checkbox" id="toggleMenu" name="toggleMenu">
-            <ul class="navMobile">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <section id="home" class="heroContainer">
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/nunomacedo1/">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="visuallyhidden">LinkedIn</span>
+                        </a>
+                        <div class="slider">
+                            <p>LinkedIn</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/nuno_webdev">
+                            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                            <span class="visuallyhidden">Twitter</span>
+                        </a>
+                        <div class="slider">
+                            <p>Twitter</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://github.com/nunomtm">
+                            <i class="fab fa-github-square" aria-hidden="true"></i>
+                            <span class="visuallyhidden">Github</span>
+                        </a>
+                        <div class="slider">
+                            <p>Github</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@nunomtm">
+                            <i class="fab fa-medium" aria-hidden="true"></i>
+                            <span class="visuallyhidden">Medium</span>
+                        </a>
+                        <div class="slider">
+                            <p>Medium</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="heroContainer">
             <div class="hero wrapper">
                 <div class="logo">
-                    <img src="./logo/rotate_black_updated.svg" alt="Nuno's logo">
+                    <img src="./logo/Nuno's Logo.svg" alt="Nuno's logo">
                 </div>
                 <div class="name">
-                    <h1>Nuno Macedo</h1>
+                    <h2>Nuno Macedo</h2>
                 </div>
                 <h2 class="headline">
                     <!-- Had to add a tabindex because I could not change to a p tag -->
                     <a tabindex="-1" href="" class="typewrite" data-period="2000"
-                        data-type='[ "Front-End Web Developer.", "Creating something great!", "Websites." ]'>
+                        data-type='[ "Front-End Developer.", "Digital Marketer.", "Account Manager." ]'>
                         <span class="wrap"></span>
                     </a>
                 </h2>
@@ -60,31 +97,32 @@
                     <a href="#about" class='iconScroll'></a>
                 </div>
             </div>
-        </div>
+        </section>
     </header>
 
     <main>
         <section class="about" id="about">
+            <h2 tabindex="0" class="title"><span class="accent"> > </span> About</h2>
+            
             <div class="arrowUp">
                 <a href="#home"><i class="far fa-caret-square-up"></i>Top</a>
             </div>
-            <h2 class="title"> > <span class="accent">.</span> About</h2>
 
             <div class="wrapper">
                 <figure class="photo">
                     <img src="./assets/me.png" alt="portrate of Nuno Macedo">
                 </figure>
                 <div class="aboutMe">
-                    <p>Hi, I'm Nuno, a front-end developer recently graduated from Juno's College Bootcamp and based in Toronto.</p>
+                    <p>Hi, I'm Nuno, a front-end developer recently graduated from Juno's College Bootcamp and I am based in Toronto.</p>
                     <p>I have always wanted to become a web-developer and be a professional coder, so a few months ago I decided to turn this plan into a reality. When I could spend hours coding without even noticing, I was able to realise that I was made for this and I found a new passion.</p>
-                    <p>As a Marketing and Sales person I can now not only build cool websites, but also use my previous experience to bring awesome results to my clients.</p>
+                    <p>In addition to my technical skills, my 5+ years of experience in tech sales and digital marketing offer a natural ability to work with customers and partners on both sides of the business.</p>
                 </div>
                 <div class="border"></div>
             </div>
         </section>
 
         <section class="skills" id="skills">
-            <h2 class="title"> > <span class="accent">.</span> Skills</h2>
+            <h2 tabindex="0" class="title"><span class="accent"> > </span> Skills</h2>
 
             <ul class="logos wrapper">
                 <li class="html">
@@ -163,13 +201,14 @@
         </section>
 
         <section class="portfolio" id="portfolio">
-            <h2 class="title"> > <span class="accent">.</span> PORTFOLIO</h2>
+            <h2 tabindex="0" class="title"><span class="accent"> > </span> Portfolio</h2>
+
             <div class="wrapper">
                 <div class="yoda" data-aos="zoom-in-up">
                     <img src="./assets/Yoda Wisdom.png" alt="Screenshot of a mobile and notebook displaying the Yoda Wisdom website.">
                 </div>
                 <div class="yodaInfo" data-aos="zoom-in-up">
-                    <h2>Yoda Wisdom | <span>Solo</span></h2>
+                    <h2 tabindex="0">Yoda Wisdom | <span>Solo</span></h2>
                     <ul>
                         <li>HTML</li>
                         <li>SCSS</li>
@@ -187,7 +226,7 @@
                     <img src="./assets/Juno's Market.png" alt="Screenshot of a tablet and notebook displaying the Juno's Market website.">
                 </div>
                 <div class="marketInfo" data-aos="zoom-in-up">
-                    <h2>Juno's Market | <span>Solo</span></h2>
+                    <h2 tabindex="0">Juno's Market | <span>Solo</span></h2>
                     <ul>
                         <li>HTML</li>
                         <li>SCSS</li>
@@ -206,7 +245,7 @@
                         alt="Screenshot of a tablet and notebook displaying the Am I Gonna be late? website.">
                 </div>
                 <div class="amILateInfo" data-aos="zoom-in-up">
-                    <h2>Am I Gonna be Late? | <span>Pair Programming</span></h2>
+                    <h2 tabindex="0">Am I Gonna be Late? | <span>Pair Programming</span></h2>
                     <ul>
                         <li>HTML</li>
                         <li>SCSS</li>
@@ -225,10 +264,10 @@
                     <img src="./assets/Textiles.png" alt="Screenshot of a tablet, mobile and notebook displaying the Textile website.">
                 </div>
                 <div class="textileInfo" data-aos="zoom-in-up">
-                    <h2>Textiles | <span>Solo</span></h2>
+                    <h2 tabindex="0">Textiles | <span>Solo</span></h2>
                     <ul>
                         <li>HTML</li>
-                        <li>SCSS</li>
+                        <li>CSS</li>
                         <li>Responsive</li>
                     </ul>
                     <p class="info">Textiles is a responsive multipage PSD conversion website created using HTML and CSS.</p>
@@ -244,28 +283,25 @@
             <div class="wrapper">
                 <div class="border"></div>
                 <div class="contactMe">
-                    <h2>Contact me!</h2>
+                    <h2 tabindex="0">Contact me!</h2>
                     <p>If you are interested to go for a coffee and discuss work opportunities, you know what you need to do.</p>
                     <div class="contactDetails">
-                        <p>Scan QR Code for contact details</p>
-                        <p class="animated infinite bounce slow 5s arrow">☟</p>
-                        <img class="qrCode" src="./assets/qrCode.png" alt="image of a qrCode that links to Nuno's contact details.">
-                        <div class="resume">
-                            <a href="./download/Nuno Macedo - Resume.pdf" download>
-                            <i class="fas fa-download" aria-hidden="true"></i>
-                            résumé</a>
-                        </div> 
-                        <div class="email">
-                            <a href="mailto:nuno.webdeveloper@gmail.com">
-                                <i class="far fa-envelope"></i>
-                                nuno.webdeveloper@gmail.com
-                            </a>
+                        <p>Scan QR Code for my contact details</p>
+                        <div class="details">
+                            <p class="animated infinite bounce slow 5s arrow">☟</p>
+                            <img class="qrCode" src="./assets/qrCode.png" alt="image of a qrCode that links to Nuno's contact details.">
+                            <div class="resume">
+                                <a class="resumeBtn" href="./download/Nuno Macedo - Resume.pdf" download><i class="fas fa-download" aria-hidden="true"></i> resume</a>
+                            </div> 
+                            <div class="email">
+                                <a class="emailBtn" href="mailto:nuno.webdeveloper@gmail.com"><i class="far fa-envelope"></i> nuno.webdeveloper@gmail.com</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <fieldset>
-                    <legend>You can write a message to me</legend>
+                    <legend>You can write me a message too</legend>
     
                     <form action="http://www.focuspocus.io/magic/9e3fdfda50a10bcc34317288f47b37ea" method="POST" autocomplete="off">
                         <label class="visually-hidden" for="username">Your name</label>
@@ -276,7 +312,7 @@
     
                         <label class="visually-hidden" for="message">Your message</label>
                         <textarea name="message" id="message" placeholder="Your message" required></textarea>
-                    
+                        
                         <input type="submit" value="Send">
                     </form>
                 </fieldset>
@@ -285,37 +321,8 @@
     </main>
 
     <footer>
-        <div class="mainFooter wrapper">
+        <div class="wrapper">
             <p><span class="white">Copyright &copy;</span> Nuno Macedo Web Developer</p>
-        
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/nunomacedo1/">
-                            <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            <span class="visuallyhidden">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/nuno_webdev">
-                            <i class="fab fa-twitter-square" aria-hidden="true"></i>
-                            <span class="visuallyhidden">Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/nunomtm">
-                            <i class="fab fa-github-square" aria-hidden="true"></i>
-                            <span class="visuallyhidden">Github</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://medium.com/@nunomtm">
-                            <i class="fab fa-medium" aria-hidden="true"></i>
-                            <span class="visuallyhidden">Medium</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </footer>
 

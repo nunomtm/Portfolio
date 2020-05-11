@@ -1,18 +1,19 @@
 .skills {
     background: $baseBackgroundColor;
     position: relative;
+    min-height: 94vh;
     .title {
         font-family: $secondaryFont;
-        font-size: 5rem;
+        font-size: 6rem;
         font-weight: bold;
-        color: $primaryFontColor;
         text-align: center;
         text-transform: uppercase;
-        padding-top: 3%;
-    }
-    .accent {
-        font-size: 5rem;
-        color: $primaryColor;
+        color: $primaryFontColor;
+        padding-top: 80px;
+        .accent {
+            font-size: 5.5rem;
+            color: $primaryColor;
+        }
     }
     .logos {
         display: grid;
@@ -22,7 +23,7 @@
         "html css sass mobile vsCode js"
         "jq react firebase github git accessible";
         list-style: none;
-        padding-left: 0%;
+        padding-top: 50px;
         .html {
             grid-area: html;
         }
@@ -73,34 +74,33 @@
         .accessible {
             display: flex;
             flex-direction: column;
-            margin: 15% 0;
-            padding: 15%;
-        }
-        p {
-            font-size: 1.8rem;
-            color: $primaryFontColor;
-            text-decoration: none;
-            text-align: center; 
-            margin-top: 10px;
-        }
-        a {
-            text-align: center;
-        }
-        i {
-            font-size: 7rem;
-            color: $primaryColor;
-        }
-        img {
-            width: 50%;
-            margin: 0 auto;
-            margin-bottom: 6%;
-        }
-        .responsive {
-            width: 100px;
-        }
-        .devicon-git-plain path {
-            fill: $primaryColor;
-            list-style: none;
+            margin: 100px 0;
+            p {
+                font-size: 2rem;
+                color: $primaryFontColor;
+                text-decoration: none;
+                text-align: center; 
+                margin-top: 10px;
+            }
+            a {
+                text-align: center;
+            }
+            i {
+                font-size: 9rem;
+                color: $primaryColor;
+            }
+            img {
+                width: 93px;
+                margin: 0 auto;
+            }
+            .responsive {
+                width: 125px;
+                margin-bottom: 11px;
+            }
+            .devicon-git-plain path {
+                fill: $primaryColor;
+                list-style: none;
+            }
         }
     }
 }

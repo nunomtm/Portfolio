@@ -1,145 +1,160 @@
 .contact {
-    background: $baseBackgroundColor;
-    padding: 5% 0;
     position: relative;
-    .accent {
-        font-size: 3rem;
-        color: $primaryColor;
-    }
-    .menu{
-        font-family: $secondaryFont;
-        position: absolute;
-        transform: rotate(270deg);
-        transform-origin: left top 0;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        color: $primaryFontColor;
-        top: 31%;
-    }
+    min-height: 89vh;
+    background: $baseBackgroundColor;
+    padding-top: 80px;
     .wrapper {
         display: flex;
         justify-content: space-around;
-    }
-    .border {
-        position: absolute;
-        border: 6px solid $primaryColor;
-        height: 50%;
-        width: 30%;
-        top: 7%;
-        left: 10%;
-        z-index: 0;
-    }
-    .contactMe {
-        width: 45%;
-        z-index: 1;
-        background-color: $baseBackgroundColor;
-        h2 {
-            font-size: 4rem;
-            letter-spacing: 1.2px;
-            color: $primaryFontColor;
-            margin: 0;
+        padding-top: 20px;
+        .border {
+            position: absolute;
+            border: 6px solid $primaryColor;
+            border-radius: 3px;
+            height: 45%;
+            width: 25%;
+            top: 6%;
+            left: 16%;
+            z-index: 0;
         }
-        p {
-            font-size: 1.8rem;
-            color: $primaryFontColor;
-        }
-        .contactDetails {
-            i {
-                font-size: 3rem;
-                color: $primaryColor;
-                padding: 3% 0;
-                transition: 0.35s;
-                &:hover,
-                &:focus {
-                    transform: scale(1.2);
-                    color: $primaryFontColor;
-                }
-            }
-            a {
-                font-size: 1.8rem;
-                text-decoration: none;
+        .contactMe {
+            background-color: $baseBackgroundColor;
+            width: 48%;
+            padding-top: 10px;
+            z-index: 1;
+            h2 {
+                font-size: 5rem;
+                letter-spacing: 1.2px;
                 color: $primaryFontColor;
-                margin-left: 2%;
+                margin: 0;
             }
             p {
-                margin-top: 5%;
-            }
-            .arrow {
+                font-size: 2rem;
                 color: $primaryFontColor;
-                font-size: 3rem;
-                margin-left: 25%;
+                line-height: 2;
             }
-            .qrCode {
-                margin-left: 10%;
-                border: 3px solid $primaryColor;
+            .contactDetails {
+                p {
+                    line-height: 2;
+                    margin-top: 20px;
+                }
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .arrow {
+                        font-size: 3rem;
+                        color: $primaryFontColor;
+                        margin-left: 90px;
+                    }
+                    .qrCode {
+                        border: 3px solid transparent;
+                        border-radius: 3px;
+                        transition: all 0.35s ease-in-out;
+                        &:hover,
+                        &:focus {
+                            border: 3px solid $primaryColor;
+                            border-radius: 3px;
+                            box-shadow: 6px 6px 1px rgba(white, 0.1);
+                        }
+                    }
+                    a {
+                        font-size: 2rem;
+                        text-decoration: none;
+                        color: $primaryFontColor;
+                        i {
+                            font-size: 2.5rem;
+                            color: $primaryFontColor;
+                            padding: 20px 0;
+                            transition: all 0.35s ease-in-out;
+                        }
+                    }
+                    .resume,
+                    .email {
+                        padding: 15px 0;
+                    }
+                    .resumeBtn,
+                    .emailBtn {
+                        border: 2px solid $primaryColor;
+                        border-radius: 3px;
+                        background: $primaryColor;
+                        padding: 10px 25px;
+                        transition: all 0.35s ease-in-out;
+                        &:hover,
+                        &:focus {
+                            background-color: $secondaryColor;
+                            box-shadow: 6px 6px 1px rgba(white, 0.1);
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
-            .resume {
-                margin-left: 18%;
-            }
         }
-    }
-    fieldset {
-        border: none;
-        padding: 0;
-        width: 45%;
-        legend {
-            font-size: 3rem;
-            font-weight: bold;
-            color: $primaryFontColor;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            padding: 5% 0;
-        }
-        #username,
-        #useremail,
-        #message {
-            font-size: 1.4rem;
-            background: transparent;
-            color: $primaryFontColor;
-            margin: 3% 0;
-            padding: 2% 2%;
-            transition: 0.35s;
-            &:hover,
-            &:focus {
-                border: 2px solid $primaryColor;
-                box-shadow: 6px 6px 1px rgba(white, 0.1);
-            }
-        }
-        #message {
-            height: 150px;
-        }
-        input[type="submit"] {
-            background-color: $primaryColor;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: $primaryFontColor;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
+        fieldset {
+            width: 48%;
             border: none;
-            padding: 2%;
-            width: 25%;
-            transition: 0.35s;
-            &:hover {
-                background-color: $secondaryColor;
-                box-shadow: 6px 6px 1px rgba(white, 0.1);
-                cursor: pointer;
+            padding: 0;
+            padding-top: 30px;
+            legend {
+                font-size: 3.5rem;
+                font-weight: bold;
+                color: $primaryFontColor;
+                padding-top: 50px;
             }
-            &:focus {
-                border: 1px solid $primaryColor;
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 0;
+                #username,
+                #useremail,
+                #message {
+                    font-size: 1.6rem;
+                    color: $primaryFontColor;
+                    background: transparent;
+                    border-radius: 3px;
+                    margin: 15px 0;
+                    padding: 15px;
+                    transition: all 0.35s ease-in-out;
+                    &:hover,
+                    &:focus {
+                        border: 2px solid $primaryColor;
+                        box-shadow: 6px 6px 1px rgba(white, 0.1);
+                    }
+                }
+                #message {
+                    height: 160px;
+                }
+                input[type="submit"] {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    color: $primaryFontColor;
+                    background-color: $primaryColor;
+                    border: 2px solid $primaryColor;
+                    border-radius: 3px;
+                    margin: 15px 0;
+                    padding: 10px;
+                    width: 120px;
+                    transition: all 0.35s ease-in-out;
+                    &:hover,
+                    &:focus {
+                        background-color: $secondaryColor;
+                        box-shadow: 6px 6px 1px rgba(white, 0.1);
+                        cursor: pointer;
+                    }
+                }
+                /* To hide the labels from the form */
+                .visually-hidden:not(:focus):not(:active) { 
+                    position: absolute;
+                    height: 1px; 
+                    width: 1px;
+                    overflow: hidden;
+                    clip: rect(1px 1px 1px 1px);
+                    clip: rect(1px, 1px, 1px, 1px);
+                    white-space: nowrap;
+                }
             }
         }
     }
-}
-
-/* To hide the labels from the form */
-.visually-hidden:not(:focus):not(:active) { 
-    position: absolute;
-    height: 1px; 
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
 }

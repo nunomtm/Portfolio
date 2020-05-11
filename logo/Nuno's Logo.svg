@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="106" height="113" viewBox="0 0 106 113">
   <g fill="none" fill-rule="evenodd" transform="rotate(45 75.075 42.678)">
-    <line x1="67.5" x2="67.5" y1="1" y2="135" stroke="#ee0149" stroke-linecap="square" stroke-width="2"/>
-    <line x1="134" y1="67.5" y2="67.5" stroke="#ee0149" stroke-linecap="square" stroke-width="2"/>
+    <line x1="67.5" x2="67.5" y1="1" y2="135" stroke="#e40b0b" stroke-linecap="square" stroke-width="2"/>
+    <line x1="134" y1="67.5" y2="67.5" stroke="#e40b0b" stroke-linecap="square" stroke-width="2"/>
     <text fill="#fff" font-family="Arimo-Regular, Arimo" font-size="60" transform="rotate(-45 37.42 92.81)">
       <tspan x="20.42" y="113.309">n</tspan>
     </text>
