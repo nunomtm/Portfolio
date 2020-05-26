@@ -284,6 +284,10 @@ a {
 /* - */
 /* Header Styles Start Here */
 header {
+  background-image: url(../assets/header.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: inherit;
   /* Nav Styles Start Here */
   /* Hero Container Styles Start Here */
   /* Hero Container Styles Ends Here */
@@ -1682,9 +1686,6 @@ footer .wrapper .white {
 }
 
 @media (max-width: 850px) {
-  header {
-    background-image: url(../assets/headerBackgroundMobile.png);
-  }
   header .navContainer .nav .navLinks {
     position: absolute;
     top: 6vh;
@@ -2202,14 +2203,6 @@ footer .wrapper .white {
 }
 
 /* Header Styles Start Here */
-header {
-  background-image: url(../assets/headerBackgroung.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 /* Nav Styles Start Here */
 .navContainer {
   background-color: rgba(0, 0, 0, 0.9);

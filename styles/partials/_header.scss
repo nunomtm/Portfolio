@@ -1,6 +1,9 @@
 /* Header Styles Start Here */
 header {
-    
+    background-image: url(../assets/header.jpg); // Photo by Matthew Henry on Unsplash
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: inherit;
 
     /* Nav Styles Start Here */
     .navContainer {
