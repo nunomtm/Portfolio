@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel='icon' href='./assets/Favicon.ico' type='image/x-icon'/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel='icon' href='./assets/Favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/fe0b8f1505.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Arimo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Nuno's Portfolio</title>
 </head>
+
 <body>
     <!-- SkipLink for accessibility -->
     <a href="header" class="skipLink">Skip to main content.</a>
@@ -46,7 +48,7 @@
                             <span class="visuallyhidden">LinkedIn</span>
                         </a>
                         <div class="slider">
-                            <p>LinkedIn</p>
+                            <p class="linkedin">LinkedIn</p>
                         </div>
                     </li>
                     <li>
@@ -55,7 +57,7 @@
                             <span class="visuallyhidden">Twitter</span>
                         </a>
                         <div class="slider">
-                            <p>Twitter</p>
+                            <p class="twitter">Twitter</p>
                         </div>
                     </li>
                     <li>
@@ -64,7 +66,7 @@
                             <span class="visuallyhidden">Github</span>
                         </a>
                         <div class="slider">
-                            <p>Github</p>
+                            <p class="github">Github</p>
                         </div>
                     </li>
                     <li>
@@ -73,7 +75,7 @@
                             <span class="visuallyhidden">Medium</span>
                         </a>
                         <div class="slider">
-                            <p>Medium</p>
+                            <p class="medium">Medium</p>
                         </div>
                     </li>
                 </ul>
@@ -103,9 +105,9 @@
     <main>
         <section class="about" id="about">
             <h2 tabindex="0" class="title"><span class="accent"> > </span> About</h2>
-            
+
             <div class="arrowUp">
-                <a href="#home"><i class="far fa-caret-square-up"></i>Top</a>
+                <a href="#home"><i class="fas fa-sort-up"></i>Top</a>
             </div>
 
             <div class="wrapper">
@@ -113,9 +115,13 @@
                     <img src="./assets/me.png" alt="portrate of Nuno Macedo">
                 </figure>
                 <div class="aboutMe">
-                    <p>Hi, I'm Nuno, a front-end developer recently graduated from Juno's College Bootcamp and I am based in Toronto.</p>
-                    <p>I have always wanted to become a web-developer and be a professional coder, so a few months ago I decided to turn this plan into a reality. When I could spend hours coding without even noticing, I was able to realise that I was made for this and I found a new passion.</p>
-                    <p>In addition to my technical skills, my 5+ years of experience in tech sales and digital marketing offer a natural ability to work with customers and partners on both sides of the business.</p>
+                    <p>Hi, I'm Nuno, a front-end developer recently graduated from Juno's College Bootcamp and I am
+                        based in Toronto.</p>
+                    <p>I have always wanted to become a web-developer and be a professional coder, so a few months ago I
+                        decided to turn this plan into a reality. When I could spend hours coding without even noticing,
+                        I was able to realise that I was made for this and I found a new passion.</p>
+                    <p>In addition to my technical skills, my 5+ years of experience in tech sales and digital marketing
+                        offer a natural ability to work with customers and partners on both sides of the business.</p>
                 </div>
                 <div class="border"></div>
             </div>
@@ -126,37 +132,44 @@
 
             <ul class="logos wrapper">
                 <li class="html">
-                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" aria-labelledby="html">
+                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+                        target="_blank" aria-labelledby="html">
                         <i class="hvr-icon fab fa-html5"></i>
                     </a>
                     <p id="html">HTML5</p>
                 </li>
                 <li class="css">
-                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" aria-labelledby="css3">
+                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                        target="_blank" aria-labelledby="css3">
                         <i class="hvr-icon fab fa-css3-alt"></i>
                     </a>
                     <p id="css3">CSS3</p>
                 </li>
                 <li class="sass">
-                    <a class="hvr-icon-pulse-grow" href="https://sass-lang.com/guide" target="_blank" aria-labelledby="sass">
+                    <a class="hvr-icon-pulse-grow" href="https://sass-lang.com/guide" target="_blank"
+                        aria-labelledby="sass">
                         <i class="hvr-icon fab fa-sass"></i>
                     </a>
                     <p id="sass">Sass</p>
                 </li>
                 <li class="mobile">
-                    <a class="hvr-icon-pulse-grow" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" aria-labelledby="design">
+                    <a class="hvr-icon-pulse-grow"
+                        href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+                        target="_blank" aria-labelledby="design">
                         <img class="responsive hvr-icon" src="./assets/responsive.png" alt="Responsive design icon.">
                     </a>
                     <p id="design">Responsive Design</p>
                 </li>
                 <li class="vsCode">
-                    <a class="hvr-icon-pulse-grow" href="https://code.visualstudio.com/" target="_blank" aria-labelledby="vscode">
+                    <a class="hvr-icon-pulse-grow" href="https://code.visualstudio.com/" target="_blank"
+                        aria-labelledby="vscode">
                         <img class="hvr-icon" src="./assets/VSCodeIcon.png" alt="VSCode icon.">
                     </a>
                     <p id="vscode">VS Code</p>
                 </li>
                 <li class="javaScript">
-                    <a class="hvr-icon-pulse-grow" href="https://www.javascript.com/" target="_blank" aria-labelledby="js">
+                    <a class="hvr-icon-pulse-grow" href="https://www.javascript.com/" target="_blank"
+                        aria-labelledby="js">
                         <i class="hvr-icon fab fa-js-square"></i>
                     </a>
                     <p id="js">JavaScript</p>
@@ -174,7 +187,8 @@
                     <p id="react">React</p>
                 </li>
                 <li class="firebase">
-                    <a class="hvr-icon-pulse-grow" href="https://firebase.google.com/" target="_blank" aria-labelledby="firebase">
+                    <a class="hvr-icon-pulse-grow" href="https://firebase.google.com/" target="_blank"
+                        aria-labelledby="firebase">
                         <img class="hvr-icon" src="./assets/FirebaseIcon.png" alt="Firebase logo">
                     </a>
                     <p id="firebase">Firebase</p>
@@ -187,14 +201,15 @@
                 </li>
                 <li class="git">
                     <a class="hvr-icon-pulse-grow" href="https://git-scm.com/" target="_blank" aria-labelledby="git">
-                        <i class="fab fa-git-alt"></i>
+                        <i class="hvr-icon fab fa-git-alt"></i>
                     </a>
                     <p id="git">Git</p>
                 </li>
                 <li class="accessible">
-                    <a class="hvr-icon-pulse-grow" href="https://www.w3.org/standards/webdesign/accessibility" target="_blank" aria-labelledby="accessible">
+                    <a class="hvr-icon-pulse-grow" href="https://www.w3.org/standards/webdesign/accessibility"
+                        target="_blank" aria-labelledby="accessible">
                         <i class="hvr-icon fas fa-universal-access"></i>
-                    </a>    
+                    </a>
                     <p id="accessible">Accessibility</p>
                 </li>
             </ul>
@@ -205,7 +220,8 @@
 
             <div class="wrapper">
                 <div class="yoda" data-aos="zoom-in-up">
-                    <img src="./assets/Yoda Wisdom.png" alt="Screenshot of a mobile and notebook displaying the Yoda Wisdom website.">
+                    <img src="./assets/Yoda Wisdom.png"
+                        alt="Screenshot of a mobile and notebook displaying the Yoda Wisdom website.">
                 </div>
                 <div class="yodaInfo" data-aos="zoom-in-up">
                     <h2 tabindex="0">Yoda Wisdom | <span>Solo</span></h2>
@@ -216,14 +232,18 @@
                         <li>JavaScript</li>
                         <li>Responsive</li>
                     </ul>
-                    <p class="info">The Yoda Wisdom app is a fun and interactive way to get some of Master Yoda's wisdom based on which side you select, rebel or dark and the color of the saber, blue or red.</p>
+                    <p class="info">The Yoda Wisdom app is a fun and interactive way to get some of Master Yoda's wisdom
+                        based on which side you select, rebel or dark and the color of the saber, blue or red.</p>
                     <div class="links">
-                        <a class="button" href="https://nunomtm.github.io/NunoMacedoProject3/" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
-                        <a class="button" href="https://github.com/nunomtm/NunoMacedoProject3" target="_blank">View GitHub <i class="fab fa-github"></i></a>
+                        <a class="button" href="https://nunomtm.github.io/NunoMacedoProject3/" target="_blank">View Live
+                            <i class="fas fa-external-link-alt"></i></a>
+                        <a class="button" href="https://github.com/nunomtm/NunoMacedoProject3" target="_blank">View
+                            GitHub <i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="market" data-aos="zoom-in-up">
-                    <img src="./assets/Juno's Market.png" alt="Screenshot of a tablet and notebook displaying the Juno's Market website.">
+                    <img src="./assets/Juno's Market.png"
+                        alt="Screenshot of a tablet and notebook displaying the Juno's Market website.">
                 </div>
                 <div class="marketInfo" data-aos="zoom-in-up">
                     <h2 tabindex="0">Juno's Market | <span>Solo</span></h2>
@@ -234,10 +254,14 @@
                         <li>Firebase</li>
                         <li>Responsive</li>
                     </ul>
-                    <p class="info">Juno's Market is a mix of grocery shop and a shopping list. The app helps you to keep track of the items you will need to buy next time you go grocery shopping, so you don't miss anything.</p>
+                    <p class="info">Juno's Market is a mix of grocery shop and a shopping list. The app helps you to
+                        keep track of the items you will need to buy next time you go grocery shopping, so you don't
+                        miss anything.</p>
                     <div class="links">
-                        <a class="button" href="https://nunomtm.github.io/NunoMacedoProject5/" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
-                        <a class="button" href="https://github.com/nunomtm/NunoMacedoProject5" target="_blank">View GitHub <i class="fab fa-github"></i></a>
+                        <a class="button" href="https://nunomtm.github.io/NunoMacedoProject5/" target="_blank">View Live
+                            <i class="fas fa-external-link-alt"></i></a>
+                        <a class="button" href="https://github.com/nunomtm/NunoMacedoProject5" target="_blank">View
+                            GitHub <i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="amILate" data-aos="zoom-in-up">
@@ -249,19 +273,24 @@
                     <ul>
                         <li>HTML</li>
                         <li>SCSS</li>
-                        <li>API</li>
+                        <li>Rest API</li>
                         <li>jQuery</li>
                         <li>JavaScript</li>
                         <li>Responsive</li>
                     </ul>
-                    <p class="info">Am I Gonna be Late was created to help you see if your daily commute will take the same time as usual or you will be running late, this is based on the weather and the TTC running on schedule.</p>
+                    <p class="info">Am I Gonna be Late was created to help you see if your daily commute will take the
+                        same time as usual or you will be running late, this is based on the weather and the TTC running
+                        on schedule.</p>
                     <div class="links">
-                        <a class="button" href="https://lynseyandnuno.github.io/lynseyAndNunoProject4/" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
-                        <a class="button" href="https://github.com/lynseyAndNuno/lynseyAndNunoProject4" target="_blank">View GitHub <i class="fab fa-github"></i></a>
+                        <a class="button" href="https://lynseyandnuno.github.io/lynseyAndNunoProject4/"
+                            target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
+                        <a class="button" href="https://github.com/lynseyAndNuno/lynseyAndNunoProject4"
+                            target="_blank">View GitHub <i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="textile" data-aos="zoom-in-up">
-                    <img src="./assets/Textiles.png" alt="Screenshot of a tablet, mobile and notebook displaying the Textile website.">
+                    <img src="./assets/Textiles.png"
+                        alt="Screenshot of a tablet, mobile and notebook displaying the Textile website.">
                 </div>
                 <div class="textileInfo" data-aos="zoom-in-up">
                     <h2 tabindex="0">Textiles | <span>Solo</span></h2>
@@ -270,10 +299,13 @@
                         <li>CSS</li>
                         <li>Responsive</li>
                     </ul>
-                    <p class="info">Textiles is a responsive multipage PSD conversion website created using HTML and CSS.</p>
+                    <p class="info">Textiles is a responsive multipage PSD conversion website created using HTML and
+                        CSS.</p>
                     <div class="links">
-                        <a class="button" href="https://nunomtm.github.io/NunoMacedoProject2/" target="_blank">View Live <i class="fas fa-external-link-alt"></i></a>
-                        <a class="button" href="https://github.com/nunomtm/NunoMacedoProject2" target="_blank">View GitHub <i class="fab fa-github"></i></a>
+                        <a class="button" href="https://nunomtm.github.io/NunoMacedoProject2/" target="_blank">View Live
+                            <i class="fas fa-external-link-alt"></i></a>
+                        <a class="button" href="https://github.com/nunomtm/NunoMacedoProject2" target="_blank">View
+                            GitHub <i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -284,17 +316,21 @@
                 <div class="border"></div>
                 <div class="contactMe">
                     <h2 tabindex="0">Contact me!</h2>
-                    <p>If you are interested to go for a coffee and discuss work opportunities, you know what you need to do.</p>
+                    <p>If you are interested to go for a coffee and discuss work opportunities, you know what you need
+                        to do.</p>
                     <div class="contactDetails">
                         <p>Scan QR Code for my contact details</p>
                         <div class="details">
                             <p class="animated infinite bounce slow 5s arrow">☟</p>
-                            <img class="qrCode" src="./assets/qrCode.png" alt="image of a qrCode that links to Nuno's contact details.">
+                            <img class="qrCode" src="./assets/qrCode.png"
+                                alt="image of a qrCode that links to Nuno's contact details.">
                             <div class="resume">
-                                <a class="resumeBtn" href="./download/Nuno Macedo - Resume.pdf" download><i class="fas fa-download" aria-hidden="true"></i> resume</a>
-                            </div> 
+                                <a class="resumeBtn" href="./download/Nuno Macedo - Resume.pdf" download><i
+                                        class="fas fa-download" aria-hidden="true"></i> resume</a>
+                            </div>
                             <div class="email">
-                                <a class="emailBtn" href="mailto:nuno.webdeveloper@gmail.com"><i class="far fa-envelope"></i> nuno.webdeveloper@gmail.com</a>
+                                <a class="emailBtn" href="mailto:nuno.webdeveloper@gmail.com"><i
+                                        class="far fa-envelope"></i> nuno.webdeveloper@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -302,20 +338,50 @@
 
                 <fieldset>
                     <legend>You can write me a message too</legend>
-    
-                    <form action="http://www.focuspocus.io/magic/9e3fdfda50a10bcc34317288f47b37ea" method="POST" autocomplete="off">
+
+                    <form action="http://www.focuspocus.io/magic/9e3fdfda50a10bcc34317288f47b37ea" method="POST"
+                        autocomplete="off">
                         <label class="visually-hidden" for="username">Your name</label>
                         <input type="text" name="username" id="username" placeholder="Your name" required>
-                    
+
                         <label class="visually-hidden" for="useremail">Your e-mail</label>
                         <input type="email" name="useremail" id="useremail" placeholder="Your e-mail" required>
-    
+
                         <label class="visually-hidden" for="message">Your message</label>
                         <textarea name="message" id="message" placeholder="Your message" required></textarea>
-                        
+
                         <input type="submit" value="Send">
                     </form>
+                    <div class="socialMedia">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/nunomacedo1/">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                    <span class="visuallyhidden">LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/nuno_webdev">
+                                    <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                                    <span class="visuallyhidden">Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/nunomtm">
+                                    <i class="fab fa-github-square" aria-hidden="true"></i>
+                                    <span class="visuallyhidden">Github</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@nunomtm">
+                                    <i class="fab fa-medium" aria-hidden="true"></i>
+                                    <span class="visuallyhidden">Medium</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </fieldset>
+
             </div>
         </section>
     </main>
@@ -331,4 +397,5 @@
     <script src="./script.js"></script>
 
 </body>
+
 </html>

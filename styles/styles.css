@@ -284,11 +284,8 @@ a {
 /* - */
 /* Header Styles Start Here */
 header {
-  background-image: url(../assets/headerBackgroung.jpg);
+  background-image: url(../assets/headerBackgroung.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
   /* Nav Styles Start Here */
   /* Hero Container Styles Start Here */
   /* Hero Container Styles Ends Here */
@@ -436,22 +433,44 @@ header .heroContainer .social ul {
 header .heroContainer .social ul li {
   position: relative;
   text-decoration: none;
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
+}
+
+header .heroContainer .social ul li:hover .fa-linkedin {
+  color: #0072b1;
+}
+
+header .heroContainer .social ul li:hover .fa-twitter-square {
+  color: #1da1f2;
+}
+
+header .heroContainer .social ul li:hover .fa-github-square {
+  color: #24292e;
+}
+
+header .heroContainer .social ul li:hover .fa-medium {
+  color: #000;
 }
 
 header .heroContainer .social ul li i {
   font-size: 3.2rem;
   color: #e40b0b;
+  background-color: #fff;
+  border-radius: 4px;
+  line-height: 29px;
   margin: 15px;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 header .heroContainer .social ul li .slider {
   content: "";
   position: absolute;
-  top: 17px;
+  top: 15px;
   left: 48px;
   width: 0px;
   height: 29px;
-  background: #e40b0b;
   border-radius: 3px;
   -webkit-transition: all 0.5s 0.3s ease;
   transition: all 0.5s 0.3s ease;
@@ -473,6 +492,26 @@ header .heroContainer .social ul li:hover .slider {
   width: 140px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+header .heroContainer .social ul li:hover .slider .linkedin {
+  background: #0072b1;
+  border-radius: 3px;
+}
+
+header .heroContainer .social ul li:hover .slider .twitter {
+  background: #1da1f2;
+  border-radius: 3px;
+}
+
+header .heroContainer .social ul li:hover .slider .github {
+  background: #24292e;
+  border-radius: 3px;
+}
+
+header .heroContainer .social ul li:hover .slider .medium {
+  background: #000;
+  border-radius: 3px;
 }
 
 header .heroContainer .social ul li:hover .slider p {
@@ -621,7 +660,11 @@ header .heroContainer .hero .scroll .iconScroll:before {
   right: 20px;
   bottom: 30px;
   display: none;
-  z-index: 1;
+  z-index: 2;
+  background: #ababab;
+  border: 2px solid #e40b0b;
+  border-radius: 3px;
+  padding: 3px;
 }
 
 .about .arrowUp a {
@@ -646,6 +689,8 @@ header .heroContainer .hero .scroll .iconScroll:before {
 .about .arrowUp i {
   font-size: 3.5rem;
   color: #e40b0b;
+  margin-top: -3px;
+  margin-bottom: -20px;
 }
 
 .about .wrapper {
@@ -660,12 +705,9 @@ header .heroContainer .hero .scroll .iconScroll:before {
 }
 
 .about .wrapper .photo {
-  max-width: 50%;
+  max-width: 45%;
   margin: 0;
-}
-
-.about .wrapper .photo img {
-  width: 90%;
+  padding: 10px;
 }
 
 .about .wrapper .aboutMe {
@@ -688,8 +730,8 @@ header .heroContainer .hero .scroll .iconScroll:before {
   border-radius: 3px;
   height: 45%;
   width: 25%;
-  top: 25%;
-  right: 15%;
+  top: 27%;
+  right: 18%;
   z-index: -1;
 }
 
@@ -1126,7 +1168,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
 
 .contact {
   position: relative;
-  min-height: 89vh;
+  min-height: 89.1vh;
   background: #161616;
   padding-top: 80px;
 }
@@ -1137,6 +1179,8 @@ header .heroContainer .hero .scroll .iconScroll:before {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 20px;
 }
 
@@ -1146,7 +1190,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
   border-radius: 3px;
   height: 45%;
   width: 25%;
-  top: 6%;
+  top: 9%;
   left: 16%;
   z-index: 0;
 }
@@ -1300,7 +1344,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
   height: 160px;
 }
 
-.contact .wrapper fieldset form input[type="submit"] {
+.contact .wrapper fieldset form input[type='submit'] {
   font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -1316,7 +1360,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
   transition: all 0.35s ease-in-out;
 }
 
-.contact .wrapper fieldset form input[type="submit"]:hover, .contact .wrapper fieldset form input[type="submit"]:focus {
+.contact .wrapper fieldset form input[type='submit']:hover, .contact .wrapper fieldset form input[type='submit']:focus {
   background-color: #000;
   -webkit-box-shadow: 6px 6px 1px rgba(255, 255, 255, 0.1);
           box-shadow: 6px 6px 1px rgba(255, 255, 255, 0.1);
@@ -1331,6 +1375,41 @@ header .heroContainer .hero .scroll .iconScroll:before {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+}
+
+.contact .wrapper .socialMedia {
+  display: none;
+  width: 100%;
+}
+
+.contact .wrapper .socialMedia ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding-top: 55px;
+}
+
+.contact .wrapper .socialMedia ul li {
+  text-decoration: none;
+  margin: 0 60px;
+}
+
+.contact .wrapper .socialMedia ul li i {
+  font-size: 4.5rem;
+  color: #e40b0b;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 30px;
+  width: 35px;
 }
 
 /* Footer Styles Starts Here */
@@ -1388,24 +1467,16 @@ footer .wrapper .white {
   .about .wrapper {
     margin-top: 20px;
   }
-  .about .wrapper .photo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .about .wrapper .photo img {
-    width: 75%;
+    width: 80%;
   }
   .about .wrapper .aboutMe p {
     font-size: 2rem;
   }
   .about .wrapper .border {
     width: 30%;
-    top: 26%;
-    right: 8%;
+    top: 24%;
+    right: 11%;
   }
   .skills .logos {
     padding-top: 40px;
@@ -1538,12 +1609,18 @@ footer .wrapper .white {
   header .heroContainer .hero {
     padding-top: 200px;
   }
+  header .heroContainer .hero .scroll .iconScroll {
+    top: 85%;
+  }
+  .about .wrapper .photo img {
+    width: 90%;
+  }
   .about .wrapper .aboutMe {
     margin-top: 25px;
   }
   .about .wrapper .border {
     top: 41%;
-    height: 50%;
+    height: 52%;
   }
   .portfolio .wrapper ul {
     -ms-flex-wrap: wrap;
@@ -1586,7 +1663,11 @@ footer .wrapper .white {
             flex-direction: column;
   }
   .about .wrapper .aboutMe {
-    margin-bottom: 30px;
+    max-width: 90%;
+  }
+  .about .wrapper .border {
+    top: 59%;
+    height: 30%;
   }
   .portfolio .wrapper .yoda,
   .portfolio .wrapper .market,
@@ -1602,7 +1683,7 @@ footer .wrapper .white {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   header .navContainer .nav .navLinks {
     position: absolute;
     top: 6vh;
@@ -1614,13 +1695,15 @@ footer .wrapper .white {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100vh;
+    height: 94vh;
     width: 50%;
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 60px 0;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.5s ease-in;
@@ -1630,6 +1713,7 @@ footer .wrapper .white {
     z-index: 2;
   }
   header .navContainer .nav .navLinks li {
+    padding: 60px 0;
     opacity: 0;
   }
   header .navContainer .nav .navLinks a {
@@ -1678,16 +1762,23 @@ footer .wrapper .white {
     }
   }
   header .heroContainer .social {
-    top: 24%;
+    display: none;
+  }
+  header .heroContainer .hero {
+    padding-top: 310px;
   }
   header .heroContainer .hero .name {
     font-size: 4rem;
   }
-  header .heroContainer .hero .scroll .iconScroll {
-    top: 62%;
+  .about .wrapper {
+    padding-bottom: 30px;
+  }
+  .about .wrapper .photo {
+    max-width: 60%;
   }
   .about .wrapper .border {
-    top: 32%;
+    top: 57%;
+    right: 10%;
   }
   .skills .logos {
     -ms-grid-columns: (1fr)[4];
@@ -1727,7 +1818,7 @@ footer .wrapper .white {
   .contact .wrapper .border {
     height: 48%;
     top: 10%;
-    left: 64%;
+    left: 68%;
   }
   .contact .wrapper .contactMe {
     width: 100%;
@@ -1753,20 +1844,52 @@ footer .wrapper .white {
   .contact .wrapper fieldset legend {
     padding-top: 50px;
   }
+  .contact .wrapper .socialMedia {
+    display: block;
+  }
+  .contact .wrapper .socialMedia ul {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 480px) {
+  header .navContainer .nav .navLinks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .navContainer .nav .navLinks li {
+    padding: 45px 0;
+  }
+  header .heroContainer .social {
+    display: none;
+  }
   header .heroContainer .hero .name {
     font-size: 2.8rem;
+  }
+  header .heroContainer .hero .scroll .iconScroll,
+  header .heroContainer .hero .scroll .iconScroll:before {
+    left: 47%;
+  }
+  header .heroContainer .hero .scroll .iconScroll {
+    top: 85%;
   }
   .about .title {
     font-size: 4rem;
   }
-  .about .wrapper .photo {
-    max-width: 65%;
+  .about .wrapper .photo img {
+    width: 100%;
+  }
+  .about .wrapper .aboutMe {
+    max-width: 90%;
+  }
+  .about .wrapper .aboutMe p {
+    width: 100%;
   }
   .about .wrapper .border {
-    top: 39%;
+    top: 40%;
+    right: 8%;
+    height: 45%;
   }
   .skills .title {
     font-size: 4rem;
@@ -1812,7 +1935,7 @@ footer .wrapper .white {
 
 @media (max-width: 415px) {
   header .heroContainer .hero {
-    padding-top: 170px;
+    padding-top: 260px;
   }
   header .heroContainer .hero .logo img {
     height: 80px;
@@ -1829,14 +1952,23 @@ footer .wrapper .white {
   header .heroContainer .hero .scroll .iconScroll:before {
     left: 46%;
   }
-  header .heroContainer .hero .scroll .iconScroll {
-    top: 72%;
-  }
   .about .wrapper .border {
-    top: 34%;
+    top: 35%;
+  }
+  .portfolio .wrapper .yodaInfo,
+  .portfolio .wrapper .marketInfo,
+  .portfolio .wrapper .amILateInfo,
+  .portfolio .wrapper .textileInfo {
+    margin-left: 5px;
+  }
+  .contact .wrapper .contactMe {
+    margin-left: 5px;
   }
   .contact .wrapper .contactMe .contactDetails .details .email .emailBtn {
     font-size: 1.5rem;
+  }
+  .contact fieldset {
+    margin-left: 5px;
   }
   .contact fieldset #username,
   .contact fieldset #useremail,
@@ -1849,9 +1981,6 @@ footer .wrapper .white {
 }
 
 @media (max-width: 375px) {
-  header .heroContainer .social {
-    top: 36%;
-  }
   header .heroContainer .social ul li i {
     font-size: 2.8rem;
     margin: 10px 5px;
@@ -1865,7 +1994,7 @@ footer .wrapper .white {
     line-height: 25px;
   }
   header .heroContainer .hero {
-    padding-top: 270px;
+    padding-top: 160px;
   }
   header .heroContainer .hero .logo img {
     height: 90px;
@@ -1875,11 +2004,12 @@ footer .wrapper .white {
     font-size: 2.8rem;
     margin-top: 30px;
   }
-  header .heroContainer .hero .scroll .iconScroll {
-    top: 90%;
-  }
   .about .arrowUp {
     right: 5px;
+  }
+  .about .wrapper .border {
+    top: 32%;
+    right: 6%;
   }
   .skills .logos {
     -ms-grid-columns: (1fr)[2];
@@ -1902,6 +2032,9 @@ footer .wrapper .white {
     font-size: 1.5rem;
     padding: 10px;
   }
+  .contact .wrapper .border {
+    height: 49%;
+  }
   .contact .wrapper .contactMe .contactDetails .details .email .emailBtn {
     font-size: 1.4rem;
   }
@@ -1920,9 +2053,6 @@ footer .wrapper .white {
   header .navContainer .nav .navLinks li a {
     font-size: 1.5rem;
   }
-  header .heroContainer .social {
-    top: 32%;
-  }
   header .heroContainer .hero {
     padding-top: 150px;
   }
@@ -1932,17 +2062,16 @@ footer .wrapper .white {
   }
   header .heroContainer .hero .name h2 {
     font-size: 2.5rem;
-    margin-top: 25px;
+    margin-top: 15px;
   }
   header .heroContainer .hero .headline {
     font-size: 1.5rem;
   }
   header .heroContainer .hero .scroll .iconScroll,
   header .heroContainer .hero .scroll .iconScroll:before {
-    left: 44.5%;
+    left: 45%;
   }
   header .heroContainer .hero .scroll .iconScroll {
-    top: 82%;
     width: 31px;
     height: 55px;
   }
@@ -1954,6 +2083,9 @@ footer .wrapper .white {
   }
   .about .wrapper .aboutMe p {
     font-size: 1.5rem;
+  }
+  .about .wrapper .border {
+    top: 41%;
   }
   .skills .title {
     font-size: 3.5rem;
@@ -2032,7 +2164,7 @@ footer .wrapper .white {
     margin-right: 0;
   }
   .contact .wrapper .border {
-    top: 4%;
+    top: 3%;
   }
   .contact .wrapper .contactMe {
     margin-left: 5px;

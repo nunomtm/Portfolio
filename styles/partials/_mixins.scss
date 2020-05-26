@@ -1,4 +1,4 @@
-@mixin mqLaptop {
+@mixin mqLaptopHD {
     @media (max-width: 1440px) {
         @content;
     }
@@ -11,7 +11,7 @@
 }
 
 @mixin mqTabletVert {
-    @media (max-width: 768px) {
+    @media (max-width: 850px) {
         @content;
     }
 }

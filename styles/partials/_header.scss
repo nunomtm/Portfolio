@@ -1,10 +1,7 @@
 /* Header Styles Start Here */
 header {
-    background-image: url(../assets/headerBackgroung.jpg);
+    background-image: url(../assets/headerBackgroung.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
 
     /* Nav Styles Start Here */
     .navContainer {
@@ -117,19 +114,35 @@ header {
                 li {
                     position: relative;
                     text-decoration: none;
+                    transition: all 0.5s 0.3s ease;
+                    &:hover .fa-linkedin {
+                        color: #0072b1;
+                    }
+                    &:hover .fa-twitter-square {
+                        color: #1da1f2;
+                    }
+                    &:hover .fa-github-square {
+                        color: #24292e;
+                    }
+                    &:hover .fa-medium {
+                        color: #000;
+                    }
                     i {
                         font-size: 3.2rem;
                         color: $primaryColor;
+                        background-color: #fff;
+                        border-radius: 4px;
+                        line-height: 29px;
                         margin: 15px;
+                        transition: all 0.6s ease-in-out;
                     }
                     .slider {
                         content: "";
                         position: absolute;
-                        top: 17px;
+                        top: 15px;
                         left: 48px;
                         width: 0px;
                         height: 29px;
-                        background: $primaryColor;
                         border-radius: 3px;
                         transition: all 0.5s 0.3s ease;
                         p {
@@ -146,6 +159,22 @@ header {
                     &:hover .slider {
                         width: 140px;
                         transition: all 0.5s ease;
+                        .linkedin {
+                            background: #0072b1;
+                            border-radius: 3px;
+                        }
+                        .twitter {
+                            background: #1da1f2;
+                            border-radius: 3px;
+                        }
+                        .github {
+                           background: #24292e;
+                           border-radius: 3px;
+                        }
+                        .medium {
+                           background: #000;
+                           border-radius: 3px;
+                        }
                     }
                     &:hover .slider p {
                         opacity: 1;

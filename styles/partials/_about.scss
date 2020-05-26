@@ -18,7 +18,11 @@
         right: 20px;
         bottom: 30px;
         display: none;
-        z-index: 1;
+        z-index: 2;
+        background: rgb(171, 171, 171);
+        border: 2px solid $primaryColor;
+        border-radius: 3px;
+        padding: 3px;
         a {
             font-size: 1.5rem;
             text-decoration: none;
@@ -32,6 +36,8 @@
         i {
             font-size: 3.5rem;
             color: $primaryColor;
+            margin-top: -3px;
+            margin-bottom: -20px;
         }
     }
     .wrapper {
@@ -40,11 +46,9 @@
         width: calc(100 / 2) - 20px;
         margin-top: 20px;
         .photo { 
-            max-width: 50%;
+            max-width: 45%;
             margin: 0;
-            img {
-                width: 90%;
-            }
+            padding: 10px;
         }
         .aboutMe {
             position: relative;
@@ -64,8 +68,8 @@
             border-radius: 3px;
             height: 45%;
             width: 25%;
-            top: 25%;
-            right: 15%;
+            top: 27%;
+            right: 18%;
             z-index: -1;
         }
     }

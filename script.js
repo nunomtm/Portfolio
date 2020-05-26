@@ -4,7 +4,7 @@
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.navLinks');
-    const navLinks = document.querySelectorAll('.navLinks li')
+    const navLinks = document.querySelectorAll('.navLinks li');
 
     burger.addEventListener('click', () => {
         // Toggle Nav
@@ -22,13 +22,12 @@ const navSlide = () => {
         // Burger Animation
         burger.classList.toggle('toggle');
     });
-}
+};
 navSlide();
-//Toggle function ends here
-
+// Toggle function ends here
 
 // Header Type.js Animation //
-let TxtType = function(el, toRotate, period) {
+const TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -39,8 +38,8 @@ let TxtType = function(el, toRotate, period) {
 };
 
 TxtType.prototype.tick = function() {
-    let i = this.loopNum % this.toRotate.length;
-    let fullTxt = this.toRotate[i];
+    const i = this.loopNum % this.toRotate.length;
+    const fullTxt = this.toRotate[i];
 
     if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -48,12 +47,14 @@ TxtType.prototype.tick = function() {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+    this.el.innerHTML = `<span class="wrap">${this.txt}</span>`;
 
-    let that = this;
+    const that = this;
     let delta = 200 - Math.random() * 100;
 
-    if (this.isDeleting) { delta /= 2; }
+    if (this.isDeleting) {
+        delta /= 2;
+    }
 
     if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
@@ -64,34 +65,33 @@ TxtType.prototype.tick = function() {
         delta = 500;
     }
 
-    setTimeout(function () {
+    setTimeout(function() {
         that.tick();
     }, delta);
 };
 
 window.onload = function() {
-    let elements = document.getElementsByClassName('typewrite');
+    const elements = document.getElementsByClassName('typewrite');
     for (let i = 0; i < elements.length; i++) {
-        let toRotate = elements[i].getAttribute('data-type');
-        let period = elements[i].getAttribute('data-period');
+        const toRotate = elements[i].getAttribute('data-type');
+        const period = elements[i].getAttribute('data-period');
         if (toRotate) {
             new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
     // INJECT CSS
-    let css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    const css = document.createElement('style');
+    css.type = 'text/css';
+    css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #fff}';
     document.body.appendChild(css);
 };
 // End of Type.js
 
-
 $(function() {
     // Active tabs on scroll
-    let sections = $('section'),
-        nav = $('.navContainer'),
-        navHeight = nav.outerHeight();
+    const sections = $('section');
+    const nav = $('.navContainer');
+    const navHeight = nav.outerHeight();
 
     $(window).on('scroll', function() {
         // Scroll to top button animation
@@ -102,27 +102,30 @@ $(function() {
         }
 
         // Transition active tabs on scroll
-        let curPos = $(this).scrollTop();
+        const curPos = $(this).scrollTop();
 
         sections.each(function() {
-            let top = $(this).offset().top - navHeight,
-                bottom = top + $(this).outerHeight();
+            const top = $(this).offset().top - navHeight;
+            const bottom = top + $(this).outerHeight();
 
-            if(curPos >= top && curPos <= bottom) {
+            if (curPos >= top && curPos <= bottom) {
                 nav.find('a').removeClass('active');
                 sections.removeClass('active');
 
                 $(this).addClass('active');
-                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+                nav.find(`a[href="#${$(this).attr('id')}"]`).addClass('active');
             }
         });
     });
 
     // Active tab scroll function
     $('a').on('click', function() {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - navHeight+1,
-        }, 900);
+        $('html, body').animate(
+            {
+                scrollTop: $($(this).attr('href')).offset().top - navHeight + 1,
+            },
+            900
+        );
         return false;
     });
 

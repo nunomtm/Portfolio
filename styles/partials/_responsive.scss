@@ -1,9 +1,8 @@
 /* Responsive Starts Here */
-@include mqLaptop {
+@include mqLaptopHD {
     .wrapper {
         width: 80%;
     }
-
     .about,
     .skills,
     .portfolio {
@@ -32,10 +31,8 @@
         .wrapper {
             margin-top: 20px;
             .photo {
-                display: flex;
-                justify-content: center;
                 img {
-                    width: 75%;
+                    width: 80%;
                 }
             }
             .aboutMe {
@@ -45,8 +42,8 @@
             }
             .border {
                 width: 30%;
-                top: 26%;
-                right: 8%;
+                top: 24%;
+                right: 11%;
             }
         }
     }
@@ -139,6 +136,7 @@
         }
     }
 }
+
 @include mqTabletLand {
     header {
         .navContainer {
@@ -151,17 +149,27 @@
         .heroContainer {
             .hero {
                 padding-top: 200px;
+                .scroll {
+                    .iconScroll {
+                        top: 85%;
+                    }
+                }
             }
         }
     }
     .about {
         .wrapper {
+            .photo {
+                img {
+                    width: 90%;
+                }
+            }
             .aboutMe {
                 margin-top: 25px;
             }
             .border {
                 top: 41%;
-                height: 50%;
+                height: 52%;
             }
         }
     }
@@ -214,7 +222,11 @@
         .wrapper {
             flex-direction: column;
             .aboutMe {
-                margin-bottom: 30px;
+                max-width: 90%;
+            }
+            .border {
+                top: 59%;
+                height: 30%;
             }
         }
     }
@@ -256,15 +268,16 @@
                     right: 0;
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
                     align-items: center;
-                    height: 100vh;
+                    height: 94vh;
                     width: 50%;
                     background-color: rgba($secondaryColor, 0.85);
-                    padding: 60px 0;
                     transform: translateX(100%);
                     transition: transform 0.5s ease-in;
                     z-index: 2;
                     li {
+                        padding: 60px 0;
                         opacity: 0;
                     }
                     a {
@@ -302,28 +315,27 @@
                 transform: translateX(0px);
             }
         }
-        
         .heroContainer {
-            // min-height: 71vh;
             .social {
-                top: 24%;
+                display: none;
             }
             .hero {
+                padding-top: 310px;
                 .name {
                     font-size: 4rem;
-                }
-                .scroll {
-                    .iconScroll {
-                        top: 62%;
-                    }
                 }
             }
         }
     }
     .about {
         .wrapper {
+            padding-bottom: 30px;
+            .photo {
+                max-width: 60%;
+            }
             .border {
-                top: 32%;
+                top: 57%;
+                right: 10%;
             }
         }
     }
@@ -371,7 +383,7 @@
             .border {
                 height: 48%;
                 top: 10%;
-                left: 64%;
+                left: 68%;
             }
             .contactMe {
                 width: 100%;
@@ -399,16 +411,44 @@
                     padding-top: 50px;
                 }
             }
+            .socialMedia {
+                display: block;
+                ul {
+                    padding-bottom: 50px;
+                }
+            }
         }
     }
 }
 
 @include mqMobile {
     header {
+        .navContainer {
+            .nav {
+                .navLinks {
+                    justify-content: flex-start;
+                    li {
+                        padding: 45px 0;
+                    }
+                }
+            }
+        }
         .heroContainer {
+            .social {
+                display: none;
+            }
             .hero {
                 .name {
                     font-size: 2.8rem;
+                } 
+                .scroll {
+                    .iconScroll,
+                    .iconScroll:before {
+                        left: 47%;
+                    }
+                    .iconScroll {
+                        top: 85%;
+                    }
                 }
             }
         }
@@ -419,10 +459,20 @@
         }
         .wrapper {
             .photo {
-                max-width: 65%;
+                img {
+                    width: 100%;
+                }
+            }
+            .aboutMe {
+               max-width: 90%;
+                p {
+                    width: 100%;
+                }
             }
             .border {
-                top: 39%;
+                top: 40%;
+                right: 8%;
+                height: 45%;
             }
         }
     }
@@ -476,9 +526,8 @@
 @include mqMobilePlus {
     header {
         .heroContainer {
-            // min-height: 85vh;
             .hero {
-                padding-top: 170px;
+                padding-top: 260px;
                 .logo img {
                     height: 80px;
                     width: 80px;
@@ -495,9 +544,6 @@
                     .iconScroll:before {
                         left: 46%;
                     }
-                    .iconScroll {
-                        top: 72%;
-                    }
                 }
             }
         }
@@ -505,13 +551,24 @@
     .about {
         .wrapper {
             .border {
-                top: 34%;
+                top: 35%;
+            }
+        }
+    }
+    .portfolio {
+        .wrapper {
+            .yodaInfo,
+            .marketInfo,
+            .amILateInfo,
+            .textileInfo {
+                margin-left: 5px;
             }
         }
     }
     .contact {
         .wrapper {
             .contactMe {
+                margin-left: 5px;
                 .contactDetails {
                     .details {
                         .email{
@@ -524,6 +581,7 @@
             }
         }
         fieldset {
+            margin-left: 5px;
             #username,
             #useremail,
             #message {
@@ -542,17 +600,8 @@
 
 @include mqMobileX {
     header {
-        // .navContainer {
-        //     .nav {
-        //         .navLinks {
-        //             // height: 79vh;
-        //         }
-        //     }
-        // }
         .heroContainer {
-            // min-height: 85vh;
             .social {
-                top: 36%;
                 ul li {
                     i {
                         font-size: 2.8rem;
@@ -569,7 +618,7 @@
                 }
             }
             .hero {
-                 padding-top: 270px;
+                padding-top: 160px;
                 .logo img {
                     height: 90px;
                     width: 90px;
@@ -578,17 +627,18 @@
                     font-size: 2.8rem;
                     margin-top: 30px;
                 }
-                .scroll {
-                    .iconScroll {
-                        top: 90%;
-                    }
-                }
             }
         }
     }
     .about {
         .arrowUp {
             right: 5px;
+        }
+        .wrapper {
+            .border {
+                top: 32%;
+                right: 6%;
+            }
         }
     }
     .skills {
@@ -623,6 +673,9 @@
     }
     .contact {
         .wrapper {
+            .border {
+                height: 49%;
+            }
             .contactMe {
                 .contactDetails {
                     .details {
@@ -656,7 +709,6 @@
                     font-size: 1rem;
                 }
                 .navLinks {
-                    // height: 89vh;
                     li a {
                         font-size: 1.5rem;
                     }
@@ -664,10 +716,6 @@
             }
         }
         .heroContainer {
-            // min-height: 95vh;
-            .social {
-                top: 32%;
-            }
             .hero {
                 padding-top: 150px;
                 .logo img {
@@ -676,7 +724,7 @@
                 }
                 .name h2 {
                     font-size: 2.5rem;
-                    margin-top: 25px;
+                    margin-top: 15px;
                 }
                 .headline {
                     font-size: 1.5rem;
@@ -684,10 +732,9 @@
                 .scroll {
                     .iconScroll,
                     .iconScroll:before {
-                        left: 44.5%;
+                        left: 45%;
                     }
                     .iconScroll {
-                        top: 82%;
                         width: 31px;
                         height: 55px;
                     }
@@ -705,6 +752,9 @@
         .wrapper {
             .aboutMe p {
                 font-size: 1.5rem;
+            }
+            .border {
+                top: 41%;
             }
         }
     }
@@ -777,7 +827,7 @@
     .contact {
         .wrapper {
             .border {
-                top: 4%;
+                top: 3%;
             }
             .contactMe {
                 margin-left: 5px;
