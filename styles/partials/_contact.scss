@@ -159,16 +159,15 @@
 		}
 		.socialMedia {
 			display: none;
-			width: 100%;
+			width: 48%;
 			ul {
 				display: flex;
-				flex-direction: row;
 				justify-content: center;
 				list-style: none;
-				padding-top: 55px;
+				padding-top: 15px;
 				li {
 					text-decoration: none;
-					margin: 0 60px;
+					margin: 0 20px;
 					i {
 						font-size: 4.5rem;
 						color: $primaryColor;

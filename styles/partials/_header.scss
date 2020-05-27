@@ -118,13 +118,13 @@ header {
                     text-decoration: none;
                     transition: all 0.5s 0.3s ease;
                     &:hover .fa-linkedin {
-                        color: #0072b1;
+                        color: #2867b2;
                     }
                     &:hover .fa-twitter-square {
                         color: #1da1f2;
                     }
                     &:hover .fa-github-square {
-                        color: #24292e;
+                        color: #211F1F;
                     }
                     &:hover .fa-medium {
                         color: #000;
@@ -162,7 +162,7 @@ header {
                         width: 140px;
                         transition: all 0.5s ease;
                         .linkedin {
-                            background: #0072b1;
+                            background: #2867b2;
                             border-radius: 3px;
                         }
                         .twitter {
@@ -170,7 +170,7 @@ header {
                             border-radius: 3px;
                         }
                         .github {
-                           background: #24292e;
+                           background: #211F1F;
                            border-radius: 3px;
                         }
                         .medium {

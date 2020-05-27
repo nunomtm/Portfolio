@@ -440,7 +440,7 @@ header .heroContainer .social ul li {
 }
 
 header .heroContainer .social ul li:hover .fa-linkedin {
-  color: #0072b1;
+  color: #2867b2;
 }
 
 header .heroContainer .social ul li:hover .fa-twitter-square {
@@ -448,7 +448,7 @@ header .heroContainer .social ul li:hover .fa-twitter-square {
 }
 
 header .heroContainer .social ul li:hover .fa-github-square {
-  color: #24292e;
+  color: #211F1F;
 }
 
 header .heroContainer .social ul li:hover .fa-medium {
@@ -497,7 +497,7 @@ header .heroContainer .social ul li:hover .slider {
 }
 
 header .heroContainer .social ul li:hover .slider .linkedin {
-  background: #0072b1;
+  background: #2867b2;
   border-radius: 3px;
 }
 
@@ -507,7 +507,7 @@ header .heroContainer .social ul li:hover .slider .twitter {
 }
 
 header .heroContainer .social ul li:hover .slider .github {
-  background: #24292e;
+  background: #211F1F;
   border-radius: 3px;
 }
 
@@ -1381,27 +1381,23 @@ header .heroContainer .hero .scroll .iconScroll:before {
 
 .contact .wrapper .socialMedia {
   display: none;
-  width: 100%;
+  width: 48%;
 }
 
 .contact .wrapper .socialMedia ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
-  padding-top: 55px;
+  padding-top: 15px;
 }
 
 .contact .wrapper .socialMedia ul li {
   text-decoration: none;
-  margin: 0 60px;
+  margin: 0 20px;
 }
 
 .contact .wrapper .socialMedia ul li i {
@@ -1847,6 +1843,7 @@ footer .wrapper .white {
     padding-top: 50px;
   }
   .contact .wrapper .socialMedia {
+    width: 50%;
     display: block;
   }
   .contact .wrapper .socialMedia ul {
@@ -2035,7 +2032,7 @@ footer .wrapper .white {
     padding: 10px;
   }
   .contact .wrapper .border {
-    height: 49%;
+    height: 44.5%;
   }
   .contact .wrapper .contactMe .contactDetails .details .email .emailBtn {
     font-size: 1.4rem;
@@ -2202,18 +2199,232 @@ footer .wrapper .white {
   }
 }
 
-/* Header Styles Start Here */
-/* Nav Styles Start Here */
-.navContainer {
-  background-color: rgba(0, 0, 0, 0.9);
+header {
+  /* Hero Container Styles Ends Here */
 }
 
-.navContainer .nav {
-  min-height: 5vh;
+header .heroContainerThanks {
+  min-height: 95vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Social Icons */
+  /* Hero Section */
+}
+
+header .heroContainerThanks .social {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+}
+
+header .heroContainerThanks .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  position: fixed;
+  z-index: 3;
+}
+
+header .heroContainerThanks .social ul li {
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
+}
+
+header .heroContainerThanks .social ul li:hover .fa-linkedin {
+  color: #2867b2;
+}
+
+header .heroContainerThanks .social ul li:hover .fa-twitter-square {
+  color: #1da1f2;
+}
+
+header .heroContainerThanks .social ul li:hover .fa-github-square {
+  color: #211F1F;
+}
+
+header .heroContainerThanks .social ul li:hover .fa-medium {
+  color: #000;
+}
+
+header .heroContainerThanks .social ul li i {
+  font-size: 3.2rem;
+  color: #e40b0b;
+  background-color: #fff;
+  border-radius: 4px;
+  line-height: 29px;
+  margin: 15px;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+header .heroContainerThanks .social ul li .slider {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 48px;
+  width: 0px;
+  height: 29px;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s 0.3s ease;
+  transition: all 0.5s 0.3s ease;
+}
+
+header .heroContainerThanks .social ul li .slider p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+header .heroContainerThanks .social ul li:hover .slider {
+  width: 140px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header .heroContainerThanks .social ul li:hover .slider .linkedin {
+  background: #2867b2;
+  border-radius: 3px;
+}
+
+header .heroContainerThanks .social ul li:hover .slider .twitter {
+  background: #1da1f2;
+  border-radius: 3px;
+}
+
+header .heroContainerThanks .social ul li:hover .slider .github {
+  background: #211F1F;
+  border-radius: 3px;
+}
+
+header .heroContainerThanks .social ul li:hover .slider .medium {
+  background: #000;
+  border-radius: 3px;
+}
+
+header .heroContainerThanks .social ul li:hover .slider p {
+  opacity: 1;
+  -webkit-transition: all 1s 0.2s ease;
+  transition: all 1s 0.2s ease;
+}
+
+header .heroContainerThanks .hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (min-content)[4];
+      grid-template-rows: repeat(4, -webkit-min-content);
+      grid-template-rows: repeat(4, min-content);
+      grid-template-areas: "logo" "name" "headline" "scroll";
+  padding-top: 300px;
+  /* Scroll Animation */
+}
+
+header .heroContainerThanks .hero .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+header .heroContainerThanks .hero .logo img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+header .heroContainerThanks .hero .name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: name;
+  font-size: 7rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+header .heroContainerThanks .hero .headline {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: headline;
+  font-family: "Aleo", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header .heroContainerThanks .hero .headline a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .heroContainerThanks .hero .scroll {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: scroll;
+}
+
+header .heroContainerThanks .hero .scroll .iconScroll,
+header .heroContainerThanks .hero .scroll .iconScroll:before {
+  position: absolute;
+  left: 49%;
+}
+
+header .heroContainerThanks .hero .scroll .iconScroll {
+  top: 90%;
+  width: 35px;
+  height: 65px;
+  -webkit-box-shadow: inset 0 0 0 1px #fff;
+          box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+header .heroContainerThanks .hero .scroll .iconScroll:before {
+  content: '';
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background: #e40b0b;
+  border-radius: 4px;
+  margin-left: -4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
 }
 
 .navContainer a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -2223,139 +2434,3 @@ footer .wrapper .white {
 .navContainer a i {
   color: #e40b0b;
 }
-
-.mobileNav {
-  display: none;
-}
-
-/*  */
-/* Hero Container Styles Start Here */
-.heroContainerTY {
-  min-height: 88vh;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.heroContainerTY .hero {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  -ms-grid-rows: (min-content)[4];
-      grid-template-rows: repeat(4, -webkit-min-content);
-      grid-template-rows: repeat(4, min-content);
-      grid-template-areas: "logo" "name" "headline" "scroll";
-  padding-top: 10%;
-}
-
-.heroContainerTY .logo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: logo;
-}
-
-.heroContainerTY .logo img {
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-}
-
-.heroContainerTY .name {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: name;
-  font-size: 4rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  text-shadow: 2px 2px #000;
-  margin: 0 auto;
-  padding-top: 5%;
-}
-
-.heroContainerTY .headline {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: headline;
-  font-family: "Aleo", serif;
-  font-size: 2.1rem;
-  color: #fff;
-  letter-spacing: 2px;
-  text-align: center;
-  text-shadow: 2px 2px #000;
-  min-width: 40%;
-  border: 6px solid #e40b0b;
-  margin: 0 auto;
-  padding: 1%;
-}
-
-.heroContainerTY .headline a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Hero Container Styles Ends Here */
-/* Header Styles Ends Here */
-/* Footer Styles Starts Here */
-footer {
-  background-color: rgba(0, 0, 0, 0.9);
-  min-height: 4vh;
-}
-
-footer .mainFooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer p {
-  font-size: 1.6rem;
-  color: #e40b0b;
-}
-
-footer .white {
-  color: #fff;
-}
-
-footer i {
-  font-size: 2rem;
-  color: #e40b0b;
-  padding: 1%;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-footer i:hover, footer i:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  color: #fff;
-}
-
-footer .social {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-}
-
-footer li {
-  text-decoration: none;
-}
-
-/* Footer Styles Ends Here */

@@ -1,20 +1,182 @@
-/* Header Styles Start Here */
-// header {
-//     background-image: url(../assets/header.jpg);
-//     background-size: center center;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-attachment: fixed;
-// }
+header {
+    .heroContainerThanks {
+        min-height: 95vh;
+        background-color: rgba(0, 0, 0, 0.5);
 
-/* Nav Styles Start Here */
-.navContainer {
-    background-color: rgba(0, 0, 0, 0.9);
-    .nav {
-        min-height: 5vh
+        /* Social Icons */
+        .social {
+            position: absolute;
+            top: 35%;
+            left: 0%;
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                position: fixed;
+                z-index: 3;
+                li {
+                    position: relative;
+                    text-decoration: none;
+                    transition: all 0.5s 0.3s ease;
+                    &:hover .fa-linkedin {
+                        color: #2867b2;
+                    }
+                    &:hover .fa-twitter-square {
+                        color: #1da1f2;
+                    }
+                    &:hover .fa-github-square {
+                        color: #211F1F;
+                    }
+                    &:hover .fa-medium {
+                        color: #000;
+                    }
+                    i {
+                        font-size: 3.2rem;
+                        color: $primaryColor;
+                        background-color: #fff;
+                        border-radius: 4px;
+                        line-height: 29px;
+                        margin: 15px;
+                        transition: all 0.6s ease-in-out;
+                    }
+                    .slider {
+                        content: "";
+                        position: absolute;
+                        top: 15px;
+                        left: 48px;
+                        width: 0px;
+                        height: 29px;
+                        border-radius: 3px;
+                        transition: all 0.5s 0.3s ease;
+                        p {
+                            font-size: 1.6rem;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            text-align: center;
+                            line-height: 30px;
+                            color: $primaryFontColor;
+                            opacity: 0;
+                            transition: all 0.6s ease;
+                        }
+                    }
+                    &:hover .slider {
+                        width: 140px;
+                        transition: all 0.5s ease;
+                        .linkedin {
+                            background: #2867b2;
+                            border-radius: 3px;
+                        }
+                        .twitter {
+                            background: #1da1f2;
+                            border-radius: 3px;
+                        }
+                        .github {
+                           background: #211F1F;
+                           border-radius: 3px;
+                        }
+                        .medium {
+                           background: #000;
+                           border-radius: 3px;
+                        }
+                    }
+                    &:hover .slider p {
+                        opacity: 1;
+                        transition: all 1s 0.2s ease;
+                    }
+                }
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, min-content);
+            grid-template-areas:
+            "logo"
+            "name"
+            "headline"
+            "scroll";
+            padding-top: 300px;
+            .logo {
+                grid-area: logo;
+                img {
+                    height: 100px;
+                    width: 100px;
+                    margin: 0 auto;
+                }
+            }
+            .name {
+                grid-area: name;
+                font-size: 7rem;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                color: $primaryFontColor;
+                margin: 0 auto;
+                padding-top: 80px;
+            }
+            .headline {
+                grid-area: headline;
+                font-family: $secondaryFont;
+                font-size: 3rem;
+                letter-spacing: 2px;
+                text-align: center;
+                color: $primaryFontColor;
+                margin: 0 auto;
+                padding: 10px;
+                a {
+                    color: $primaryFontColor;
+                    text-decoration: none;
+                }
+            }
+
+            /* Scroll Animation */
+            .scroll {
+                grid-area: scroll;
+                .iconScroll,
+                .iconScroll:before {
+                    position: absolute;
+                    left: 49%;
+                }
+                .iconScroll {
+                    top: 90%;
+                    width: 35px;
+                    height: 65px;
+                    box-shadow: inset 0 0 0 1px $primaryFontColor;
+                    border-radius: 25px;
+                }
+                .iconScroll:before {
+                    content: '';
+                    top: 8px;
+                    width: 8px;
+                    height: 8px;
+                    background: $primaryColor;
+                    border-radius: 4px;
+                    margin-left: -4px;
+                    animation-duration: 1.5s;
+                    animation-iteration-count: infinite;
+                    animation-name: scroll;
+                }
+            
+                @keyframes scroll {
+                    0% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                        transform: translateY(46px);
+                    }
+                }
+            }
+        }
     }
+    /* Hero Container Styles Ends Here */
+}
+
+.navContainer {
     a {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: $primaryFontColor;
         text-transform: uppercase;
         text-decoration: none;
@@ -24,106 +186,3 @@
         }
     }
 }
-
-// /* Mobile Nav */
-.mobileNav {
-    display: none;
-}
-/*  */
-
-/* Hero Container Styles Start Here */
-.heroContainerTY {
-    min-height: 88vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    .hero {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, min-content);
-        grid-template-areas:
-        "logo"
-        "name"
-        "headline"
-        "scroll";
-        padding-top: 10%;
-    }
-    .logo {
-        grid-area: logo;
-        img {
-            height: 100px;
-            width: 100px;
-            margin: 0 auto;
-        }
-    }
-    .name {
-        grid-area: name;
-        font-size: 4rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: $primaryFontColor;
-        text-align: center;
-        text-shadow: 2px 2px $secondaryColor;
-        margin: 0 auto;
-        padding-top: 5%;
-    }
-    .headline {
-        grid-area: headline;
-        font-family: $secondaryFont;
-        font-size: 2.1rem;
-        color: $primaryFontColor;
-        letter-spacing: 2px;
-        text-align: center;
-        text-shadow: 2px 2px $secondaryColor;
-        min-width: 40%;
-        border: 6px solid $primaryColor;
-        margin: 0 auto;
-        padding: 1%;
-        a {
-            color: $primaryFontColor;
-            text-decoration: none;
-        }
-    }
-}
-/* Hero Container Styles Ends Here */
-/* Header Styles Ends Here */
-
-
-/* Footer Styles Starts Here */
-footer {
-    background-color:rgba(0, 0, 0, 0.9);
-    min-height: 4vh;
-    .mainFooter {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    p {
-        font-size: 1.6rem;
-        color: $primaryColor;
-    }
-    .white{
-        color: $primaryFontColor;
-    }
-    i {
-        font-size: 2rem;
-        color: $primaryColor;
-        padding: 1%;
-        transition: 0.25s;
-        &:hover,
-        &:focus {
-            transform: scale(1.1);
-            color: $primaryFontColor;
-        }
-    }
-    .social {
-        align-self: center;
-    }
-    ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-    }
-    li {
-      text-decoration: none;
-    }
-}
-/* Footer Styles Ends Here */
