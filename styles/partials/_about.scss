@@ -19,7 +19,7 @@
         bottom: 30px;
         display: none;
         z-index: 2;
-        background: rgb(171, 171, 171);
+        background: $primaryFontColor;
         border: 2px solid $primaryColor;
         border-radius: 3px;
         padding: 3px;
@@ -48,7 +48,6 @@
         .photo { 
             max-width: 45%;
             margin: 0;
-            padding: 10px;
         }
         .aboutMe {
             position: relative;

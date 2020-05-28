@@ -1,3 +1,15 @@
+@mixin mq4K {
+    @media (max-width: 3840px) {
+        @content;
+    }
+}
+
+@mixin mqFullHD {
+    @media (max-width: 1920px) {
+        @content;
+    }
+}
+
 @mixin mqLaptopHD {
     @media (max-width: 1440px) {
         @content;

@@ -171,8 +171,8 @@ header {
             }
         }
     }
-    /* Hero Container Styles Ends Here */
 }
+/* Header Styles Ends Here */
 
 .navContainer {
     a {
@@ -183,6 +183,41 @@ header {
         padding: 5px;
         i {
             color: $primaryColor;
+        }
+    }
+}
+
+
+// Media query
+
+@media (max-width: 375px) {
+    header {
+        .navContainer {
+            .nav {
+                a {
+                    font-size: 1.5rem;
+                };
+            }
+        }
+        .heroContainerThanks {
+            min-height: 80vh;
+            .social {
+                display: none;
+            }
+            .hero {
+                padding-top: 130px;
+                .logo img {
+                    height: 90px;
+                    width: 90px;
+                }
+                .name {
+                    font-size: 2.8rem;
+                    margin-top: 15px;
+                }
+                .headline {
+                    font-size: 2rem;
+                }
+            }
         }
     }
 }

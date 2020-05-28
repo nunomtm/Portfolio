@@ -284,10 +284,10 @@ a {
 /* - */
 /* Header Styles Start Here */
 header {
-  background-image: url(../assets/header.jpg);
-  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: inherit;
+  background-attachment: fixed;
   /* Nav Styles Start Here */
   /* Hero Container Styles Start Here */
   /* Hero Container Styles Ends Here */
@@ -663,7 +663,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
   bottom: 30px;
   display: none;
   z-index: 2;
-  background: #ababab;
+  background: #fff;
   border: 2px solid #e40b0b;
   border-radius: 3px;
   padding: 3px;
@@ -709,7 +709,6 @@ header .heroContainer .hero .scroll .iconScroll:before {
 .about .wrapper .photo {
   max-width: 45%;
   margin: 0;
-  padding: 10px;
 }
 
 .about .wrapper .aboutMe {
@@ -1438,6 +1437,18 @@ footer .wrapper .white {
 }
 
 /* Responsive Starts Here */
+@media (max-width: 3840px) {
+  header {
+    background-image: url(../assets/4KHeader.jpg);
+  }
+}
+
+@media (max-width: 1920px) {
+  header {
+    background-image: url(../assets/header.jpg);
+  }
+}
+
 @media (max-width: 1440px) {
   .wrapper {
     width: 80%;
@@ -1852,6 +1863,9 @@ footer .wrapper .white {
 }
 
 @media (max-width: 480px) {
+  header {
+    background-position: top;
+  }
   header .navContainer .nav .navLinks {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -2199,10 +2213,6 @@ footer .wrapper .white {
   }
 }
 
-header {
-  /* Hero Container Styles Ends Here */
-}
-
 header .heroContainerThanks {
   min-height: 95vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -2423,6 +2433,7 @@ header .heroContainerThanks .hero .scroll .iconScroll:before {
   }
 }
 
+/* Header Styles Ends Here */
 .navContainer a {
   font-size: 1.6rem;
   color: #fff;
@@ -2433,4 +2444,30 @@ header .heroContainerThanks .hero .scroll .iconScroll:before {
 
 .navContainer a i {
   color: #e40b0b;
+}
+
+@media (max-width: 375px) {
+  header .navContainer .nav a {
+    font-size: 1.5rem;
+  }
+  header .heroContainerThanks {
+    min-height: 80vh;
+  }
+  header .heroContainerThanks .social {
+    display: none;
+  }
+  header .heroContainerThanks .hero {
+    padding-top: 130px;
+  }
+  header .heroContainerThanks .hero .logo img {
+    height: 90px;
+    width: 90px;
+  }
+  header .heroContainerThanks .hero .name {
+    font-size: 2.8rem;
+    margin-top: 15px;
+  }
+  header .heroContainerThanks .hero .headline {
+    font-size: 2rem;
+  }
 }

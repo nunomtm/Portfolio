@@ -1,4 +1,16 @@
 /* Responsive Starts Here */
+@include mq4K {
+    header {
+        background-image: url(../assets/4KHeader.jpg); // Photo by Matthew Henry on Unsplash
+    }
+}
+
+@include mqFullHD {
+    header {
+        background-image: url(../assets/header.jpg); // Photo by Matthew Henry on Unsplash
+    }
+}
+
 @include mqLaptopHD {
     .wrapper {
         width: 80%;
@@ -424,6 +436,7 @@
 
 @include mqMobile {
     header {
+        background-position: top;
         .navContainer {
             .nav {
                 .navLinks {
