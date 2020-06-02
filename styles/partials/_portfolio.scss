@@ -1,117 +1,194 @@
 .portfolio {
-    background-color: rgba(0, 0, 0, 0.2);
-    position: relative;
-    .title {
-        font-size: 6rem;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        color: $secondaryColor;
-        padding-top: 80px;
-        .accent {
-            font-size: 5.5rem;
-            color: $primaryColor;
-        }
-    }
-    .wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, min-content);
-        grid-template-areas:
-        "yodaInfo yoda"
-        "market marketInfo"
-        "lateInfo late"
-        "textile textileInfo";
-        padding-top: 10px;
-        padding-bottom: 40px;
-        h2 {
-            font-size: 3.2rem;
-            margin-bottom: 20px;
-            span {
-                font-size: 2.6rem;
-            }
-        }
-        ul {
-            text-decoration: none;
-            list-style: none;
-            display: flex;
-            li {
-                font-size: 1.8rem;
-                color: $primaryFontColor;
-                background-color: $primaryColor;
-                border-radius: 3px;
-                margin-left: 0;
-                margin-right: 10px;
-                padding: 5px;
-            }
-        }
-        p {
-            font-size: 2rem;
-            margin: 20px 0;
-        }
-        .links {
-            margin-top: 25px;
-            a {
-                font-size: 1.6rem;
-                font-weight: bold;
-                text-decoration: none;
-                color: $primaryFontColor;
-                border: 2px solid $secondaryColor;
-                border-radius: 3px;
-                background-color: $secondaryColor;
-                margin-right: 10px;
-                padding: 10px 15px;
-                transition: all 0.35s ease-in-out;
-                &:hover,
-                &:focus {
-                    background-color: $primaryColor;
-                    border: 2px solid $primaryColor;
-                    box-shadow: 4px 4px 1px rgba(white, 0.8);
-                }
-            }
-        }
-    }
-    .yoda {
-        grid-area: yoda;
-        padding: 20px 0;
-    }
-    .market {
-        grid-area: market;
-        padding: 20px 0;
-    }
-    .amILate {
-        grid-area: late;
-        padding: 20px 0;
-    }
-    .textile {
-        grid-area: textile;
-        padding: 20px 0;
-    }
-    .yodaInfo {
-        grid-area: yodaInfo;
-        margin-top: 50px;
-        margin-right: 5px;
-    }
-    .marketInfo {
-        grid-area: marketInfo;
-        margin-top: 80px;
-        margin-left: 25px;
-    }
-    .amILateInfo {
-        grid-area: lateInfo;
-        margin-top: 60px;
-        margin-right: 5px;
-    }
-    .textileInfo {
-        grid-area: textileInfo;
-        margin-top: 70px;
-        margin-left: 25px;
-    }
-    .title {
-        font-family: $secondaryFont;
-        font-size: 5rem;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-    }
+	background-color: rgba(0, 0, 0, 0.2);
+	position: relative;
+	.title {
+		font-size: 6rem;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		color: $secondaryColor;
+		padding-top: 80px;
+		.accent {
+			font-size: 5.5rem;
+			color: $primaryColor;
+		}
+	}
+	.subTitle {
+		font-size: 3rem;
+		color: $primaryFontColor;
+		text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+		width: 330px;
+		border-bottom: 2px solid $primaryColor;
+	}
+	.quick {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, min-content);
+		grid-template-areas: "subTittle subTittle" "weather weatherInfo" "socialIconsInfo socialIcons";
+		padding-top: 10px;
+		padding-bottom: 40px;
+		h2 {
+			font-size: 3.2rem;
+			margin-bottom: 20px;
+			span {
+				font-size: 2.6rem;
+			}
+		}
+		ul {
+			text-decoration: none;
+			list-style: none;
+			display: flex;
+			li {
+				font-size: 1.8rem;
+				color: $primaryFontColor;
+				background-color: $primaryColor;
+				border-radius: 3px;
+				margin-left: 0;
+				margin-right: 10px;
+				padding: 5px;
+			}
+		}
+		p {
+			font-size: 2rem;
+			margin: 20px 0;
+		}
+		.links {
+			margin-top: 25px;
+			a {
+				font-size: 1.6rem;
+				font-weight: bold;
+				text-decoration: none;
+				color: $primaryFontColor;
+				border: 2px solid $secondaryColor;
+				border-radius: 3px;
+				background-color: $secondaryColor;
+				margin-right: 10px;
+				padding: 10px 15px;
+				transition: all 0.35s ease-in-out;
+				&:hover,
+				&:focus {
+					background-color: $primaryColor;
+					border: 2px solid $primaryColor;
+					box-shadow: 4px 4px 1px rgba(white, 0.8);
+				}
+			}
+		}
+	}
+	.weather {
+		grid-area: weather;
+		padding: 20px 0;
+	}
+	.weatherInfo {
+		grid-area: weatherInfo;
+		margin-top: 80px;
+		margin-right: 5px;
+	}
+	.socialIcons {
+		grid-area: socialIcons;
+		padding: 20px 0;
+	}
+	.socialIconsInfo {
+		grid-area: socialIconsInfo;
+		margin-top: 80px;
+		margin-right: 5px;
+	}
+
+	.feature {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, min-content);
+		grid-template-areas: "subTitle subTitle" "lateInfo late" "market marketInfo" "yodaInfo yoda"
+			"textile textileInfo";
+		padding-top: 10px;
+		padding-bottom: 40px;
+		h2 {
+			font-size: 3.2rem;
+			margin-bottom: 20px;
+			span {
+				font-size: 2.6rem;
+			}
+		}
+		ul {
+			text-decoration: none;
+			list-style: none;
+			display: flex;
+			li {
+				font-size: 1.8rem;
+				color: $primaryFontColor;
+				background-color: $primaryColor;
+				border-radius: 3px;
+				margin-left: 0;
+				margin-right: 10px;
+				padding: 5px;
+			}
+		}
+		p {
+			font-size: 2rem;
+			margin: 20px 0;
+		}
+		.links {
+			margin-top: 25px;
+			a {
+				font-size: 1.6rem;
+				font-weight: bold;
+				text-decoration: none;
+				color: $primaryFontColor;
+				border: 2px solid $secondaryColor;
+				border-radius: 3px;
+				background-color: $secondaryColor;
+				margin-right: 10px;
+				padding: 10px 15px;
+				transition: all 0.35s ease-in-out;
+				&:hover,
+				&:focus {
+					background-color: $primaryColor;
+					border: 2px solid $primaryColor;
+					box-shadow: 4px 4px 1px rgba(white, 0.8);
+				}
+			}
+		}
+	}
+	.yoda {
+		grid-area: yoda;
+		padding: 20px 0;
+	}
+	.market {
+		grid-area: market;
+		padding: 20px 0;
+	}
+	.amILate {
+		grid-area: late;
+		padding: 20px 0;
+	}
+	.textile {
+		grid-area: textile;
+		padding: 20px 0;
+	}
+	.yodaInfo {
+		grid-area: yodaInfo;
+		margin-top: 50px;
+		margin-right: 5px;
+	}
+	.marketInfo {
+		grid-area: marketInfo;
+		margin-top: 80px;
+		margin-left: 25px;
+	}
+	.amILateInfo {
+		grid-area: lateInfo;
+		margin-top: 60px;
+		margin-right: 5px;
+	}
+	.textileInfo {
+		grid-area: textileInfo;
+		margin-top: 70px;
+		margin-left: 25px;
+	}
+	.title {
+		font-family: $secondaryFont;
+		font-size: 5rem;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
 }

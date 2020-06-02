@@ -336,6 +336,10 @@ header .navContainer .nav .navLinks {
   width: 50%;
 }
 
+header .navContainer .nav .navLinks li {
+  position: relative;
+}
+
 header .navContainer .nav .navLinks li:hover a::before {
   left: -10px;
   opacity: 1;
@@ -382,14 +386,58 @@ header .navContainer .nav .navLinks li a:after {
 
 header .navContainer .nav .navLinks li a.active:before {
   content: '[';
-  left: -10px;
+  left: -9px;
   opacity: 1;
 }
 
 header .navContainer .nav .navLinks li a.active:after {
   content: ']';
-  right: -10px;
+  right: -9px;
   opacity: 1;
+}
+
+header .navContainer .nav .navLinks li .subMenu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px 5px 5px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navContainer .nav .navLinks li .subMenu .subItem {
+  list-style: none;
+  border-top: 1px dashed #e40b0b;
+  padding: 5px 0;
+}
+
+header .navContainer .nav .navLinks li .subMenu .subItem:first-child {
+  border-top: none;
+}
+
+header .navContainer .nav .navLinks li .subMenu .subItem a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: #fff;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navContainer .nav .navLinks li .subMenu .subItem a::before, header .navContainer .nav .navLinks li .subMenu .subItem a::after {
+  content: none;
+}
+
+header .navContainer .nav .navLinks li:hover > .subMenu {
+  top: 40px;
+  opacity: 1;
+  visibility: visible;
 }
 
 header .navContainer .nav .burger {
@@ -448,7 +496,7 @@ header .heroContainer .social ul li:hover .fa-twitter-square {
 }
 
 header .heroContainer .social ul li:hover .fa-github-square {
-  color: #211F1F;
+  color: #211f1f;
 }
 
 header .heroContainer .social ul li:hover .fa-medium {
@@ -507,7 +555,7 @@ header .heroContainer .social ul li:hover .slider .twitter {
 }
 
 header .heroContainer .social ul li:hover .slider .github {
-  background: #211F1F;
+  background: #211f1f;
   border-radius: 3px;
 }
 
@@ -1029,7 +1077,15 @@ header .heroContainer .hero .scroll .iconScroll:before {
   color: #e40b0b;
 }
 
-.portfolio .wrapper {
+.portfolio .subTitle {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  width: 330px;
+  border-bottom: 2px solid #e40b0b;
+}
+
+.portfolio .quick {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -1037,21 +1093,21 @@ header .heroContainer .hero .scroll .iconScroll:before {
   -ms-grid-rows: (min-content)[3];
       grid-template-rows: repeat(3, -webkit-min-content);
       grid-template-rows: repeat(3, min-content);
-      grid-template-areas: "yodaInfo yoda" "market marketInfo" "lateInfo late" "textile textileInfo";
+      grid-template-areas: "subTittle subTittle" "weather weatherInfo" "socialIconsInfo socialIcons";
   padding-top: 10px;
   padding-bottom: 40px;
 }
 
-.portfolio .wrapper h2 {
+.portfolio .quick h2 {
   font-size: 3.2rem;
   margin-bottom: 20px;
 }
 
-.portfolio .wrapper h2 span {
+.portfolio .quick h2 span {
   font-size: 2.6rem;
 }
 
-.portfolio .wrapper ul {
+.portfolio .quick ul {
   text-decoration: none;
   list-style: none;
   display: -webkit-box;
@@ -1059,7 +1115,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
   display: flex;
 }
 
-.portfolio .wrapper ul li {
+.portfolio .quick ul li {
   font-size: 1.8rem;
   color: #fff;
   background-color: #e40b0b;
@@ -1069,16 +1125,16 @@ header .heroContainer .hero .scroll .iconScroll:before {
   padding: 5px;
 }
 
-.portfolio .wrapper p {
+.portfolio .quick p {
   font-size: 2rem;
   margin: 20px 0;
 }
 
-.portfolio .wrapper .links {
+.portfolio .quick .links {
   margin-top: 25px;
 }
 
-.portfolio .wrapper .links a {
+.portfolio .quick .links a {
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
@@ -1092,7 +1148,107 @@ header .heroContainer .hero .scroll .iconScroll:before {
   transition: all 0.35s ease-in-out;
 }
 
-.portfolio .wrapper .links a:hover, .portfolio .wrapper .links a:focus {
+.portfolio .quick .links a:hover, .portfolio .quick .links a:focus {
+  background-color: #e40b0b;
+  border: 2px solid #e40b0b;
+  -webkit-box-shadow: 4px 4px 1px rgba(255, 255, 255, 0.8);
+          box-shadow: 4px 4px 1px rgba(255, 255, 255, 0.8);
+}
+
+.portfolio .weather {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: weather;
+  padding: 20px 0;
+}
+
+.portfolio .weatherInfo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: weatherInfo;
+  margin-top: 80px;
+  margin-right: 5px;
+}
+
+.portfolio .socialIcons {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: socialIcons;
+  padding: 20px 0;
+}
+
+.portfolio .socialIconsInfo {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: socialIconsInfo;
+  margin-top: 80px;
+  margin-right: 5px;
+}
+
+.portfolio .feature {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (min-content)[4];
+      grid-template-rows: repeat(4, -webkit-min-content);
+      grid-template-rows: repeat(4, min-content);
+      grid-template-areas: "subTitle subTitle" "lateInfo late" "market marketInfo" "yodaInfo yoda" "textile textileInfo";
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.portfolio .feature h2 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.portfolio .feature h2 span {
+  font-size: 2.6rem;
+}
+
+.portfolio .feature ul {
+  text-decoration: none;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio .feature ul li {
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #e40b0b;
+  border-radius: 3px;
+  margin-left: 0;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.portfolio .feature p {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.portfolio .feature .links {
+  margin-top: 25px;
+}
+
+.portfolio .feature .links a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 3px;
+  background-color: #000;
+  margin-right: 10px;
+  padding: 10px 15px;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.portfolio .feature .links a:hover, .portfolio .feature .links a:focus {
   background-color: #e40b0b;
   border: 2px solid #e40b0b;
   -webkit-box-shadow: 4px 4px 1px rgba(255, 255, 255, 0.8);
@@ -1100,35 +1256,35 @@ header .heroContainer .hero .scroll .iconScroll:before {
 }
 
 .portfolio .yoda {
-  -ms-grid-row: 1;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: yoda;
   padding: 20px 0;
 }
 
 .portfolio .market {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: market;
   padding: 20px 0;
 }
 
 .portfolio .amILate {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: late;
   padding: 20px 0;
 }
 
 .portfolio .textile {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: textile;
   padding: 20px 0;
 }
 
 .portfolio .yodaInfo {
-  -ms-grid-row: 1;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: yodaInfo;
   margin-top: 50px;
@@ -1136,7 +1292,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
 }
 
 .portfolio .marketInfo {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: marketInfo;
   margin-top: 80px;
@@ -1144,7 +1300,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
 }
 
 .portfolio .amILateInfo {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: lateInfo;
   margin-top: 60px;
@@ -1152,7 +1308,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
 }
 
 .portfolio .textileInfo {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: textileInfo;
   margin-top: 70px;

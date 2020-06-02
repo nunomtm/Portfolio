@@ -28,7 +28,13 @@
                     <li><a class="active" href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                        <ul class="subMenu">
+                            <li class="subItem"><a href="#quick">Quick Projects</a></li>
+                            <li class="subItem"><a href="#feature">Feature Projects</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="burger">
@@ -218,7 +224,57 @@
         <section class="portfolio" id="portfolio">
             <h2 tabindex="0" class="title"><span class="accent"> > </span> Portfolio</h2>
 
-            <div class="wrapper">
+            <div id="quick" class="quick wrapper">
+                <h3 class="subTitle" data-aos="zoom-in-up">Quick Projects</h3>
+
+                <div class="weather" data-aos="zoom-in-up">
+                    <img src="./assets/weatherBuddy.png" alt="Screenshot of a mobile and notebook displaying the Weather Buddy website.">
+                </div>
+                <div class="weatherInfo" data-aos="zoom-in-up">
+                    <h2 tabindex="0">Weather Buddy | <span>Solo</span></h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>REST API</li>
+                        <li>Responsive</li>
+                    </ul>
+                    <p class="info">The Weather Buddy app is where you can search the weather forecasted based on the city and time of your search.</p>
+                    <div class="links">
+                        <a class="button" href="https://nunomtm.github.io/weather-app/" target="_blank">View Live
+                            <i class="fas fa-external-link-alt"></i></a>
+                        <a class="button" href="https://github.com/nunomtm/weather-app" target="_blank">View
+                            GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="socialIcons" data-aos="zoom-in-up">
+                    <img src="./assets/socialIcons.png" alt="Screenshot of a mobile and notebook displaying the Social Media website.">
+                </div>
+                <div class="socialIconsInfo" data-aos="zoom-in-up">
+                    <h2 tabindex="0">Social Media | <span>Solo</span></h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>REST API</li>
+                        <li>Responsive</li>
+                    </ul>
+                    <p class="info">The Social Media app is a quick and fun way to disply social media icons on hover and showing the color of the band.</p>
+                    <div class="links">
+                        <a class="button" href="https://nunomtm.github.io/socialIcons/" target="_blank">View Live
+                            <i class="fas fa-external-link-alt"></i></a>
+                        <a class="button" href="https://github.com/nunomtm/socialIcons" target="_blank">View
+                            GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="feature" class="feature wrapper">
+                <h3 class="subTitle" data-aos="zoom-in-up">Feature Projects</h3>
+
                 <div class="yoda" data-aos="zoom-in-up">
                     <img src="./assets/Yoda Wisdom.png"
                         alt="Screenshot of a mobile and notebook displaying the Yoda Wisdom website.">
