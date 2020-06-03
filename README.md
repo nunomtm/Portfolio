@@ -1,4 +1,4 @@
-<img src="/Portfolio/assets/ScreenshotPortfolio.png">
+<img src="/assets/screenShotPortfolio.png">
 
 
 ## Nuno's Portfolio
