@@ -1,888 +1,909 @@
 /* Responsive Starts Here */
 @include mq4K {
-    header {
-        background-image: url(../assets/4KHeader.jpg); // Photo by Matthew Henry on Unsplash
-    }
+	header {
+		background-image: url(../assets/4KHeader.jpg); // Photo by Matthew Henry on Unsplash
+	}
 }
 
 @include mqFullHD {
-    header {
-        background-image: url(../assets/header.jpg); // Photo by Matthew Henry on Unsplash
-    }
+	header {
+		background-image: url(../assets/header.jpg); // Photo by Matthew Henry on Unsplash
+	}
 }
 
 @include mqLaptopHD {
-    .wrapper {
-        width: 80%;
-    }
-    .about,
-    .skills,
-    .portfolio {
-        .title {
-            font-size: 4.5rem;
-            padding-top: 40px;
-            .accent {
-                font-size: 5rem;
-            }
-        }
-    }
-    header {
-        .heroContainer {
-            .hero {
-                padding-top: 185px;
-                .name {
-                    font-size: 5rem;
-                }
-                .headline {
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
-    .about {
-        .wrapper {
-            margin-top: 20px;
-            .photo {
-                img {
-                    width: 80%;
-                }
-            }
-            .aboutMe {
-                p {
-                    font-size: 2rem;
-                }
-            }
-            .border {
-                width: 30%;
-                top: 24%;
-                right: 11%;
-            }
-        }
-    }
-    .skills {
-        .logos {
-            padding-top: 40px;
-            .html,
-            .css,
-            .sass,
-            .mobile,
-            .vsCode,
-            .javaScript,
-            .jQuery,
-            .react,
-            .firebase,
-            .github,
-            .git,
-            .accessible {
-                margin: 70px 0;
-                p {
-                    font-size: 1.8rem;
-                }
-                i {
-                    font-size: 7.5rem;
-                }
-                img {
-                    width: 79px;
-                }
-                .responsive {
-                    width: 102px;
-                }
-            }
-        }
-    }
-    .contact {
-        min-height: 89.1vh;
-        padding-top: 40px;
-        .wrapper {
-            .border {
-                top: 5%;
-                left: 9%;
-                height: 55%;
-            }
-            .contactMe {
-                h2 {
-                    font-size: 4.5rem;
-                }
-                p {
-                    font-size: 1.8rem;
-                    line-height: 1.5;
-                }
-                .contactDetails {
-                    p {
-                        line-height: 1.5;
-                        margin-top: 10px;
-                    }
-                    .details {
-                        a {
-                            font-size: 1.6rem;
-                            i {
-                                font-size: 2rem;
-                            }
-                        }
-                        .resume,
-                        .email {
-                            padding: 10px 0;
-                        }
-                    }
-                }
-            }
-            fieldset {
-                margin-top: 35px;
-                legend {
-                    font-size: 2.5rem;
-                    padding-top: 25px;
-                }
-                form {
-                    padding: 10px 0;
-                    #username,
-                    #useremail,
-                    #message {
-                        font-size: 1.4rem;
-                        padding: 10px;
-                    }
-                    input[type="submit"] {
-                        font-size: 1.4rem;
-                    }
-                }
-            }
-        }
-    }
+	.wrapper {
+		width: 80%;
+	}
+	.about,
+	.skills,
+	.portfolio {
+		.title {
+			font-size: 4.5rem;
+			padding-top: 40px;
+			.accent {
+				font-size: 5rem;
+			}
+		}
+	}
+	header {
+		.heroContainer {
+			.hero {
+				padding-top: 185px;
+				.name {
+					font-size: 5rem;
+				}
+				.headline {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+	.about {
+		.wrapper {
+			margin-top: 20px;
+			.photo {
+				img {
+					width: 80%;
+				}
+			}
+			.aboutMe {
+				p {
+					font-size: 2rem;
+				}
+			}
+			.border {
+				width: 30%;
+				top: 24%;
+				right: 11%;
+			}
+		}
+	}
+	.skills {
+		.logos {
+			padding-top: 40px;
+			.html,
+			.css,
+			.sass,
+			.mobile,
+			.vsCode,
+			.javaScript,
+			.jQuery,
+			.react,
+			.firebase,
+			.github,
+			.git,
+			.accessible {
+				margin: 70px 0;
+				p {
+					font-size: 1.8rem;
+				}
+				i {
+					font-size: 7.5rem;
+				}
+				img {
+					width: 79px;
+				}
+				.responsive {
+					width: 102px;
+				}
+			}
+		}
+	}
+	.contact {
+		min-height: 89.1vh;
+		padding-top: 40px;
+		.wrapper {
+			.border {
+				top: 5%;
+				left: 9%;
+				height: 55%;
+			}
+			.contactMe {
+				h2 {
+					font-size: 4.5rem;
+				}
+				p {
+					font-size: 1.8rem;
+					line-height: 1.5;
+				}
+				.contactDetails {
+					p {
+						line-height: 1.5;
+						margin-top: 10px;
+					}
+					.details {
+						a {
+							font-size: 1.6rem;
+							i {
+								font-size: 2rem;
+							}
+						}
+						.resume,
+						.email {
+							padding: 10px 0;
+						}
+					}
+				}
+			}
+			fieldset {
+				margin-top: 35px;
+				legend {
+					font-size: 2.5rem;
+					padding-top: 25px;
+				}
+				form {
+					padding: 10px 0;
+					#username,
+					#useremail,
+					#message {
+						font-size: 1.4rem;
+						padding: 10px;
+					}
+					input[type="submit"] {
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 @include mqTabletLand {
-    header {
-        .navContainer {
-            .nav {
-                .navLinks {
-                    width: 70%;
-                }
-            }
-        }
-        .heroContainer {
-            .hero {
-                padding-top: 200px;
-                .scroll {
-                    .iconScroll {
-                        top: 85%;
-                    }
-                }
-            }
-        }
-    }
-    .about {
-        .wrapper {
-            .photo {
-                img {
-                    width: 90%;
-                }
-            }
-            .aboutMe {
-                margin-top: 25px;
-            }
-            .border {
-                top: 41%;
-                height: 52%;
-            }
-        }
-    }
-    .portfolio {
-        .wrapper {
-            ul {
-                flex-wrap: wrap;
-            }
-            li {
-                margin-top: 10px;
-            }
-            .yoda,
-            .market,
-            .amILate,
-            .textile {
-                padding: 70px 0;
-            }
-            .yodaInfo {
-                margin-top: 25px;
-            }
-            .marketInfo {
-                margin-top: 45px;
-            }
-            .amILateInfo {
-                margin-top: 20px;
-            }
-            .textileInfo {
-                margin-top: 60px;
-            }
-        }
-    }
+	header {
+		.navContainer {
+			.nav {
+				.navLinks {
+					width: 70%;
+				}
+			}
+		}
+		.heroContainer {
+			.hero {
+				padding-top: 200px;
+				.scroll {
+					.iconScroll {
+						top: 85%;
+					}
+				}
+			}
+		}
+	}
+	.about {
+		.wrapper {
+			.photo {
+				img {
+					width: 90%;
+				}
+			}
+			.aboutMe {
+				margin-top: 25px;
+			}
+			.border {
+				top: 41%;
+				height: 52%;
+			}
+		}
+	}
+	.portfolio {
+		.wrapper {
+			ul {
+				flex-wrap: wrap;
+			}
+			li {
+				margin-top: 10px;
+			}
+		}
+		.quick {
+			.weatherInfo {
+				margin-top: 0;
+				padding-bottom: 20px;
+			}
+			.socialIconsInfo {
+				margin-top: 10px;
+			}
+		}
+		.feature {
+			.yoda,
+			.market,
+			.amILate,
+			.textile {
+				padding: 70px 0;
+			}
+			.yodaInfo {
+				margin-top: 25px;
+			}
+			.marketInfo {
+				margin-top: 45px;
+			}
+			.amILateInfo {
+				margin-top: 20px;
+			}
+			.textileInfo {
+				margin-top: 60px;
+			}
+		}
+	}
 }
 
 @media (max-width: 900px) {
-    header {
-        .navContainer {
-            .nav {
-                .navLinks {
-                    width: 80%;
-                }
-            }
-        }
-        .heroContainer {
-            .hero {
-                padding-top: 220px;
-            }
-        }
-    }
-    .about {
-        .wrapper {
-            flex-direction: column;
-            .aboutMe {
-                max-width: 90%;
-            }
-            .border {
-                top: 59%;
-                height: 30%;
-            }
-        }
-    }
-    .portfolio {
-        .wrapper {
-            .yoda,
-            .market,
-            .amILate,
-            .textile {
-                padding: 90px 0;
-            }
-        }
-    }
-    .contact {
-        .contactMe {
-            .contactDetails {
-                .details {
-                    .email {
-                        a {
-                            font-size: 1.6rem;
-                            i {
-                                font-size: 2rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+	header {
+		.navContainer {
+			.nav {
+				.navLinks {
+					width: 80%;
+				}
+			}
+		}
+		.heroContainer {
+			.hero {
+				padding-top: 220px;
+			}
+		}
+	}
+	.about {
+		.wrapper {
+			flex-direction: column;
+			.aboutMe {
+				max-width: 90%;
+			}
+			.border {
+				top: 59%;
+				height: 30%;
+			}
+		}
+	}
+	.portfolio {
+		.quick {
+			.weather {
+				padding: 50px 0;
+			}
+			.socialIcons {
+				padding: 60px 0;
+			}
+		}
+		.feature {
+			.yoda,
+			.market,
+			.amILate,
+			.textile {
+				padding: 90px 0;
+			}
+		}
+	}
+	.contact {
+		.contactMe {
+			.contactDetails {
+				.details {
+					.email {
+						a {
+							font-size: 1.6rem;
+							i {
+								font-size: 2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @include mqTabletVert {
-    header {
-        .navContainer {
-            .nav {
-                .navLinks {
-                    position: absolute;
-                    top: 6vh;
-                    right: 0;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    height: 94vh;
-                    width: 50%;
-                    background-color: rgba($secondaryColor, 0.85);
-                    transform: translateX(100%);
-                    transition: transform 0.5s ease-in;
-                    z-index: 2;
-                    li {
-                        padding: 60px 0;
-                        opacity: 0;
-                    }
-                    a {
-                        font-weight: bold;
-                    }
-                }
-                .burger {
-                    display: block;
-                }
-                .navActive {
-                    transform: translateX(0%);
-                }
-            }
-        }
-        // Burger Toggle Animation
-        .toggle {
-            .line1 {
-                transform: rotate(-45deg) translate(-5px, 6px);
-            }
-            .line2 {
-                opacity: 0;
-            }
-            .line3 {
-                transform: rotate(45deg) translate(-5px, -6px);
-            }
-        }
-        // Burger Animation
-        @keyframes navLinkFade {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0px);
-            }
-        }
-        .heroContainer {
-            .social {
-                display: none;
-            }
-            .hero {
-                padding-top: 310px;
-                .name {
-                    font-size: 4rem;
-                }
-            }
-        }
-    }
-    .about {
-        .wrapper {
-            padding-bottom: 30px;
-            .photo {
-                max-width: 60%;
-            }
-            .border {
-                top: 57%;
-                right: 10%;
-            }
-        }
-    }
-    .skills {
-        .logos {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, min-content);
-            grid-template-areas:
-            "html css sass mobile"
-            "vsCode js jq react"
-            "firebase github git accessible";
-        }
-    }
-    .portfolio {
-        .wrapper {
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(8, min-content);
-            grid-template-areas:
-            "yoda"
-            "yodaInfo"
-            "market"
-            "marketInfo"
-            "late"
-            "lateInfo"
-            "textile" 
-            "textileInfo";
-            padding-bottom: 60px;
-            .yoda,
-            .market,
-            .amILate,
-            .textile {
-                padding: 60px 0;
-            }
-            .yodaInfo,
-            .marketInfo,
-            .amILateInfo,
-            .textileInfo {
-                margin: 0;
-            }
-        }
-    }
-    .contact {
-        .wrapper {
-            flex-direction: column;
-            .border {
-                height: 48%;
-                top: 10%;
-                left: 68%;
-            }
-            .contactMe {
-                width: 100%;
-                p {
-                    padding: 10px 0;
-                }
-                .contactDetails {
-                    .details {
-                        align-items: center;
-                        .arrow {
-                            margin-left: 0;
-                        }
-                        .email {
-                            .emailBtn {
-                                font-size: 1.8rem;
-                            }
-                        }
-                    }
-                }   
-            }
-            fieldset {
-                width: 100%; 
-                padding-top: 0;
-                legend {
-                    padding-top: 50px;
-                }
-            }
-            .socialMedia {
-                width: 50%;
-                display: block;
-                ul {
-                    padding-bottom: 50px;
-                }
-            }
-        }
-    }
+	header {
+		.navContainer {
+			.nav {
+				.navLinks {
+					position: absolute;
+					top: 6vh;
+					right: 0;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					height: 94vh;
+					width: 50%;
+					background-color: rgba($secondaryColor, 0.85);
+					transform: translateX(100%);
+					transition: transform 0.5s ease-in;
+					z-index: 2;
+					li {
+						padding: 60px 0;
+						opacity: 0;
+					}
+					a {
+						font-weight: bold;
+					}
+				}
+				.burger {
+					display: block;
+				}
+				.navActive {
+					transform: translateX(0%);
+				}
+			}
+		}
+		// Burger Toggle Animation
+		.toggle {
+			.line1 {
+				transform: rotate(-45deg) translate(-5px, 6px);
+			}
+			.line2 {
+				opacity: 0;
+			}
+			.line3 {
+				transform: rotate(45deg) translate(-5px, -6px);
+			}
+		}
+		// Burger Animation
+		@keyframes navLinkFade {
+			from {
+				opacity: 0;
+				transform: translateX(50px);
+			}
+			to {
+				opacity: 1;
+				transform: translateX(0px);
+			}
+		}
+		.heroContainer {
+			.social {
+				display: none;
+			}
+			.hero {
+				padding-top: 310px;
+				.name {
+					font-size: 4rem;
+				}
+			}
+		}
+	}
+	.about {
+		.wrapper {
+			padding-bottom: 30px;
+			.photo {
+				max-width: 60%;
+			}
+			.border {
+				top: 57%;
+				right: 10%;
+			}
+		}
+	}
+	.skills {
+		.logos {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(3, min-content);
+			grid-template-areas: "html css sass mobile" "vsCode js jq react" "firebase github git accessible";
+		}
+	}
+	.portfolio {
+		.quick {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(5, min-content);
+			grid-template-areas: "subTitle" "weather" "weatherInfo" "socialIcons" "socialIconsInfo";
+			.socialIconsInfo {
+				padding-bottom: 60px;
+			}
+		}
+		.feature {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(9, min-content);
+			grid-template-areas: "subTitle" "yoda" "yodaInfo" "market" "marketInfo" "late" "lateInfo" "textile" "textileInfo";
+			padding-bottom: 60px;
+			.yoda,
+			.market,
+			.amILate,
+			.textile {
+				padding: 60px 0;
+			}
+			.yodaInfo,
+			.marketInfo,
+			.amILateInfo,
+			.textileInfo {
+				margin: 0;
+			}
+		}
+	}
+	.contact {
+		.wrapper {
+			flex-direction: column;
+			.border {
+				height: 48%;
+				top: 10%;
+				left: 68%;
+			}
+			.contactMe {
+				width: 100%;
+				p {
+					padding: 10px 0;
+				}
+				.contactDetails {
+					.details {
+						align-items: center;
+						.arrow {
+							margin-left: 0;
+						}
+						.email {
+							.emailBtn {
+								font-size: 1.8rem;
+							}
+						}
+					}
+				}
+			}
+			fieldset {
+				width: 100%;
+				padding-top: 0;
+				legend {
+					padding-top: 50px;
+				}
+			}
+			.socialMedia {
+				width: 50%;
+				display: block;
+				ul {
+					padding-bottom: 50px;
+				}
+			}
+		}
+	}
 }
 
 @include mqMobile {
-    header {
-        background-position: top;
-        .navContainer {
-            .nav {
-                .navLinks {
-                    justify-content: flex-start;
-                    li {
-                        padding: 45px 0;
-                    }
-                }
-            }
-        }
-        .heroContainer {
-            .social {
-                display: none;
-            }
-            .hero {
-                .name {
-                    font-size: 2.8rem;
-                } 
-                .scroll {
-                    .iconScroll,
-                    .iconScroll:before {
-                        left: 47%;
-                    }
-                    .iconScroll {
-                        top: 85%;
-                    }
-                }
-            }
-        }
-    }
-    .about {
-        .title {
-            font-size: 4rem;
-        }
-        .wrapper {
-            .photo {
-                img {
-                    width: 100%;
-                }
-            }
-            .aboutMe {
-               max-width: 90%;
-                p {
-                    width: 100%;
-                }
-            }
-            .border {
-                top: 40%;
-                right: 8%;
-                height: 45%;
-            }
-        }
-    }
-    .skills {
-        .title {
-            font-size: 4rem;
-        }
-        .logos {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(4, min-content);
-            grid-template-areas:
-            "html css sass" 
-            "mobile vsCode js"
-            "jq react firebase"
-            "github git accessible";
-        }
-    }
-    .portfolio {
-        .title {
-            font-size: 4rem;
-        }
-        .yodaInfo,
-        .marketInfo,
-        .textileInfo,
-        .amILateInfo {
-            h2,
-            .links {
-                text-align: center;
-            }
-            ul {
-                justify-content: center;
-            }
-        }
-    }
-    .contact {
-        .wrapper {
-            .border {
-                width: 50%;
-                top: 9%;
-                left: 45%;
-            }
-            fieldset {
-                legend {
-                    padding-top: 65px;
-                }
-            }
-        }
-    }
+	header {
+		background-position: top;
+		.navContainer {
+			.nav {
+				.navLinks {
+					justify-content: flex-start;
+					li {
+						padding: 45px 0;
+					}
+					.subMenu {
+						display: none;
+					}
+				}
+			}
+		}
+		.heroContainer {
+			.social {
+				display: none;
+			}
+			.hero {
+				.name {
+					font-size: 2.8rem;
+				}
+				.scroll {
+					.iconScroll,
+					.iconScroll:before {
+						left: 47%;
+					}
+					.iconScroll {
+						top: 85%;
+					}
+				}
+			}
+		}
+	}
+	.about {
+		.title {
+			font-size: 4rem;
+		}
+		.wrapper {
+			.photo {
+				img {
+					width: 100%;
+				}
+			}
+			.aboutMe {
+				max-width: 90%;
+				p {
+					width: 100%;
+				}
+			}
+			.border {
+				top: 40%;
+				right: 8%;
+				height: 45%;
+			}
+		}
+	}
+	.skills {
+		.title {
+			font-size: 4rem;
+		}
+		.logos {
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(4, min-content);
+			grid-template-areas: "html css sass" "mobile vsCode js" "jq react firebase" "github git accessible";
+		}
+	}
+	.portfolio {
+		.title {
+			font-size: 4rem;
+		}
+		.weatherInfo,
+		.socialIconsInfo,
+		.yodaInfo,
+		.marketInfo,
+		.textileInfo,
+		.amILateInfo {
+			h2,
+			.links {
+				text-align: center;
+			}
+			ul {
+				justify-content: center;
+			}
+		}
+	}
+	.contact {
+		.wrapper {
+			.border {
+				width: 50%;
+				top: 9%;
+				left: 45%;
+			}
+			fieldset {
+				legend {
+					padding-top: 65px;
+				}
+			}
+		}
+	}
 }
 
 @include mqMobilePlus {
-    header {
-        .heroContainer {
-            .hero {
-                padding-top: 260px;
-                .logo img {
-                    height: 80px;
-                    width: 80px;
-                }
-                .name h2 {
-                    font-size: 3.6rem;
-                    margin-top: 40px;
-                }
-                .headline {
-                    font-size: 1.6rem;
-                }
-                .scroll {
-                    .iconScroll,
-                    .iconScroll:before {
-                        left: 46%;
-                    }
-                }
-            }
-        }
-    }
-    .about {
-        .wrapper {
-            .border {
-                top: 35%;
-            }
-        }
-    }
-    .portfolio {
-        .wrapper {
-            .yodaInfo,
-            .marketInfo,
-            .amILateInfo,
-            .textileInfo {
-                margin-left: 5px;
-            }
-        }
-    }
-    .contact {
-        .wrapper {
-            .contactMe {
-                margin-left: 5px;
-                .contactDetails {
-                    .details {
-                        .email{
-                            .emailBtn {
-                                font-size: 1.5rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        fieldset {
-            margin-left: 5px;
-            #username,
-            #useremail,
-            #message {
-                border: 2px solid $primaryColor;
-            }
-        }
-    }
-    footer {
-        .wrapper {
-            p {
-                font-size: 1.5rem;
-            }
-        }
-    }
+	header {
+		.heroContainer {
+			.hero {
+				padding-top: 260px;
+				.logo img {
+					height: 80px;
+					width: 80px;
+				}
+				.name h2 {
+					font-size: 3.6rem;
+					margin-top: 40px;
+				}
+				.headline {
+					font-size: 1.6rem;
+				}
+				.scroll {
+					.iconScroll,
+					.iconScroll:before {
+						left: 46%;
+					}
+				}
+			}
+		}
+	}
+	.about {
+		.wrapper {
+			.border {
+				top: 35%;
+			}
+		}
+	}
+	.portfolio {
+		.quick h2 {
+			font-size: 3rem;
+		}
+		.wrapper {
+			.weatherInfo,
+			.socialIconsInfo,
+			.yodaInfo,
+			.marketInfo,
+			.amILateInfo,
+			.textileInfo {
+				margin-left: 5px;
+			}
+		}
+	}
+	.contact {
+		.wrapper {
+			.contactMe {
+				margin-left: 5px;
+				.contactDetails {
+					.details {
+						.email {
+							.emailBtn {
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+		fieldset {
+			margin-left: 5px;
+			#username,
+			#useremail,
+			#message {
+				border: 2px solid $primaryColor;
+			}
+		}
+	}
+	footer {
+		.wrapper {
+			p {
+				font-size: 1.5rem;
+			}
+		}
+	}
 }
 
 @include mqMobileX {
-    header {
-        .heroContainer {
-            .social {
-                ul li {
-                    i {
-                        font-size: 2.8rem;
-                        margin: 10px 5px;
-                    }
-                    .slider {
-                        top: 12px;
-                        left: 34px;
-                        height: 25px;
-                        p {
-                            line-height: 25px;
-                        }
-                    }
-                }
-            }
-            .hero {
-                padding-top: 160px;
-                .logo img {
-                    height: 90px;
-                    width: 90px;
-                }
-                .name h2 {
-                    font-size: 2.8rem;
-                    margin-top: 30px;
-                }
-            }
-        }
-    }
-    .about {
-        .arrowUp {
-            right: 5px;
-        }
-        .wrapper {
-            .border {
-                top: 32%;
-                right: 6%;
-            }
-        }
-    }
-    .skills {
-        .logos {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(6, min-content);
-            grid-template-areas:
-            "html css"
-            "sass mobile"
-            "vsCode js"
-            "jq react" 
-            "firebase github"
-            "git accessible";
-        }
-    }
-    .portfolio {
-        .title {
-            font-size: 3.5rem;
-        }
-        .wrapper {
-            h2 {
-                font-size: 3rem;
-            }
-            p {
-                font-size: 1.8rem;
-            }
-            .links a {
-                font-size: 1.5rem;
-                padding: 10px;
-            }
-        }
-    }
-    .contact {
-        .wrapper {
-            .border {
-                height: 44.5%;
-            }
-            .contactMe {
-                .contactDetails {
-                    .details {
-                        .email{
-                            .emailBtn {
-                                font-size: 1.4rem;
-                            }
-                        }
-                    }
-                }
-            }
-            fieldset {
-                legend {
-                    font-size: 2.8rem;
-                }
-            }
-        }
-    }
-    footer {
-        .wrapper p {
-            font-size: 1.3rem;
-        }
-    }
+	header {
+		.heroContainer {
+			.social {
+				ul li {
+					i {
+						font-size: 2.8rem;
+						margin: 10px 5px;
+					}
+					.slider {
+						top: 12px;
+						left: 34px;
+						height: 25px;
+						p {
+							line-height: 25px;
+						}
+					}
+				}
+			}
+			.hero {
+				padding-top: 160px;
+				.logo img {
+					height: 90px;
+					width: 90px;
+				}
+				.name h2 {
+					font-size: 2.8rem;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+	.about {
+		.arrowUp {
+			right: 5px;
+		}
+		.wrapper {
+			.border {
+				top: 32%;
+				right: 6%;
+			}
+		}
+	}
+	.skills {
+		.logos {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(6, min-content);
+			grid-template-areas: "html css" "sass mobile" "vsCode js" "jq react" "firebase github" "git accessible";
+		}
+	}
+	.portfolio {
+		.title {
+			font-size: 3.5rem;
+		}
+		.wrapper {
+			justify-content: center;
+			h2 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 1.8rem;
+			}
+			.links a {
+				font-size: 1.5rem;
+				padding: 10px;
+			}
+		}
+	}
+	.contact {
+		.wrapper {
+			.border {
+				height: 44.5%;
+			}
+			.contactMe {
+				.contactDetails {
+					.details {
+						.email {
+							.emailBtn {
+								font-size: 1.4rem;
+							}
+						}
+					}
+				}
+			}
+			fieldset {
+				legend {
+					font-size: 2.8rem;
+				}
+			}
+		}
+	}
+	footer {
+		.wrapper p {
+			font-size: 1.3rem;
+		}
+	}
 }
 
 @include mqMobileSE {
-    header {
-        .navContainer {
-            .nav {
-                .initial {
-                    font-size: 1rem;
-                }
-                .navLinks {
-                    li a {
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-        }
-        .heroContainer {
-            .hero {
-                padding-top: 150px;
-                .logo img {
-                    height: 60px;
-                    width: 60px;
-                }
-                .name h2 {
-                    font-size: 2.5rem;
-                    margin-top: 15px;
-                }
-                .headline {
-                    font-size: 1.5rem;
-                }
-                .scroll {
-                    .iconScroll,
-                    .iconScroll:before {
-                        left: 45%;
-                    }
-                    .iconScroll {
-                        width: 31px;
-                        height: 55px;
-                    }
-                    .iconScroll:before {
-                        margin-left: -2px;
-                    }
-                }
-            }
-        }
-    }
-    .about {
-        .title {
-            font-size: 3.5rem;
-        }
-        .wrapper {
-            .aboutMe p {
-                font-size: 1.5rem;
-            }
-            .border {
-                top: 41%;
-            }
-        }
-    }
-    .skills {
-        .title {
-            font-size: 3.5rem;
-        }
-        .logos {
-            .html,
-            .css,
-            .sass,
-            .mobile,
-            .vsCode,
-            .javaScript,
-            .jQuery,
-            .react,
-            .firebase,
-            .github,
-            .git,
-            .accessible {
-                i {
-                    font-size: 6.5rem;
-                }
-                img {
-                    width: 68px;
-                }
-                .responsive {
-                    width: 87px;
-                }
-            }
-        }
-    }
-    .portfolio {
-        .title {
-            font-size: 3.5rem;
-        }
-        .wrapper {
-            .yoda,
-            .market,
-            .amILate,
-            .textile {
-                padding: 35px 0;
-            }
-            .yodaInfo,
-            .marketInfo,
-            .amILateInfo,
-            .textileInfo {
-                border-bottom: 3px solid $primaryColor;
-                padding-bottom: 30px;
-            }
-            h2 {
-                font-size: 2.5rem;
-                margin-bottom: 5px;
-            }
-            ul li {
-                font-size: 1.6rem;
-            }
-            p {
-                font-size: 1.7rem;
-                margin-left: 5px;
-            }
-            .links {
-                a {
-                    font-size: 1.2rem;
-                    margin-right: 0;
-                }
-            }
-        }
-    }
-    .contact {
-        .wrapper {
-            .border {
-                top: 3%;
-            }
-            .contactMe {
-                margin-left: 5px;
-                h2 {
-                    font-size: 3rem;
-                }
-                p {
-                    font-size: 1.6rem;
-                }
-                .contactDetails {
-                    .details {
-                        a {
-                            font-size: 1.4rem;
-                            i {
-                                font-size: 2rem;
-                            }
-                        }
-                        .resumeBtn,
-                        .emailBtn {
-                            padding: 10px 5px;
-                        }
-                    }
-                }
-            }
-            fieldset {
-                margin-left: 5px;
-                legend {
-                    font-size: 1.8rem;
-                }
-                form {
-                    input[type="submit"] {
-                        font-size: 1.4rem;
-                        padding: 8px;
-                    }
-                }
-            }
-        }
-    }
-    footer {
-        .wrapper p {
-            font-size: 1.29rem;
-        }
-    }
+	header {
+		.navContainer {
+			.nav {
+				.initial {
+					font-size: 1rem;
+				}
+				.navLinks {
+					li a {
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+		.heroContainer {
+			.hero {
+				padding-top: 150px;
+				.logo img {
+					height: 60px;
+					width: 60px;
+				}
+				.name h2 {
+					font-size: 2.5rem;
+					margin-top: 15px;
+				}
+				.headline {
+					font-size: 1.5rem;
+				}
+				.scroll {
+					.iconScroll,
+					.iconScroll:before {
+						left: 45%;
+					}
+					.iconScroll {
+						width: 31px;
+						height: 55px;
+					}
+					.iconScroll:before {
+						margin-left: -2px;
+					}
+				}
+			}
+		}
+	}
+	.about {
+		.title {
+			font-size: 3.5rem;
+		}
+		.wrapper {
+			.aboutMe p {
+				font-size: 1.5rem;
+			}
+			.border {
+				top: 41%;
+			}
+		}
+	}
+	.skills {
+		.title {
+			font-size: 3.5rem;
+		}
+		.logos {
+			.html,
+			.css,
+			.sass,
+			.mobile,
+			.vsCode,
+			.javaScript,
+			.jQuery,
+			.react,
+			.firebase,
+			.github,
+			.git,
+			.accessible {
+				i {
+					font-size: 6.5rem;
+				}
+				img {
+					width: 68px;
+				}
+				.responsive {
+					width: 87px;
+				}
+			}
+		}
+	}
+	.portfolio {
+		.title {
+			font-size: 3.5rem;
+		}
+		.wrapper {
+			h3 {
+				font-size: 3rem;
+				width: 255px;
+			}
+			.yoda,
+			.market,
+			.amILate,
+			.textile {
+				padding: 35px 0;
+			}
+			.yodaInfo,
+			.marketInfo,
+			.amILateInfo,
+			.textileInfo {
+				border-bottom: 3px solid $primaryColor;
+				padding-bottom: 30px;
+			}
+			h2 {
+				font-size: 2.5rem;
+				margin-bottom: 5px;
+			}
+			ul li {
+				font-size: 1.6rem;
+			}
+			p {
+				font-size: 1.7rem;
+				margin-left: 5px;
+			}
+			.links {
+				a {
+					font-size: 1.2rem;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.contact {
+		.wrapper {
+			.border {
+				top: 3%;
+			}
+			.contactMe {
+				margin-left: 5px;
+				h2 {
+					font-size: 3rem;
+				}
+				p {
+					font-size: 1.6rem;
+				}
+				.contactDetails {
+					.details {
+						a {
+							font-size: 1.4rem;
+							i {
+								font-size: 2rem;
+							}
+						}
+						.resumeBtn,
+						.emailBtn {
+							padding: 10px 5px;
+						}
+					}
+				}
+			}
+			fieldset {
+				margin-left: 5px;
+				legend {
+					font-size: 1.8rem;
+				}
+				form {
+					input[type="submit"] {
+						font-size: 1.4rem;
+						padding: 8px;
+					}
+				}
+			}
+		}
+	}
+	footer {
+		.wrapper p {
+			font-size: 1.29rem;
+		}
+	}
 }

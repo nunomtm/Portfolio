@@ -23,8 +23,8 @@
 	.quick {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(3, min-content);
-		grid-template-areas: "subTittle subTittle" "weather weatherInfo" "socialIconsInfo socialIcons";
+		grid-template-rows: repeat(5, min-content);
+		grid-template-areas: "subTittle subTittle" "weather weatherInfo" "socialIconsInfo socialIcons" "tipCalculator tipCalculatorInfo";
 		padding-top: 10px;
 		padding-bottom: 40px;
 		h2 {
@@ -92,13 +92,21 @@
 		margin-top: 80px;
 		margin-right: 5px;
 	}
+	.tipCalculator {
+		grid-area: tipCalculator;
+		padding: 20px 0;
+	}
+	.tipCalculatorInfo {
+		grid-area: tipCalculatorInfo;
+		margin-top: 80px;
+		margin-right: 5px;
+	}
 
 	.feature {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(4, min-content);
-		grid-template-areas: "subTitle subTitle" "lateInfo late" "market marketInfo" "yodaInfo yoda"
-			"textile textileInfo";
+		grid-template-areas: "subTitle subTitle" "lateInfo late" "market marketInfo" "yodaInfo yoda" "textile textileInfo";
 		padding-top: 10px;
 		padding-bottom: 40px;
 		h2 {

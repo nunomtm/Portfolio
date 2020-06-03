@@ -1,149 +1,152 @@
 .skills {
-    background: $baseBackgroundColor;
-    position: relative;
-    min-height: 94vh;
-    .title {
-        font-family: $secondaryFont;
-        font-size: 6rem;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        color: $primaryFontColor;
-        padding-top: 80px;
-        .accent {
-            font-size: 5.5rem;
-            color: $primaryColor;
-        }
-    }
-    .logos {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, min-content);
-        grid-template-areas:
-        "html css sass mobile vsCode js"
-        "jq react firebase github git accessible";
-        list-style: none;
-        padding-top: 50px;
-        .html {
-            grid-area: html;
-        }
-        .css {
-            grid-area: css;
-        }
-        .sass {
-            grid-area: sass;
-        }
-        .mobile {
-            grid-area: mobile;
-        }
-        .vsCode {
-            grid-area: vsCode;
-        }
-        .javaScript {
-            grid-area: js;
-        }
-        .jQuery {
-            grid-area: jq;
-        }
-        .react {
-            grid-area: react;
-        }
-        .firebase {
-            grid-area: firebase;
-        }
-        .github {
-            grid-area: github;
-        }
-        .git {
-            grid-area: git;
-        }
-        .accessible {
-            grid-area: accessible;
-        }
-        .html,
-        .css,
-        .sass,
-        .mobile,
-        .vsCode,
-        .javaScript,
-        .jQuery,
-        .react,
-        .firebase,
-        .github,
-        .git,
-        .accessible {
-            display: flex;
-            flex-direction: column;
-            margin: 100px 0;
-            p {
-                font-size: 2rem;
-                color: $primaryFontColor;
-                text-decoration: none;
-                text-align: center; 
-                margin-top: 10px;
-            }
-            a {
-                text-align: center;
-            }
-            i {
-                font-size: 9rem;
-                color: $primaryColor;
-            }
-            img {
-                width: 93px;
-                margin: 0 auto;
-            }
-            .responsive {
-                width: 125px;
-                margin-bottom: 11px;
-            }
-            .devicon-git-plain path {
-                fill: $primaryColor;
-                list-style: none;
-            }
-        }
-    }
+	background: $baseBackgroundColor;
+	position: relative;
+	min-height: 94vh;
+	.title {
+		font-family: $secondaryFont;
+		font-size: 6rem;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		color: $primaryFontColor;
+		padding-top: 80px;
+		.accent {
+			font-size: 5.5rem;
+			color: $primaryColor;
+		}
+	}
+	.logos {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(2, min-content);
+		grid-template-areas: "html css sass mobile vsCode js" "jq react firebase github git accessible";
+		list-style: none;
+		padding-top: 50px;
+		.html {
+			grid-area: html;
+		}
+		.css {
+			grid-area: css;
+		}
+		.sass {
+			grid-area: sass;
+		}
+		.mobile {
+			grid-area: mobile;
+		}
+		.vsCode {
+			grid-area: vsCode;
+		}
+		.javaScript {
+			grid-area: js;
+		}
+		.jQuery {
+			grid-area: jq;
+		}
+		.react {
+			grid-area: react;
+		}
+		.firebase {
+			grid-area: firebase;
+		}
+		.github {
+			grid-area: github;
+		}
+		.git {
+			grid-area: git;
+		}
+		.accessible {
+			grid-area: accessible;
+		}
+		.html,
+		.css,
+		.sass,
+		.mobile,
+		.vsCode,
+		.javaScript,
+		.jQuery,
+		.react,
+		.firebase,
+		.github,
+		.git,
+		.accessible {
+			display: flex;
+			flex-direction: column;
+			margin: 100px 0;
+			p {
+				font-size: 2rem;
+				color: $primaryFontColor;
+				text-decoration: none;
+				text-align: center;
+				margin-top: 10px;
+			}
+			a {
+				text-align: center;
+			}
+			i {
+				font-size: 9rem;
+				// color: grayscale($color: #444343);
+				// transition: all 0.4s ease-in-out;
+				// &:hover {
+				color: $primaryColor;
+				// }
+			}
+			img {
+				width: 93px;
+				margin: 0 auto;
+				color: grayscale($color: #444343);
+			}
+			.responsive {
+				width: 125px;
+				margin-bottom: 11px;
+			}
+			// .devicon-git-plain path {
+			// 	fill: $primaryColor;
+			// 	list-style: none;
+			// }
+		}
+	}
 }
 
 /* Skills Icons Hover Effect */
 @-webkit-keyframes hvr-icon-pulse-grow {
-    to {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
+	to {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
 }
 @keyframes hvr-icon-pulse-grow {
-    to {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
+	to {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
 }
 .hvr-icon-pulse-grow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 .hvr-icon-pulse-grow .hvr-icon {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
-.hvr-icon-pulse-grow:hover .hvr-icon, 
-.hvr-icon-pulse-grow:focus .hvr-icon, 
+.hvr-icon-pulse-grow:hover .hvr-icon,
+.hvr-icon-pulse-grow:focus .hvr-icon,
 .hvr-icon-pulse-grow:active .hvr-icon {
-    -webkit-animation-name: hvr-icon-pulse-grow;
-    animation-name: hvr-icon-pulse-grow;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+	-webkit-animation-name: hvr-icon-pulse-grow;
+	animation-name: hvr-icon-pulse-grow;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
 }
 /* Skills Icons Hover Effect End */
 /* Skills Styles Ends Here */

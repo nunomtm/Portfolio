@@ -976,6 +976,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
 .skills .logos .accessible img {
   width: 93px;
   margin: 0 auto;
+  color: #444444;
 }
 
 .skills .logos .html .responsive,
@@ -992,22 +993,6 @@ header .heroContainer .hero .scroll .iconScroll:before {
 .skills .logos .accessible .responsive {
   width: 125px;
   margin-bottom: 11px;
-}
-
-.skills .logos .html .devicon-git-plain path,
-.skills .logos .css .devicon-git-plain path,
-.skills .logos .sass .devicon-git-plain path,
-.skills .logos .mobile .devicon-git-plain path,
-.skills .logos .vsCode .devicon-git-plain path,
-.skills .logos .javaScript .devicon-git-plain path,
-.skills .logos .jQuery .devicon-git-plain path,
-.skills .logos .react .devicon-git-plain path,
-.skills .logos .firebase .devicon-git-plain path,
-.skills .logos .github .devicon-git-plain path,
-.skills .logos .git .devicon-git-plain path,
-.skills .logos .accessible .devicon-git-plain path {
-  fill: #e40b0b;
-  list-style: none;
 }
 
 /* Skills Icons Hover Effect */
@@ -1090,10 +1075,10 @@ header .heroContainer .hero .scroll .iconScroll:before {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (min-content)[3];
-      grid-template-rows: repeat(3, -webkit-min-content);
-      grid-template-rows: repeat(3, min-content);
-      grid-template-areas: "subTittle subTittle" "weather weatherInfo" "socialIconsInfo socialIcons";
+  -ms-grid-rows: (min-content)[5];
+      grid-template-rows: repeat(5, -webkit-min-content);
+      grid-template-rows: repeat(5, min-content);
+      grid-template-areas: "subTittle subTittle" "weather weatherInfo" "socialIconsInfo socialIcons" "tipCalculator tipCalculatorInfo";
   padding-top: 10px;
   padding-bottom: 40px;
 }
@@ -1181,6 +1166,21 @@ header .heroContainer .hero .scroll .iconScroll:before {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: socialIconsInfo;
+  margin-top: 80px;
+  margin-right: 5px;
+}
+
+.portfolio .tipCalculator {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: tipCalculator;
+  padding: 20px 0;
+}
+
+.portfolio .tipCalculatorInfo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: tipCalculatorInfo;
   margin-top: 80px;
   margin-right: 5px;
 }
@@ -1794,22 +1794,29 @@ footer .wrapper .white {
   .portfolio .wrapper li {
     margin-top: 10px;
   }
-  .portfolio .wrapper .yoda,
-  .portfolio .wrapper .market,
-  .portfolio .wrapper .amILate,
-  .portfolio .wrapper .textile {
+  .portfolio .quick .weatherInfo {
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  .portfolio .quick .socialIconsInfo {
+    margin-top: 10px;
+  }
+  .portfolio .feature .yoda,
+  .portfolio .feature .market,
+  .portfolio .feature .amILate,
+  .portfolio .feature .textile {
     padding: 70px 0;
   }
-  .portfolio .wrapper .yodaInfo {
+  .portfolio .feature .yodaInfo {
     margin-top: 25px;
   }
-  .portfolio .wrapper .marketInfo {
+  .portfolio .feature .marketInfo {
     margin-top: 45px;
   }
-  .portfolio .wrapper .amILateInfo {
+  .portfolio .feature .amILateInfo {
     margin-top: 20px;
   }
-  .portfolio .wrapper .textileInfo {
+  .portfolio .feature .textileInfo {
     margin-top: 60px;
   }
 }
@@ -1834,10 +1841,16 @@ footer .wrapper .white {
     top: 59%;
     height: 30%;
   }
-  .portfolio .wrapper .yoda,
-  .portfolio .wrapper .market,
-  .portfolio .wrapper .amILate,
-  .portfolio .wrapper .textile {
+  .portfolio .quick .weather {
+    padding: 50px 0;
+  }
+  .portfolio .quick .socialIcons {
+    padding: 60px 0;
+  }
+  .portfolio .feature .yoda,
+  .portfolio .feature .market,
+  .portfolio .feature .amILate,
+  .portfolio .feature .textile {
     padding: 90px 0;
   }
   .contact .contactMe .contactDetails .details .email a {
@@ -1953,25 +1966,36 @@ footer .wrapper .white {
         grid-template-rows: repeat(3, min-content);
         grid-template-areas: "html css sass mobile" "vsCode js jq react" "firebase github git accessible";
   }
-  .portfolio .wrapper {
+  .portfolio .quick {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (min-content)[8];
-        grid-template-rows: repeat(8, -webkit-min-content);
-        grid-template-rows: repeat(8, min-content);
-        grid-template-areas: "yoda" "yodaInfo" "market" "marketInfo" "late" "lateInfo" "textile"  "textileInfo";
+    -ms-grid-rows: (min-content)[5];
+        grid-template-rows: repeat(5, -webkit-min-content);
+        grid-template-rows: repeat(5, min-content);
+        grid-template-areas: "subTitle" "weather" "weatherInfo" "socialIcons" "socialIconsInfo";
+  }
+  .portfolio .quick .socialIconsInfo {
     padding-bottom: 60px;
   }
-  .portfolio .wrapper .yoda,
-  .portfolio .wrapper .market,
-  .portfolio .wrapper .amILate,
-  .portfolio .wrapper .textile {
+  .portfolio .feature {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (min-content)[9];
+        grid-template-rows: repeat(9, -webkit-min-content);
+        grid-template-rows: repeat(9, min-content);
+        grid-template-areas: "subTitle" "yoda" "yodaInfo" "market" "marketInfo" "late" "lateInfo" "textile" "textileInfo";
+    padding-bottom: 60px;
+  }
+  .portfolio .feature .yoda,
+  .portfolio .feature .market,
+  .portfolio .feature .amILate,
+  .portfolio .feature .textile {
     padding: 60px 0;
   }
-  .portfolio .wrapper .yodaInfo,
-  .portfolio .wrapper .marketInfo,
-  .portfolio .wrapper .amILateInfo,
-  .portfolio .wrapper .textileInfo {
+  .portfolio .feature .yodaInfo,
+  .portfolio .feature .marketInfo,
+  .portfolio .feature .amILateInfo,
+  .portfolio .feature .textileInfo {
     margin: 0;
   }
   .contact .wrapper {
@@ -2030,6 +2054,9 @@ footer .wrapper .white {
   header .navContainer .nav .navLinks li {
     padding: 45px 0;
   }
+  header .navContainer .nav .navLinks .subMenu {
+    display: none;
+  }
   header .heroContainer .social {
     display: none;
   }
@@ -2069,11 +2096,15 @@ footer .wrapper .white {
     -ms-grid-rows: (min-content)[4];
         grid-template-rows: repeat(4, -webkit-min-content);
         grid-template-rows: repeat(4, min-content);
-        grid-template-areas: "html css sass"  "mobile vsCode js" "jq react firebase" "github git accessible";
+        grid-template-areas: "html css sass" "mobile vsCode js" "jq react firebase" "github git accessible";
   }
   .portfolio .title {
     font-size: 4rem;
   }
+  .portfolio .weatherInfo h2,
+  .portfolio .weatherInfo .links,
+  .portfolio .socialIconsInfo h2,
+  .portfolio .socialIconsInfo .links,
   .portfolio .yodaInfo h2,
   .portfolio .yodaInfo .links,
   .portfolio .marketInfo h2,
@@ -2084,6 +2115,8 @@ footer .wrapper .white {
   .portfolio .amILateInfo .links {
     text-align: center;
   }
+  .portfolio .weatherInfo ul,
+  .portfolio .socialIconsInfo ul,
   .portfolio .yodaInfo ul,
   .portfolio .marketInfo ul,
   .portfolio .textileInfo ul,
@@ -2124,6 +2157,11 @@ footer .wrapper .white {
   .about .wrapper .border {
     top: 35%;
   }
+  .portfolio .quick h2 {
+    font-size: 3rem;
+  }
+  .portfolio .wrapper .weatherInfo,
+  .portfolio .wrapper .socialIconsInfo,
   .portfolio .wrapper .yodaInfo,
   .portfolio .wrapper .marketInfo,
   .portfolio .wrapper .amILateInfo,
@@ -2186,10 +2224,15 @@ footer .wrapper .white {
     -ms-grid-rows: (min-content)[6];
         grid-template-rows: repeat(6, -webkit-min-content);
         grid-template-rows: repeat(6, min-content);
-        grid-template-areas: "html css" "sass mobile" "vsCode js" "jq react"  "firebase github" "git accessible";
+        grid-template-areas: "html css" "sass mobile" "vsCode js" "jq react" "firebase github" "git accessible";
   }
   .portfolio .title {
     font-size: 3.5rem;
+  }
+  .portfolio .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .portfolio .wrapper h2 {
     font-size: 3rem;
@@ -2303,6 +2346,10 @@ footer .wrapper .white {
   }
   .portfolio .title {
     font-size: 3.5rem;
+  }
+  .portfolio .wrapper h3 {
+    font-size: 3rem;
+    width: 255px;
   }
   .portfolio .wrapper .yoda,
   .portfolio .wrapper .market,
