@@ -24,7 +24,7 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(5, min-content);
-		grid-template-areas: "subTittle subTittle" "weather weatherInfo" "socialIconsInfo socialIcons" "tipCalculator tipCalculatorInfo";
+		grid-template-areas: "subTittle subTittle" "weather weatherInfo" "tipCalculatorInfo tipCalculator" "socialIcons socialIconsInfo";
 		padding-top: 10px;
 		padding-bottom: 40px;
 		h2 {

@@ -1078,7 +1078,7 @@ header .heroContainer .hero .scroll .iconScroll:before {
   -ms-grid-rows: (min-content)[5];
       grid-template-rows: repeat(5, -webkit-min-content);
       grid-template-rows: repeat(5, min-content);
-      grid-template-areas: "subTittle subTittle" "weather weatherInfo" "socialIconsInfo socialIcons" "tipCalculator tipCalculatorInfo";
+      grid-template-areas: "subTittle subTittle" "weather weatherInfo" "tipCalculatorInfo tipCalculator" "socialIcons socialIconsInfo";
   padding-top: 10px;
   padding-bottom: 40px;
 }
@@ -1156,30 +1156,30 @@ header .heroContainer .hero .scroll .iconScroll:before {
 }
 
 .portfolio .socialIcons {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: socialIcons;
   padding: 20px 0;
 }
 
 .portfolio .socialIconsInfo {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: socialIconsInfo;
   margin-top: 80px;
   margin-right: 5px;
 }
 
 .portfolio .tipCalculator {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: tipCalculator;
   padding: 20px 0;
 }
 
 .portfolio .tipCalculatorInfo {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: tipCalculatorInfo;
   margin-top: 80px;
   margin-right: 5px;
