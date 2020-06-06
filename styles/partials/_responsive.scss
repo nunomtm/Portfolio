@@ -380,8 +380,17 @@
 	.portfolio {
 		.quick {
 			grid-template-columns: repeat(1, 1fr);
-			grid-template-rows: repeat(5, min-content);
-			grid-template-areas: "subTitle" "weather" "weatherInfo" "socialIcons" "socialIconsInfo";
+			grid-template-rows: repeat(7, min-content);
+			grid-template-areas: "subTitle" "weather" "weatherInfo" "tipCalculator" "tipCalculatorInfo" "socialIcons" "socialIconsInfo";
+			.weather,
+			.tipCalculator,
+			.socialIcons {
+				padding: 30px 0;
+			}
+			.tipCalculatorInfo {
+				margin-top: 0px;
+				padding-bottom: 30px;
+			}
 			.socialIconsInfo {
 				padding-bottom: 60px;
 			}
@@ -389,7 +398,7 @@
 		.feature {
 			grid-template-columns: repeat(1, 1fr);
 			grid-template-rows: repeat(9, min-content);
-			grid-template-areas: "subTitle" "yoda" "yodaInfo" "market" "marketInfo" "late" "lateInfo" "textile" "textileInfo";
+			grid-template-areas: "subTitle" "late" "lateInfo" "market" "marketInfo" "yoda" "yodaInfo" "textile" "textileInfo";
 			padding-bottom: 60px;
 			.yoda,
 			.market,
