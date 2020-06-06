@@ -1075,9 +1075,9 @@ header .heroContainer .hero .scroll .iconScroll:before {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (min-content)[5];
-      grid-template-rows: repeat(5, -webkit-min-content);
-      grid-template-rows: repeat(5, min-content);
+  -ms-grid-rows: (min-content)[4];
+      grid-template-rows: repeat(4, -webkit-min-content);
+      grid-template-rows: repeat(4, min-content);
       grid-template-areas: "subTittle subTittle" "weather weatherInfo" "tipCalculatorInfo tipCalculator" "socialIcons socialIconsInfo";
   padding-top: 10px;
   padding-bottom: 40px;
@@ -1155,21 +1155,6 @@ header .heroContainer .hero .scroll .iconScroll:before {
   margin-right: 5px;
 }
 
-.portfolio .socialIcons {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: socialIcons;
-  padding: 20px 0;
-}
-
-.portfolio .socialIconsInfo {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: socialIconsInfo;
-  margin-top: 80px;
-  margin-right: 5px;
-}
-
 .portfolio .tipCalculator {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
@@ -1185,14 +1170,29 @@ header .heroContainer .hero .scroll .iconScroll:before {
   margin-right: 5px;
 }
 
+.portfolio .socialIcons {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: socialIcons;
+  padding: 20px 0;
+}
+
+.portfolio .socialIconsInfo {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: socialIconsInfo;
+  margin-top: 80px;
+  margin-right: 5px;
+}
+
 .portfolio .feature {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (min-content)[4];
-      grid-template-rows: repeat(4, -webkit-min-content);
-      grid-template-rows: repeat(4, min-content);
+  -ms-grid-rows: (min-content)[5];
+      grid-template-rows: repeat(5, -webkit-min-content);
+      grid-template-rows: repeat(5, min-content);
       grid-template-areas: "subTitle subTitle" "lateInfo late" "market marketInfo" "yodaInfo yoda" "textile textileInfo";
   padding-top: 10px;
   padding-bottom: 40px;
@@ -2112,6 +2112,8 @@ footer .wrapper .white {
   }
   .portfolio .weatherInfo h2,
   .portfolio .weatherInfo .links,
+  .portfolio .tipCalculatorInfo h2,
+  .portfolio .tipCalculatorInfo .links,
   .portfolio .socialIconsInfo h2,
   .portfolio .socialIconsInfo .links,
   .portfolio .yodaInfo h2,
@@ -2125,6 +2127,7 @@ footer .wrapper .white {
     text-align: center;
   }
   .portfolio .weatherInfo ul,
+  .portfolio .tipCalculatorInfo ul,
   .portfolio .socialIconsInfo ul,
   .portfolio .yodaInfo ul,
   .portfolio .marketInfo ul,
